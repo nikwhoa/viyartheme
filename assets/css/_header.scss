@@ -1,5 +1,6 @@
 .header {
-    
+    clip-path: polygon(100% 0, 100% 63%, 0 100%, 0 0);
+    height: 760px;
 	background: radial-gradient(44.52% 130.48% at 61.79% 38.76%,
 			rgba(48, 160, 240, 0.9) 0%,
 			rgba(0, 128, 224, 0.9) 45.12%,
@@ -12,10 +13,48 @@
     
 	section {
 		background: url('assets/img/header-bg--drawing.svg') center center / cover no-repeat;
+        height: inherit;
 	}
-
+    &__container.flex-container {
+        justify-content: space-between;
+    }
 	&__container {
+        
+        line-height: 64px;
 		max-width: 1344px;
 		margin: 0 auto;
 	}
+    &__nav {
+        
+        .menu {
+            display: flex;
+            padding: 0;
+            margin: 0;
+            list-style-type: none;
+            .menu-item {
+                margin: 0 1.7rem;
+                a {
+                    padding: 0 0 0.3rem 0;
+                    text-decoration: none;
+                    color: $main-white;
+                    &:hover {
+                        // text-decoration: underline $main-white 2px;
+                        border-bottom: 2px solid $main-white;
+                    }
+                }
+                
+            }
+        }
+    }
+    &__logo {
+        display: flex;
+       
+        .custom-logo-link {
+            align-items: center;
+            display: flex;
+            img {
+                display: block;
+            }
+        }
+    }
 }
