@@ -1,5 +1,44 @@
 @import 'fonts';
+@import 'normalize';
+@import 'breakpoints';
+@import 'variables';
+@import 'header';
 
-html, body {
-    font-family: "Roboto", sans-serif;
+html,
+body {
+	font-family: $roboto-regular, sans-serif;
+    box-sizing: border-box;
 }
+*,
+*:before,
+*:after {
+	box-sizing: inherit;
+}
+
+main {
+    margin: 0 auto 4rem;
+    max-width: 1344px;
+    @include xll {
+    }
+}
+section {
+    padding: 1rem;
+    @include sm {
+        padding: 1.5rem;
+    }
+}
+.flex-container {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: flex-start;
+    align-items: stretch;
+    /*
+    flex-flow is the combination of flex-direction and flex-wrap.
+      flex-direction: row;
+      flex-wrap: nowrap;
+      align-content: flex-start;
+    */
+  }
+  .flex-item {
+    flex: 0 1 auto;
+  }
