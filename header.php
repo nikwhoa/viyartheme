@@ -44,14 +44,19 @@
                     </a>
                 </div>
             </div>
+            <section>
+            <div class="header__title">
+                <div class="title">
+                    <div class="academy-logo">
+                        by <div><img src="<?php echo get_template_directory_uri(); ?>/assets/img/viar-academy-logo.svg" alt=""></div>
+                        <span>Viyar</span>
+                        academy
+                    </div>
+                    <h1>Курс Viyar ProBusinnes</h1>
+                </div>
+            </div>  
+            <!-- TODO: продолжить с текста под заголовком  Курс Viyar ProBusinnes-->
         </section>
+        </section>
+       
     </header>
-    <main>
-        <section>
-            <div class="flex-container">
-                <div class="flex-item">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore ad quia ipsum, tenetur deleniti officia quis reiciendis obcaecati. Aut, soluta voluptates exercitationem omnis quidem, delectus odit illum deserunt sint mollitia unde sunt magnam laudantium voluptate quod ex iure minus molestiae cumque minima. Similique, harum debitis corrupti sunt dicta reprehenderit? Dolorem!</div>
-                <div class="flex-item">Rem illo doloribus cupiditate vero illum voluptatum quod quisquam autem qui aperiam praesentium suscipit tenetur mollitia, quae, distinctio voluptates velit. Dolorum sed libero eum cumque culpa soluta tempore harum at voluptates, repellendus ducimus illo iste quisquam ab consectetur porro aperiam ullam laborum praesentium modi officia dignissimos ea! Labore, eum suscipit.</div>
-                <div class="flex-item">Voluptatum at aliquam reprehenderit consequuntur veritatis corporis rem ex porro blanditiis temporibus corrupti nulla, ducimus autem doloremque. Magni iste autem rerum adipisci quis vitae soluta dicta nulla corrupti mollitia recusandae, ipsa alias, quibusdam maiores sit, ab deleniti assumenda a ipsam distinctio eaque incidunt eveniet pariatur maxime. Sunt ipsam placeat dicta!</div>
-            </div>
-        </section>
-    </main>
