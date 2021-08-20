@@ -21,15 +21,7 @@
                     }
                     ?>
                 </div>
-                <!-- <nav class="header__nav flex-container">
-                    <div class="nav-item flex-item">Главная</div>
-                    <div class="nav-item flex-item">Преимущества</div>
-                    <div class="nav-item flex-item">Программа</div>
-                    <div class="nav-item flex-item">Спикеры</div>
-                    <div class="nav-item flex-item">Отзывы</div>
-                    <div class="nav-item flex-item">FAQ</div>
-                    <div class="nav-item flex-item">Контакты</div>
-                </nav> -->
+
                 <?php
 
                 wp_nav_menu(array(
@@ -42,12 +34,14 @@
 
                 ?>
                 <div class="header__phone flex-container">
-                    <div class="phone__icon flex-item">
-                        <img src="<?php echo get_template_directory_uri(); ?>/assets/img/phone-call.svg" alt="Call to us">
-                    </div>
-                    <div class="flex-item">
-                        +380 (99) 99 99 999
-                    </div>
+                    <a class="phone__link" href="tel:+380999999999">
+                        <div class="phone-icon flex-item">
+                            <img src="<?php echo get_template_directory_uri(); ?>/assets/img/phone-call.svg" alt="Call to us">
+                        </div>
+                        <div class="phone-number flex-item">
+                            +380 (99) 99 99 999
+                        </div>
+                    </a>
                 </div>
             </div>
         </section>
