@@ -1,4 +1,5 @@
 @font-face{font-family:"Roboto";src:url("assets/fonts/Roboto-Regular.woff2") format("woff2"),url("assets/fonts/Roboto-Regular.woff2") format("woff")}
+@font-face{font-family:'Roboto Bold';src:url("assets/fonts/Roboto-Bold.woff2") format("woff2"),url("assets/fonts/Roboto-Bold.woff2") format("woff")}
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */html{line-height:1.15;-webkit-text-size-adjust:100%}
 body{margin:0}
 main{display:block}
@@ -50,13 +51,22 @@ template{display:none}
 .header__phone .phone__link:hover{-webkit-transform:scale(1.05);-ms-transform:scale(1.05);transform:scale(1.05)}
 .header__phone .phone-icon{margin:0 .8rem 0 0;-webkit-box-align:center;-ms-flex-align:center;align-items:center;display:-webkit-box;display:-ms-flexbox;display:flex}
 .header__phone .phone-icon img{display:block}
-.header__title{max-width:1344px;margin:0 auto;padding:8rem 0 0 10rem}
+.header__title{max-width:1344px;margin:0 auto;padding:8rem 0 0 7.4rem}
+.header__title .title h1{line-height:2.3rem;font-size:3rem;font-weight:normal}
+.header__title .title h1 span{font-family:'Roboto Bold'}
+.header__title .academy-logo{font-size:.8rem;display:-webkit-box;display:-ms-flexbox;display:flex;font-weight:normal;-ms-flex-line-pack:end;align-content:flex-end;-webkit-box-pack:end;-ms-flex-pack:end;justify-content:flex-end;-webkit-box-align:center;-ms-flex-align:center;align-items:center;margin:0 -4.8rem -1rem 0}
+.header__title .academy-logo div{margin:0 .5rem}
+.header__title .sub-title{width:430px;font-weight:normal;line-height:1.6rem;font-size:1.1rem}
+.header__title .course-btn{padding:5rem 0 0 0;text-align:right}
+.header__title .course-btn .btn{padding:1rem 3rem}
 html,body{font-family:"Roboto",sans-serif;-webkit-box-sizing:border-box;box-sizing:border-box;overflow-x:hidden}
 *,*:before,*:after{-webkit-box-sizing:inherit;box-sizing:inherit}
 main{margin:0 auto 4rem;max-width:1344px}
 section{padding:1rem}
 .flex-container{display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-orient:horizontal;-webkit-box-direction:normal;-ms-flex-flow:row nowrap;flex-flow:row nowrap;-webkit-box-align:stretch;-ms-flex-align:stretch;align-items:stretch}
 .flex-item{-webkit-box-flex:0;-ms-flex:0 1 auto;flex:0 1 auto}
-.pc{max-width:1344px;margin:0 auto;left:0;right:0;padding:0 7rem;top:7.9rem;display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-pack:end;-ms-flex-pack:end;justify-content:flex-end;position:absolute;z-index:100}
+.pc{max-width:900px;margin:0 auto;right:0;padding:0 8.5rem;top:7.9rem;display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-pack:end;-ms-flex-pack:end;justify-content:flex-end;position:absolute;z-index:100}
+.btn{background:-webkit-gradient(linear,left top,right top,from(#ff8000),to(#fc710d));background:-o-linear-gradient(left,#ff8000 0,#fc710d 100%);background:linear-gradient(90deg,#ff8000 0,#fc710d 100%);border-radius:14px;border:transparent;font-weight:700;text-align:center;color:#fff;cursor:pointer}
+.link{display:inline-block;text-decoration:none;cursor:-webkit-grab;cursor:grab}
 @media(max-width:575.98px){section{padding:1.5rem}
 }

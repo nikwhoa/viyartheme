@@ -45,14 +45,27 @@ section {
   }
 
   .pc {
-    max-width: 1344px;
+    max-width: 900px;
     margin: 0 auto;
-    left:0;
     right:0;
-    padding: 0 7rem;
+    padding: 0 8.5rem;
     top: 7.9rem;
     display: flex;
     justify-content: flex-end;
     position: absolute;
     z-index: 100;
+  }
+  .btn {
+    background: linear-gradient(90deg, #FF8000 0%, #FC710D 100%);
+    border-radius: 14px;
+    border: transparent;
+    font-weight: 700;
+    text-align: center;
+    color: $main-white;
+    cursor: pointer;
+  }
+  .link {
+    display: inline-block;
+    text-decoration: none;
+    cursor: grab;
   }

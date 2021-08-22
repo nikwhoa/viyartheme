@@ -49,11 +49,23 @@
             <div class="header__title flex-container">
                 <div class="title">
                     <div class="academy-logo">
-                        by <div><img src="<?php echo get_template_directory_uri(); ?>/assets/img/viar-academy-logo.svg" alt=""></div>
-                        <span>Viyar</span>
-                        academy
+                        by
+                        <div>
+                            <img src="<?php echo get_template_directory_uri(); ?>/assets/img/viar-academy-logo.svg" alt="">
+                        </div>
                     </div>
-                    <h1>Курс Viyar ProBusiness</h1>
+                    <h1>Курс <span> Viyar ProBusiness</span></h1>
+                    <div class="sub-title">
+                        Комплексний курс для розвитку меблевого бізнесу
+                        Від стратегії до створення контенту за 2 місяці
+                    </div>
+                    <div class="course-btn">
+
+                        <a href="#" class="link"> 
+                            <button class="btn"> Програма </button> 
+                        </a>
+
+                    </div>
                 </div>
             </div>
 
