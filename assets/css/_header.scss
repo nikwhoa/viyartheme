@@ -1,5 +1,6 @@
 .header {
-
+	position: relative;
+	z-index: 1;
 	// margin: 2rem 0;
 	clip-path: polygon(100% 0, 100% 57%, 0 100%, 0 0);
 	height: 760px;
@@ -125,4 +126,15 @@
 		// }
 
 	}
+
+	/* TITLE */
+
+	&__title {
+		max-width: 1344px;
+		margin: 0 auto;
+		padding: 8rem 0 0 10rem;
+		// justify-content: space-around!important;
+	}
+
+	/* TODO: разобраться с компом на главной. придумать что-то с фоном */
 }

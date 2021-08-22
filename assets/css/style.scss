@@ -31,10 +31,10 @@ section {
 .flex-container {
     display: flex;
     flex-flow: row nowrap;
-    justify-content: flex-start;
     align-items: stretch;
     /*
     flex-flow is the combination of flex-direction and flex-wrap.
+      justify-content: flex-start;
       flex-direction: row;
       flex-wrap: nowrap;
       align-content: flex-start;
@@ -42,4 +42,17 @@ section {
   }
   .flex-item {
     flex: 0 1 auto;
+  }
+
+  .pc {
+    max-width: 1344px;
+    margin: 0 auto;
+    left:0;
+    right:0;
+    padding: 0 7rem;
+    top: 7.9rem;
+    display: flex;
+    justify-content: flex-end;
+    position: absolute;
+    z-index: 100;
   }
