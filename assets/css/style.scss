@@ -4,6 +4,7 @@
 @import 'variables';
 @import 'header';
 @import 'approaches';
+@import 'benefits';
 
 html,
 body {
@@ -72,4 +73,9 @@ section {
     display: inline-block;
     text-decoration: none;
     cursor: grab;
+  }
+  h2 {
+    font-family: 'Roboto Bold';
+    text-align: center;
+    font-size: 1.5rem;
   }

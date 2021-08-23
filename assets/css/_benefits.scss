@@ -1,0 +1,68 @@
+.benefits {
+    margin: -3.5rem 0;
+    &__title {
+        text-align: center;
+        color: $main-blue;
+    }
+    &__list {
+        width: 90%;
+        margin: 3rem auto 0 auto;
+        padding: 0 2rem;
+        justify-content: center;
+        .benefit-item {
+            width: 264px;
+            background: $main-white;
+            padding: 1rem .5rem;
+            border: 0.5px solid #D0EEFF;
+            box-shadow: 0px 4px 10px rgba(0, 96, 192, 0.08);
+            border-radius: 1.1rem;
+            margin: 0 1rem;
+            &__feature-image {
+                padding: 1rem 0;
+                text-align: center;
+                .image-wrapper {
+                    width: 96px;
+                    height: 96px;
+                    border: 0.5px solid #E0E0E0;
+                    border-radius: 100%;
+                    text-align: center;
+                    vertical-align: middle;
+                    display: inline-block;
+                    &:before {
+                        content: "";
+                        display: inline-block;
+                        vertical-align: middle;
+                        height: 100%;
+                      }
+                    img {
+                        display: inline-block;
+                        vertical-align: middle;
+                        width: 48px;
+                        height: 48px;
+                        // margin: 0 2px 0 0;
+                    }
+                }
+            }
+            &__divider {
+                width: 40px;
+                height: 4px;
+                background: $main-blue;
+                margin: 1rem auto;
+            }
+            &__title {
+                text-align: center;
+                line-height: 1.2rem;
+                font-weight: 700;
+                color: #606060;
+            }
+            &__description {
+                font-size: .9rem;
+                color: #909090;
+                text-align: center;
+                line-height: 1.1rem;
+                font-weight: 500;
+                padding: 0.7rem 0 0 0;
+            }
+        }
+    }
+}
