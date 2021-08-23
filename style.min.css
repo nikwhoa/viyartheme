@@ -82,6 +82,21 @@ template{display:none}
 .benefits__list .benefit-item__description{font-size:.9rem;color:#909090;text-align:center;line-height:1.1rem;font-weight:500;padding:.7rem 0 0 0}
 .benefits__button{text-align:center;margin:2rem 0}
 .benefits__button .register-btn{padding:1.2rem 3rem}
+.course-programme{margin:1rem 0}
+.course-programme .container{max-width:856px;margin:0 auto;padding:1rem}
+.course-programme__title{margin:2rem 0;color:#0080e0}
+.course-programme__download{padding:1rem 0;font-weight:bold;color:#0080e0;margin:1rem 0;text-align:center}
+.course-programme__download a{color:#0080e0;display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-align:center;-ms-flex-align:center;align-items:center;-webkit-box-pack:center;-ms-flex-pack:center;justify-content:center}
+.course-programme__download a img{margin:0 1rem 0 0}
+.course-programme__modules{padding:2rem 0}
+.course-programme__modules .module{margin:1.5rem 0}
+.course-programme__modules .module__header .circle{margin:0 1rem 0 0;width:48px;height:48px;background:url("assets/img/module-point.png") no-repeat center center;background-size:cover}
+.course-programme__modules .module__header .number{font-family:'Roboto Bold';font-size:4.3rem;color:#0080e0;line-height:1.4rem}
+.course-programme__modules .module__header .ext{font-family:'Roboto Bold';line-height:2.25rem;font-size:2rem;color:#0080e0;-webkit-box-align:center;-ms-flex-align:center;align-items:center;display:-webkit-box;display:-ms-flexbox;display:flex}
+.course-programme__modules .module__header .title{margin:0 0 0 1rem;padding:.5rem 1rem;background:#0080e0;border-radius:8px;color:#fff;-webkit-box-align:center;-ms-flex-align:center;align-items:center;display:-webkit-box;display:-ms-flexbox;display:flex;font-size:1.5rem}
+.course-programme__modules .module__content{color:#606060;line-height:1.2rem;margin:0 0 0 26%}
+.course-programme__modules .module__content ul{list-style:none}
+.course-programme__modules .module__content ul li::before{content:"\2022";color:#ff8000;font-weight:bold;display:inline-block;width:1em;margin-left:-1em}
 html,body{font-family:"Roboto",sans-serif;-webkit-box-sizing:border-box;box-sizing:border-box;overflow-x:hidden;background:url("assets/img/body-bg.png") no-repeat center center fixed;background-size:cover}
 *,*:before,*:after{-webkit-box-sizing:inherit;box-sizing:inherit}
 main{margin:-11.7rem auto 4rem;max-width:1344px}
