@@ -1,6 +1,6 @@
+<div class="approaches-bg"></div>
 <main>
     <section class="approaches">
-
         <div class="approaches__title">
             <h2>ЧИ ПІДХОДИТЬ ВАМ ЦЕЙ КУРС?</h2>
             <div class="subtitle flex-container">
