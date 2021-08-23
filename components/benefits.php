@@ -52,4 +52,9 @@
             </div>
         </div>
     </div>
+    <div class="benefits__button">
+        <a href="#" class="link">
+            <button class="register-btn btn">Зареєструватися</button>
+        </a>
+    </div>
 </section>

@@ -80,6 +80,8 @@ template{display:none}
 .benefits__list .benefit-item__divider{width:40px;height:4px;background:#0080e0;margin:1rem auto}
 .benefits__list .benefit-item__title{text-align:center;line-height:1.2rem;font-weight:700;color:#606060}
 .benefits__list .benefit-item__description{font-size:.9rem;color:#909090;text-align:center;line-height:1.1rem;font-weight:500;padding:.7rem 0 0 0}
+.benefits__button{text-align:center;margin:2rem 0}
+.benefits__button .register-btn{padding:1.2rem 3rem}
 html,body{font-family:"Roboto",sans-serif;-webkit-box-sizing:border-box;box-sizing:border-box;overflow-x:hidden;background:url("assets/img/body-bg.png") no-repeat center center fixed;background-size:cover}
 *,*:before,*:after{-webkit-box-sizing:inherit;box-sizing:inherit}
 main{margin:-11.7rem auto 4rem;max-width:1344px}
