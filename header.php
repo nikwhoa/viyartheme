@@ -10,7 +10,7 @@
 </head>
 
 <body>
-
+<div class="header-bg"></div>
     <header class="header">
         <section>
             <!-- LOGO&NAV&PHONE -->
