@@ -60,6 +60,6 @@
                 <div class="approaches-item__description">
                 і не знаю, з чого почати, щоб вийти на новий рівень і масштабуватися
                 </div>
-            </div>
-        </div> -->
+            </div> -->
+        </div> 
     </section>
