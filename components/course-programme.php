@@ -1,6 +1,7 @@
 <section id="course-programme" class="course-programme">
     <!-- TODO: COURSE LINE -->
     <div class="container">
+        <div class="course-programme-line"></div>
         <div class="course-programme__title">
             <h2>ПРОГРАМА КУРСУ</h2>
         </div>
@@ -101,4 +102,5 @@
            
         </div>
     </div>
+  
 </section>
