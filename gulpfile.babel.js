@@ -87,6 +87,7 @@ const browsersync = done => {
 	browserSync.init({
 		proxy: config.projectURL,
 		open: config.browserAutoOpen,
+		localOnly: true,
 		injectChanges: config.injectChanges,
 		watchEvents: ['change', 'add', 'unlink', 'addDir', 'unlinkDir']
 	});

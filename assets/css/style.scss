@@ -12,8 +12,9 @@ body {
 	font-family: $roboto-regular, sans-serif;
     box-sizing: border-box;
     overflow-x: hidden;
-    background: url('assets/img/body-bg.png') no-repeat center center fixed;
-    background-size: cover; 
+    background: url('assets/img/body-bg-3-min.png') no-repeat;
+    background-position: 50% 10%;
+    // background-size: cover; 
 
 }
 *,
