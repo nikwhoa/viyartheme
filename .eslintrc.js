@@ -14,10 +14,10 @@ module.exports = {
 		// 'space-before-function-paren': 'off',
 		// 'space-in-parens': 'off',
 		// 'array-bracket-spacing': 'off', // Disable weird WP spacing rules.
-		indent: ['error', 'tab'],
+		// indent: ['error', 'tab'],
 		semi: ['error', 'always'],
 		quotes: ['error', 'single'],
-		'linebreak-style': ['error', 'unix']
+		'linebreak-style': ['error', 'windows']
 	}
 };
 ``;

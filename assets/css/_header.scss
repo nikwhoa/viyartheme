@@ -5,56 +5,100 @@
 			rgba(0, 128, 224, 0.9) 100%);
 	box-shadow: 0px 4px 20px rgba(0, 32, 64, 0.19);
 	position: absolute;
-    width: 100%;
+	width: 100%;
 	top: -320px;
-    min-height: 780px;
-    
-    max-height: 960px;
-    // padding: 48px 48px 32px;
-    overflow: hidden;
-    transform: skewY(-8deg);
-    transform-origin: 100%;
+	min-height: 780px;
+
+	max-height: 960px;
+	// padding: 48px 48px 32px;
+	overflow: hidden;
+	transform: skewY(-8deg);
+	transform-origin: 100%;
+
 	@include wide-screen {
 		top: -360px;
 		max-height: 1000px;
 	}
 }
-.header {
-	position: relative;
-	z-index: 1;
-	// margin: 2rem 0;
-	// clip-path: polygon(100% 0, 100% 57%, 0 100%, 0 0);
-	// height: 785px;
-	height: auto;
-	
-	
-	color: $main-white;
-	font-weight: bold;
-	font-size: 0.9rem;
-	
 
-	section {
-		background: url('assets/img/header-bg--drawing.svg') top / cover no-repeat;
-		height: inherit;
+.nav-wrapper {
+	width: 100%;
+	position: fixed;
+	top: 0;
+	left: 50%;
+    transform: translate(-50%, 0);
+	
+	z-index: 999;
+	transition: all 0.6s ease-in-out;
+	text-align: center;
+	display: flex;
+	justify-content: center;
+	
+}
+.sticky-nav {
+	background: $main-white;
+	.navigation__nav .menu .menu-item a, .navigation__phone .phone__link {
+		color: $main-blue;
 	}
+	#phone-icon {
+		fill: $main-blue;
+	}
+	.navigation__logo .custom-logo-link svg path {
+		fill: $main-blue;
+	}
+	.navigation__nav .menu .menu-item a:after {
+		background: $main-blue;
+	}
+	transition: all 0.6s ease-in-out;
+}
+.navigation {
+	align-self: center;
+	padding: 0 1rem;
+	line-height: 64px;
+	font-size: 0.9rem;
+	transition: all 0.6s ease-in-out;
+	/*
+		TODO: remove if will be wrapper 
+		max-width: 1344px; 
+		*/
+	
 
-	&__container.flex-container {
+	.navigation.flex-container {
 		justify-content: space-between;
 	}
 
-	&__container {
-		padding: 0 1rem;
-		line-height: 64px;
-		max-width: 1344px;
-		margin: -1rem auto;
+
+	&__logo {
+		display: flex;
+
+		.custom-logo-link {
+			align-items: center;
+			display: flex;
+			transition: all 0.4s ease-in-out;
+
+			// transition-timing-function: ease;
+			&:hover {
+				transform: scale(1.05);
+			}
+
+			img {
+				display: block;
+			}
+			#phone-icon {
+				fill: $main-white;
+			}
+		}
 	}
 
 	&__nav {
-
+		padding: 0 1rem;
+		
 		.menu {
+			font-weight: 600;
 			display: flex;
 			padding: 0;
 			margin: 0;
+			
 			list-style-type: none;
 
 			.menu-item {
@@ -96,32 +140,15 @@
 
 			}
 		}
-	}
 
-	&__logo {
-		display: flex;
-
-		.custom-logo-link {
-			align-items: center;
-			display: flex;
-			transition: all 0.4s ease-in-out;
-
-			// transition-timing-function: ease;
-			&:hover {
-				transform: scale(1.05);
-			}
-
-			img {
-				display: block;
-			}
-		}
 	}
 
 	&__phone {
 		.phone__link {
+			font-weight: bold;
 			display: flex;
 			text-decoration: none;
-			color: inherit;
+			color: $main-white;
 			transition: all 0.4s ease-in-out;
 
 			// transition-timing-function: ease;
@@ -139,71 +166,91 @@
 				display: block;
 			}
 		}
-
-		/* TODO: ховер на телефон */
-		// .phone-number {
-		//     &:hover {
-
-		//         border-bottom: 2px solid $main-white;
-		//     }
-		// }
-
 	}
-
-	/* TITLE */
-
-	&__title {
-		max-width: 1344px;
-		margin: 0 auto 10rem auto;
-		padding: 9.4rem 0 0 7.6rem;
-		@include xl {
-			margin: 0 auto 16rem auto;
-		}
-		// justify-content: space-around!important;
-		.title {
-			h1 {
-				line-height: 2.3rem;
-				font-size: 3rem;
-				font-weight: normal;
-
-				span {
-					font-family: 'Roboto Bold';
-					// font-weight: 900;
-				}
-			}
-		}
-
-		.academy-logo {
-			font-size: 0.8rem;
-			display: flex;
-			font-weight: normal;
-			align-content: flex-end;
-			justify-content: flex-end;
-			align-items: center;
-
-			margin: 0.5rem -6.76rem -1.3rem 0;
-
-			div {
-				margin: 0 0.5rem;
-			}
-		}
-
-		.sub-title {
-			width: 430px;
-			font-weight: normal;
-			line-height: 1.6rem;
-			padding: 1.2rem 0;
-			font-size: 1.1rem;
-		}
-
-		.course-btn {
-			padding: 5rem 0 0 0;
-			text-align: right;
-			.btn {
-				padding: 1rem 2.7rem;
-			}
-		}
-	}
-
-	/* TODO: разобраться с компом на главной. придумать что-то с фоном */
 }
+
+.header {
+	position: relative;
+	z-index: 1;
+	// margin: 2rem 0;
+	// clip-path: polygon(100% 0, 100% 57%, 0 100%, 0 0);
+	// height: 785px;
+	height: auto;
+
+
+	color: $main-white;
+	font-weight: bold;
+	font-size: 0.9rem;
+
+
+	section {
+		background: url('assets/img/header-bg--drawing.svg') top / cover no-repeat;
+		height: inherit;
+	}
+
+
+
+	
+
+
+
+/* TITLE */
+
+&__title {
+	max-width: 1344px;
+	margin: 0 auto 10rem auto;
+	padding: 9.4rem 0 0 7.6rem;
+
+	@include xl {
+		margin: 0 auto 16rem auto;
+	}
+
+	// justify-content: space-around!important;
+	.title {
+		h1 {
+			line-height: 2.3rem;
+			font-size: 3rem;
+			font-weight: normal;
+
+			span {
+				font-family: 'Roboto Bold';
+				// font-weight: 900;
+			}
+		}
+	}
+
+	.academy-logo {
+		font-size: 0.8rem;
+		display: flex;
+		font-weight: normal;
+		align-content: flex-end;
+		justify-content: flex-end;
+		align-items: center;
+
+		margin: 0.5rem -6.76rem -1.3rem 0;
+
+		div {
+			margin: 0 0.5rem;
+		}
+	}
+
+	.sub-title {
+		width: 430px;
+		font-weight: normal;
+		line-height: 1.6rem;
+		padding: 1.2rem 0;
+		font-size: 1.1rem;
+	}
+
+	.course-btn {
+		padding: 5rem 0 0 0;
+		text-align: right;
+
+		.btn {
+			padding: 1rem 2.7rem;
+		}
+	}
+}
+}
+
+
