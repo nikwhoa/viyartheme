@@ -8,9 +8,7 @@
 	width: 100%;
 	top: -320px;
 	min-height: 780px;
-
 	max-height: 960px;
-	// padding: 48px 48px 32px;
 	overflow: hidden;
 	transform: skewY(-8deg);
 	transform-origin: 100%;
@@ -27,7 +25,6 @@
 	top: 0;
 	left: 50%;
     transform: translate(-50%, 0);
-	
 	z-index: 999;
 	transition: all 0.6s ease-in-out;
 	text-align: center;
@@ -36,19 +33,24 @@
 	
 }
 .sticky-nav {
+	/* painting background in white and all elements in blue  */
 	background: $main-white;
-	.navigation__nav .menu .menu-item a, .navigation__phone .phone__link {
-		color: $main-blue;
-	}
+	
 	#phone-icon {
 		fill: $main-blue;
 	}
-	.navigation__logo .custom-logo-link svg path {
+	
+	a {
+		color: $main-blue !important;
+	}
+	
+	a:after {
+		background: $main-blue !important;
+	}
+	svg path {
 		fill: $main-blue;
 	}
-	.navigation__nav .menu .menu-item a:after {
-		background: $main-blue;
-	}
+
 	transition: all 0.6s ease-in-out;
 }
 .navigation {
@@ -57,6 +59,12 @@
 	line-height: 64px;
 	font-size: 0.9rem;
 	transition: all 0.6s ease-in-out;
+	@media (max-width: 1110px) {
+		font-size: 0.75rem;
+	}
+	a {
+		color: $main-white;
+	}
 	/*
 		TODO: remove if will be wrapper 
 		max-width: 1344px; 
@@ -75,7 +83,7 @@
 			align-items: center;
 			display: flex;
 			transition: all 0.4s ease-in-out;
-
+			
 			// transition-timing-function: ease;
 			&:hover {
 				transform: scale(1.05);
@@ -104,10 +112,18 @@
 			.menu-item {
 				margin: 0 1.8rem;
 
+				@media (max-width: 1110px) {
+					margin: 0.8rem;
+				}
+
+				@include xl {
+					margin: 1.2rem;
+				}
+
 				a {
 					padding: 0 0 0.3rem 0;
 					text-decoration: none;
-					color: $main-white;
+					
 					transition-delay: 200ms;
 					transition-timing-function: ease;
 
@@ -164,6 +180,16 @@
 
 			img {
 				display: block;
+			}
+		}
+		.phone-number {
+			@media (max-width: 1110px) {
+				line-height: 90px;
+			}
+			@include xl {
+				text-align: center;
+				vertical-align: middle;
+				line-height: 100px;
 			}
 		}
 	}
