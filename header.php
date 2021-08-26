@@ -16,6 +16,7 @@
             <div class="navigation__logo flex-item">
                 <a href="" class="custom-logo-link">
                     <picture>
+                        <source srcset="<?php echo get_template_directory_uri(); ?>/assets/img/logo-mobile-svg.svg" type="image/svg+xml" media="(max-width:794px)">
                         <source srcset="<?php echo get_template_directory_uri(); ?>/assets/img/logo-phone-landscape-svg.svg" type="image/svg+xml" media="(max-width:835px)">
                         <source srcset="<?php echo get_template_directory_uri(); ?>/assets/img/logo-tablet-svg.svg" type="image/svg+xml" media="(max-width:991px)">
                         <img src="<?php echo get_template_directory_uri(); ?>/assets/img/logo-svg.svg" alt="">
