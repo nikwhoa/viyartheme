@@ -132,7 +132,7 @@ const team = 'Nikita <norenkonikita@email.com>';
 
 // Browsers you care about for auto-prefixing. Browserlist https://github.com/ai/browserslist
 // The following list is set as per WordPress requirements. Though; Feel free to change.
-const BROWSERS_LIST = ['last 2 version', '> 1%'];
+const BROWSERS_LIST = ['last 2 version', '> 0.7%'];
 
 // Export.
 module.exports = {

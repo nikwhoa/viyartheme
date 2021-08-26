@@ -30,36 +30,5 @@
                 </div>
             <?php endwhile;
             wp_reset_query(); ?>
-
-            <!-- <div class="approaches-item">
-                <div class="approaches-item__title"> <span><img src="<?php echo get_template_directory_uri(); ?>/assets/img/view_side_r.svg" alt=""></span> Я мебляр-початківець</div>
-                <div class="approaches-item__description">
-                і не знаю, з чого почати, щоб вийти на новий рівень і масштабуватися
-                </div>
-            </div>
-            <div class="approaches-item">
-                <div class="approaches-item__title"> <span><img src="<?php echo get_template_directory_uri(); ?>/assets/img/view_side_r.svg" alt=""></span> Я мебляр-початківець</div>
-                <div class="approaches-item__description">
-                і не знаю, з чого почати, щоб вийти на новий рівень і масштабуватися
-                </div>
-            </div>
-            <div class="approaches-item">
-                <div class="approaches-item__title"> <span><img src="<?php echo get_template_directory_uri(); ?>/assets/img/view_side_r.svg" alt=""></span> Я мебляр-початківець</div>
-                <div class="approaches-item__description">
-                і не знаю, з чого почати, щоб вийти на новий рівень і масштабуватися
-                </div>
-            </div>
-            <div class="approaches-item">
-                <div class="approaches-item__title"> <span><img src="<?php echo get_template_directory_uri(); ?>/assets/img/view_side_r.svg" alt=""></span> Я мебляр-початківець</div>
-                <div class="approaches-item__description">
-                і не знаю, з чого почати, щоб вийти на новий рівень і масштабуватися
-                </div>
-            </div>
-            <div class="approaches-item">
-                <div class="approaches-item__title"> <span><img src="<?php echo get_template_directory_uri(); ?>/assets/img/view_side_r.svg" alt=""></span> Я мебляр-початківець</div>
-                <div class="approaches-item__description">
-                і не знаю, з чого почати, щоб вийти на новий рівень і масштабуватися
-                </div>
-            </div> -->
         </div> 
     </section>
