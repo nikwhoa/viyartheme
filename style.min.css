@@ -128,5 +128,8 @@ h2{font-family:'Roboto Bold';text-align:center;font-size:1.5rem}
 .navigation__phone .phone-number{line-height:90px}
 }@media(max-width:794.98px){.navigation{background:#fff;width:100%}
 .navigation__nav{display:none}
-}@media(max-width:575.98px){section{padding:1.5rem}
+.navigation__phone .phone-number{line-height:3rem}
+}@media(max-width:575.98px){.navigation__phone .phone-number{line-height:3rem}
+section{padding:1.5rem}
+}@media(max-width:372px){.navigation__phone .phone-number{line-height:1.5rem}
 }

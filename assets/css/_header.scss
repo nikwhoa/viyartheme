@@ -12,7 +12,7 @@
 	overflow: hidden;
 	transform: skewY(-8deg);
 	transform-origin: 100%;
-
+		
 	@include wide-screen {
 		top: -360px;
 		max-height: 1000px;
@@ -192,6 +192,15 @@
 			}
 		}
 		.phone-number {
+			@media (max-width: 372px) {
+				line-height: 1.5rem;
+			}
+			@include sm {
+				line-height: 3rem;
+			}
+			@include md {
+				line-height: 3rem;
+			}
 			@media (max-width: 1110px) {
 				line-height: 90px;
 			}
