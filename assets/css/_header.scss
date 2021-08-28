@@ -63,10 +63,14 @@
 	line-height: 64px;
 	font-size: 0.9rem;
 	transition: all 0.6s ease-in-out;
-
+	@include sm {
+		padding: 0 .5rem;
+		height: 48px;
+	}
 	@include md {
 		background: $main-white;
 		width: 100%;
+		
 	}
 
 	@media (max-width: 1110px) {
@@ -89,10 +93,12 @@
 
 	&__mobile-menu {
 		display: none;
-
+		height: 32px;
+		margin: 0 .5rem 0 1.2rem;
 		@include md {
 			display: flex;
 			align-items: center;
+			line-height: 16px;
 		}
 	}
 	.mobile-menu-btn {
@@ -106,9 +112,32 @@
 		div {
 			margin: 5px 0;
 		}
-		&__first-line {
+		&__lines {
 			height: 2px;
+			width: 22px;
+			margin: 5px 0;
 			background: $main-blue;
+			&::before {
+				display: block;
+				// padding: 5px 0 15px 0;
+				margin: 14px 0;
+				position: absolute;
+				content: ' ';
+				height: 2px;
+				width: 22px;
+				background: $main-blue;
+			}
+			&::after {
+				display: block;
+				// padding: 5px 0 15px 0;
+				margin: 7px 0;
+				// top: .5rem;
+				position: absolute;
+				content: ' ';
+				height: 2px;
+				width: 14px;
+				background: $main-blue;
+			}
 		}
 		&__second-line {
 			height: 2px;
@@ -207,6 +236,12 @@
 
 	&__phone {
 		.phone__link {
+			@include sm {
+				display: none;
+			}
+			@include md {
+				color: $main-blue;
+			}
 			font-weight: bold;
 			display: flex;
 			text-decoration: none;
@@ -223,7 +258,9 @@
 			margin: 0 0.8rem 0 0;
 			align-items: center;
 			display: flex;
-
+			@include sm {
+				margin: 0;
+			}
 			img {
 				display: block;
 			}

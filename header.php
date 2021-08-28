@@ -15,9 +15,7 @@
         <div class="navigation flex-container">
             <div class="navigation__mobile-menu">
                 <div class="mobile-menu-btn">
-                    <div class="mobile-menu-btn__first-line"></div>
-                    <div class="mobile-menu-btn__second-line"></div>
-                    <div class="mobile-menu-btn__first-line"></div>
+                    <div class="mobile-menu-btn__lines"></div>
                 </div>
             </div>
             <div class="navigation__logo flex-item">
@@ -43,7 +41,8 @@
 
             ?>
             <div class="navigation__phone flex-container">
-                <a class="phone__link" href="tel:+380999999999">
+                
+            <a class="phone__link" href="tel:+380999999999">
                     <div class="phone-icon flex-item">
                         <!-- <img src="<?php echo get_template_directory_uri(); ?>/assets/img/phone-call.svg" alt="Call to us"> -->
                         <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
