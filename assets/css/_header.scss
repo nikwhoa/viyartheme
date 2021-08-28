@@ -91,26 +91,30 @@
 		display: none;
 
 		@include md {
-			display: block;
+			display: flex;
+			align-items: center;
 		}
 	}
 	.mobile-menu-btn {
-		border: none;
-	}
-	.mobile-menu-btn:nth-of-type(1) {
 		width: 22px;
-		height: 2px;
-		background: $main-blue;
-	}
-	.mobile-menu-btn:nth-of-type(2) {
-		width: 16px;
-		height: 2px;
-		background: $main-blue;
-	}
-	.mobile-menu-btn:nth-of-type(1) {
-		width: 22px;
-		height: 2px;
-		background: $main-blue;
+		// display: flex;
+		flex-direction: column;
+		
+		
+		
+
+		div {
+			margin: 5px 0;
+		}
+		&__first-line {
+			height: 2px;
+			background: $main-blue;
+		}
+		&__second-line {
+			height: 2px;
+			width: 16px;
+			background: $main-blue;
+		}
 	}
 
 	&__logo {

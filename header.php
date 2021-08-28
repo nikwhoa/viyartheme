@@ -14,11 +14,11 @@
     <div class="nav-wrapper">
         <div class="navigation flex-container">
             <div class="navigation__mobile-menu">
-                <button type="button" class="mobile-menu-btn">
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                </button>
+                <div class="mobile-menu-btn">
+                    <div class="mobile-menu-btn__first-line"></div>
+                    <div class="mobile-menu-btn__second-line"></div>
+                    <div class="mobile-menu-btn__first-line"></div>
+                </div>
             </div>
             <div class="navigation__logo flex-item">
                 <a href="" class="custom-logo-link">

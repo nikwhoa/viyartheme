@@ -45,10 +45,10 @@ template{display:none}
 .navigation a{color:#fff}
 .navigation .navigation.flex-container{-webkit-box-pack:justify;-ms-flex-pack:justify;justify-content:space-between}
 .navigation__mobile-menu{display:none}
-.navigation .mobile-menu-btn{border:0}
-.navigation .mobile-menu-btn:nth-of-type(1){width:22px;height:2px;background:#0080e0}
-.navigation .mobile-menu-btn:nth-of-type(2){width:16px;height:2px;background:#0080e0}
-.navigation .mobile-menu-btn:nth-of-type(1){width:22px;height:2px;background:#0080e0}
+.navigation .mobile-menu-btn{width:22px;-webkit-box-orient:vertical;-webkit-box-direction:normal;-ms-flex-direction:column;flex-direction:column}
+.navigation .mobile-menu-btn div{margin:5px 0}
+.navigation .mobile-menu-btn__first-line{height:2px;background:#0080e0}
+.navigation .mobile-menu-btn__second-line{height:2px;width:16px;background:#0080e0}
 .navigation__logo{display:-webkit-box;display:-ms-flexbox;display:flex}
 .navigation__logo .custom-logo-link{-webkit-box-align:center;-ms-flex-align:center;align-items:center;display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-transition:all .4s ease-in-out;transition:all .4s ease-in-out}
 .navigation__logo .custom-logo-link:hover{-webkit-transform:scale(1.05);transform:scale(1.05)}
@@ -132,7 +132,7 @@ h2{font-family:'Roboto Bold';text-align:center;font-size:1.5rem}
 .navigation__nav .menu .menu-item{margin:.8rem}
 .navigation__phone .phone-number{line-height:90px}
 }@media(max-width:794.98px){.navigation{background:#fff;width:100%}
-.navigation__mobile-menu{display:block}
+.navigation__mobile-menu{display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-align:center;-ms-flex-align:center;align-items:center}
 .navigation__nav{display:none}
 .navigation__phone .phone-number{line-height:3rem}
 }@media(max-width:575.98px){.navigation__phone .phone-number{line-height:3rem}
