@@ -93,18 +93,22 @@
 
 	&__mobile-menu {
 		display: none;
-		height: 32px;
-		margin: 0 .5rem 0 1.2rem;
+		height: 100%;
+		margin: 0 .8rem 0 1.2rem;
+		
 		@include md {
 			display: flex;
 			align-items: center;
-			line-height: 16px;
+			
 		}
 	}
 	.mobile-menu-btn {
 		width: 22px;
 		// display: flex;
 		flex-direction: column;
+		
+		margin-top: -12px;
+		
 		
 		
 		
@@ -113,7 +117,7 @@
 			margin: 5px 0;
 		}
 		&__lines {
-			height: 2px;
+			height: 2.6px;
 			width: 22px;
 			margin: 5px 0;
 			background: $main-blue;
@@ -156,7 +160,7 @@
 
 			// transition-timing-function: ease;
 			&:hover {
-				transform: scale(1.05);
+				// transform: scale(1.05);
 			}
 
 			img {

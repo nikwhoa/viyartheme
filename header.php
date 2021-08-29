@@ -15,7 +15,9 @@
         <div class="navigation flex-container">
             <div class="navigation__mobile-menu">
                 <div class="mobile-menu-btn">
-                    <div class="mobile-menu-btn__lines"></div>
+                    <div class="mobile-menu-btn__lines">
+                        
+                    </div>
                 </div>
             </div>
             <div class="navigation__logo flex-item">
