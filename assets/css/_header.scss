@@ -93,7 +93,7 @@
 
 	&__mobile-menu {
 		display: none;
-		height: 100%;
+		height: 48px;
 		margin: 0 .8rem 0 1.2rem;
 		
 		@include md {
@@ -376,6 +376,32 @@
 			.btn {
 				padding: 1rem 2.7rem;
 			}
+		}
+	}
+}
+
+
+.hamburger-navigation {
+	display: flex !important;
+	flex-direction: column;
+	position: fixed;
+	top: 48px;
+	left: 0;
+	z-index: 1000;
+	width: 90vw;
+	height: 100vh;
+	background: $main-white;
+	line-height: 50px!important;
+	font-size: 1.1rem!important;
+	text-align: left;
+	padding: 1.5rem 1.63rem;
+	a {
+		color: $main-blue;
+	}
+	.menu {
+		flex-direction: column;
+		.menu-item {
+			margin: 0 !important;
 		}
 	}
 }
