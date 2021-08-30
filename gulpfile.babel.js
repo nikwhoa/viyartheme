@@ -83,22 +83,22 @@ const errorHandler = r => {
  *
  * @param {Mixed} done Done.
  */
-const browsersync = done => {
-	browserSync.init({
-		proxy: config.projectURL,
-		open: config.browserAutoOpen,
-		localOnly: true,
-		injectChanges: config.injectChanges,
-		watchEvents: ['change', 'add', 'unlink', 'addDir', 'unlinkDir']
-	});
-	done();
-};
+// const browsersync = done => {
+// 	browserSync.init({
+// 		proxy: config.projectURL,
+// 		open: config.browserAutoOpen,
+// 		localOnly: true,
+// 		injectChanges: config.injectChanges,
+// 		watchEvents: ['change', 'add', 'unlink', 'addDir', 'unlinkDir']
+// 	});
+// 	done();
+// };
 
-// Helper function to allow browser reload with Gulp 4.
-const reload = done => {
-	browserSync.reload();
-	done();
-};
+// // Helper function to allow browser reload with Gulp 4.
+// const reload = done => {
+// 	browserSync.reload();
+// 	done();
+// };
 
 /**
  * Task: `styles`.
@@ -402,11 +402,11 @@ gulp.task('zip', () => {
  */
 gulp.task(
 	'default',
-	gulp.parallel('styles', 'vendorsJS', 'customJS', 'images', browsersync, () => {
-		gulp.watch(config.watchPhp, reload); // Reload on PHP file changes.
+	gulp.parallel('styles', 'vendorsJS', 'customJS', 'images', () => {
+		gulp.watch(config.watchPhp); // Reload on PHP file changes.
 		gulp.watch(config.watchStyles, gulp.parallel('styles')); // Reload on SCSS file changes.
-		gulp.watch(config.watchJsVendor, gulp.series('vendorsJS', reload)); // Reload on vendorsJS file changes.
-		gulp.watch(config.watchJsCustom, gulp.series('customJS', reload)); // Reload on customJS file changes.
-		gulp.watch(config.imgSRC, gulp.series('images', reload)); // Reload on customJS file changes.
+		gulp.watch(config.watchJsVendor, gulp.series('vendorsJS')); // Reload on vendorsJS file changes.
+		gulp.watch(config.watchJsCustom, gulp.series('customJS')); // Reload on customJS file changes.
+		gulp.watch(config.imgSRC, gulp.series('images')); // Reload on customJS file changes.
 	})
 );
