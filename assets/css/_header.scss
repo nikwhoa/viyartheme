@@ -12,7 +12,10 @@
 	overflow: hidden;
 	transform: skewY(-8deg);
 	transform-origin: 100%;
-
+	@include md {
+		max-height: unset;
+		height: 1200px;
+	}
 	@include wide-screen {
 		top: -360px;
 		max-height: 1000px;
@@ -358,6 +361,10 @@
 		max-width: 1344px;
 		margin: 0 auto 10rem auto;
 		padding: 9.4rem 0 0 7.6rem;
+		@include md {
+			margin: 25rem auto 0 auto;
+			padding: unset;
+		}
 
 		@include xl {
 			margin: 0 auto 16rem auto;
@@ -369,9 +376,14 @@
 				line-height: 2.3rem;
 				font-size: 3rem;
 				font-weight: normal;
-
+				@include md {
+					font-size: 2.1rem;
+				}
 				span {
 					font-family: 'Roboto Bold';
+					@include md {
+						display: block;
+					}
 					// font-weight: 900;
 				}
 			}
@@ -386,6 +398,10 @@
 			align-items: center;
 
 			margin: 0.5rem -6.76rem -1.3rem 0;
+			@include md {
+				margin: unset;
+				
+			}
 
 			div {
 				margin: 0 0.5rem;
@@ -398,12 +414,19 @@
 			line-height: 1.6rem;
 			padding: 1.2rem 0;
 			font-size: 1.1rem;
+			@include md {
+				margin: unset;
+				width: 100%;
+				padding: unset;
+			}
 		}
 
 		.course-btn {
 			padding: 5rem 0 0 0;
 			text-align: right;
-
+			@include md {
+				text-align: center;
+			}
 			.btn {
 				padding: 1rem 2.7rem;
 			}
