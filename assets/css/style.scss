@@ -30,14 +30,14 @@ body.disable-scroll {
 main {
     margin: -11.7rem auto 4rem;
     max-width: 1344px;
-    @include xll {
+    @include md {
+      margin: unset;
     }
+    
 }
 section {
     padding: 1rem;
-    @include sm {
-        padding: 1.5rem;
-    }
+    
 }
 .flex-container {
     display: flex;

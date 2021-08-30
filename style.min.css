@@ -92,6 +92,7 @@ template{display:none}
 .approaches__title .subtitle{-webkit-box-pack:center;-ms-flex-pack:center;justify-content:center;-webkit-box-align:center;-ms-flex-align:center;align-items:center}
 .approaches__title .subtitle img{margin:0 .5rem}
 .approaches__dash-line{padding:.7rem 0;text-align:center;width:90%;margin:0 auto}
+.approaches__dash-line img{width:100%}
 .approaches__list{width:92%;margin:0 auto;padding:0 5rem;-ms-flex-wrap:wrap !important;flex-wrap:wrap !important;-webkit-box-pack:center;-ms-flex-pack:center;justify-content:center}
 .approaches__list .approaches-item{margin:1.3rem 0;width:356px;-webkit-box-flex:0;-ms-flex-positive:0;flex-grow:0;-webkit-transition:all .4s ease-in-out;transition:all .4s ease-in-out;cursor:pointer}
 .approaches__list .approaches-item:hover{-webkit-transform:scale(1.05);transform:scale(1.05)}
@@ -151,18 +152,26 @@ h2{font-family:'Roboto Bold';text-align:center;font-size:1.5rem}
 .navigation__nav{display:none}
 .navigation__phone .phone__link{color:#0080e0}
 .navigation__phone .phone-number{line-height:3rem}
-.header__title{margin:25rem auto 0 auto;padding:unset}
+.header__title{margin:30rem auto 0 auto;padding:unset}
 .header__title .title h1{font-size:2.1rem}
 .header__title .title h1 span{display:block}
 .header__title .academy-logo{margin:unset}
 .header__title .sub-title{margin:unset;width:100%;padding:unset}
 .header__title .course-btn{text-align:center}
+.approaches-bg{margin-top:unset;-webkit-transform:unset;transform:unset;max-height:unset;height:890px}
+.approaches{padding:1rem 0}
+.approaches__dash-line{width:100%}
+.approaches__list{padding:0}
+.benefits{margin:1rem 0}
+.benefits__list{width:100%;display:-webkit-box;display:-ms-flexbox;display:flex;-ms-flex-wrap:wrap;flex-wrap:wrap;-webkit-box-orient:horizontal;-webkit-box-direction:normal;-ms-flex-direction:row;flex-direction:row;margin:1rem auto;padding:unset}
+.benefits__list .benefit-item{-webkit-box-flex:40%;-ms-flex:40%;flex:40%;padding:.7rem;margin:.7rem}
+main{margin:unset}
 .pc{width:100%;left:unset;top:4.9rem;padding:0 3rem;max-width:unset;position:absolute}
 .pc .pc-image img{width:100%;height:auto}
 }@media(max-width:575.98px){.navigation{padding:0 .5rem;height:48px}
 .navigation__phone .phone__link{display:none}
 .navigation__phone .phone-icon{margin:0}
 .navigation__phone .phone-number{line-height:3rem}
-section{padding:1.5rem}
+.benefits__list .benefit-item{-webkit-box-flex:35%;-ms-flex:35%;flex:35%;padding:.5rem;margin:.5rem}
 }@media(max-width:372px){.navigation__phone .phone-number{line-height:1.5rem}
 }
