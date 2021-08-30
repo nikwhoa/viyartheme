@@ -63,14 +63,16 @@
 	line-height: 64px;
 	font-size: 0.9rem;
 	transition: all 0.6s ease-in-out;
+
 	@include sm {
 		padding: 0 .5rem;
 		height: 48px;
 	}
+
 	@include md {
 		background: $main-white;
 		width: 100%;
-		
+
 	}
 
 	@media (max-width: 1110px) {
@@ -95,32 +97,35 @@
 		display: none;
 		height: 48px;
 		margin: 0 .8rem 0 1.2rem;
-		
+
 		@include md {
 			display: flex;
 			align-items: center;
-			
+
 		}
 	}
+
 	.mobile-menu-btn {
 		width: 22px;
 		// display: flex;
 		flex-direction: column;
-		
+
 		margin-top: -12px;
-		
-		
-		
-		
+
+
+
+
 
 		div {
 			margin: 5px 0;
 		}
+
 		&__lines {
 			height: 2.6px;
 			width: 22px;
 			margin: 5px 0;
 			background: $main-blue;
+
 			&::before {
 				display: block;
 				// padding: 5px 0 15px 0;
@@ -131,6 +136,7 @@
 				width: 22px;
 				background: $main-blue;
 			}
+
 			&::after {
 				display: block;
 				// padding: 5px 0 15px 0;
@@ -143,6 +149,7 @@
 				background: $main-blue;
 			}
 		}
+
 		&__second-line {
 			height: 2px;
 			width: 16px;
@@ -243,9 +250,11 @@
 			@include sm {
 				display: none;
 			}
+
 			@include md {
 				color: $main-blue;
 			}
+
 			font-weight: bold;
 			display: flex;
 			text-decoration: none;
@@ -262,9 +271,11 @@
 			margin: 0 0.8rem 0 0;
 			align-items: center;
 			display: flex;
+
 			@include sm {
 				margin: 0;
 			}
+
 			img {
 				display: block;
 			}
@@ -383,7 +394,7 @@
 
 .hamburger-navigation {
 	display: flex !important;
-	flex-direction: column;
+	flex-direction: column !important;
 	position: fixed;
 	top: 48px;
 	left: 0;
@@ -391,17 +402,51 @@
 	width: 90vw;
 	height: 100vh;
 	background: $main-white;
-	line-height: 50px!important;
-	font-size: 1.1rem!important;
+	line-height: 50px !important;
+	font-size: 1.1rem !important;
 	text-align: left;
 	padding: 1.5rem 1.63rem;
+
 	a {
 		color: $main-blue;
 	}
+
 	.menu {
 		flex-direction: column;
+
 		.menu-item {
 			margin: 0 !important;
 		}
+	}
+}
+
+/* TODO: no need */
+// .hamburger {
+// 	&__line {
+// 		width: 64px;
+// 		height: 1px;
+// 		background: #30A0F0;
+// 		margin: 1rem auto;
+// 	}
+// }
+
+.hamburger-phone {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: center;
+	.phone-icon {
+		margin: 0 1rem 0 0;
+		padding: .2rem 0;
+	}
+	.phone__link {
+		font-weight: bold;
+			display: flex;
+			text-decoration: none;
+			
+			transition: all 0.4s ease-in-out;
+	}
+	#phone-icon {
+		fill: $main-blue;
 	}
 }

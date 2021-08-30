@@ -22,7 +22,11 @@ body {
 *:after {
 	box-sizing: inherit;
 }
-
+html,
+body.disable-scroll {
+    overflow-x: hidden;
+    height: 100%;
+}
 main {
     margin: -11.7rem auto 4rem;
     max-width: 1344px;

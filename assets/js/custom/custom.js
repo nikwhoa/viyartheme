@@ -2,8 +2,11 @@
 window.addEventListener( 'DOMContentLoaded', () => {
     const navWrapper = document.querySelector( '.nav-wrapper' ),
     hamburgerButton = document.querySelector( ' .navigation__mobile-menu' ),
-    navigation = navWrapper.querySelector( '.navigation__nav' );
+    navigation = navWrapper.querySelector( '.navigation__nav' ),
+    menu = navWrapper.querySelectorAll( '.menu > li' );
     
+    
+
     window.addEventListener( 'scroll', () => {
         if ( 200 < window.pageYOffset /* added pageYOffset for ie */ ) {
             navWrapper.classList.add( 'sticky-nav' );
@@ -15,21 +18,38 @@ window.addEventListener( 'DOMContentLoaded', () => {
     // eslint-disable-next-line yoda
     if ( window.outerWidth <= 794 ) {
         navigation.classList.remove( 'flex-container' );
+
+        menu.forEach(el => {
+            el.addEventListener( 'click', () => {
+                navigation.classList.toggle( 'hamburger-navigation' );     
+            });
+        });
+
     }
 
     hamburgerButton.addEventListener( 'click', () => {
         navigation.classList.toggle( 'hamburger-navigation' );
+
+        document.body.classList.add('disable-scroll');
         
         const hamburgerLine = document.createElement( 'div' );
+        hamburgerLine.setAttribute('id', 'hamburgerLine');
         hamburgerLine.style.cssText = `
         width: 64px;
         height: 1px;
         background: #30A0F0;
         margin: 1rem auto;
         `;
-        navigation.appendChild(hamburgerLine);
+        if (document.querySelector( '#hamburgerLine' ) ) {
+            console.log('hamburgerLine is exist');
+        } else {
+
+            navigation.appendChild( hamburgerLine );
+        }
         
         const hamburgerPhone = document.createElement( 'div' );
+        
+        hamburgerPhone.classList.add( 'hamburger-phone' );
         hamburgerPhone.innerHTML = `
         <a class="phone__link" href="tel:+380999999999">
         <div class="phone-icon flex-item">
@@ -44,8 +64,18 @@ window.addEventListener( 'DOMContentLoaded', () => {
         </div>
     </a>
         `;
-        navigation.appendChild(hamburgerPhone);
+
+        if ( document.querySelector('.hamburger-phone') ) {
+            console.log( 'already exist' );
+        } else {
+            navigation.appendChild(hamburgerPhone);
+        }
 
     });
+
+
+  
+
+
 });
 
