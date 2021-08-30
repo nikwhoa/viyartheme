@@ -75,7 +75,7 @@ template{display:none}
 .header__title .sub-title{width:430px;font-weight:normal;line-height:1.6rem;padding:1.2rem 0;font-size:1.1rem}
 .header__title .course-btn{padding:5rem 0 0 0;text-align:right}
 .header__title .course-btn .btn{padding:1rem 2.7rem}
-.hamburger-navigation{display:-webkit-box !important;display:-ms-flexbox !important;display:flex !important;-webkit-box-orient:vertical !important;-webkit-box-direction:normal !important;-ms-flex-direction:column !important;flex-direction:column !important;position:fixed;top:48px;left:0;z-index:1000;width:90vw;height:100vh;background:#fff;line-height:50px !important;font-size:1.1rem !important;text-align:left;padding:1.5rem 1.63rem}
+.hamburger-navigation{display:-webkit-box !important;display:-ms-flexbox !important;display:flex !important;-webkit-box-orient:vertical !important;-webkit-box-direction:normal !important;-ms-flex-direction:column !important;flex-direction:column !important;position:fixed;color:rgba(0,128,224,0.9);top:48px;left:0;z-index:1000;width:90vw;height:100vh;background:#fff;line-height:50px !important;font-size:1.1rem !important;text-align:left;padding:1.5rem 1.63rem}
 .hamburger-navigation a{color:#0080e0}
 .hamburger-navigation .menu{-webkit-box-orient:vertical;-webkit-box-direction:normal;-ms-flex-direction:column;flex-direction:column}
 .hamburger-navigation .menu .menu-item{margin:0 !important}
