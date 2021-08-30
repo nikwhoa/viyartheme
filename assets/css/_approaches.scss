@@ -20,6 +20,12 @@
     overflow: hidden;
     transform: skewY(-8deg);
     transform-origin: 100%;
+    @include md {
+        margin-top: unset;
+        transform: unset;
+        max-height: unset;
+        height: 890px;
+    }
 }
 .approaches {
 	// height: 850px;
@@ -28,7 +34,9 @@
 	position: relative;
     z-index: 2;
     padding: 18rem 0 10rem 0;
-    
+    @include md {
+        padding: 1rem 0;
+    }
     
     &__title {
        
@@ -45,6 +53,12 @@
         text-align: center;
         width: 90%;
         margin: 0 auto;
+        @include md {
+            width: 100%;
+        }
+        img {
+            width: 100%;
+        }
     }
     &__list {
         width: 92%;
@@ -52,6 +66,11 @@
         padding: 0 5rem;
         flex-wrap: wrap!important;
         justify-content: center;
+
+        @include md {
+            padding: 0;
+        }
+
         .approaches-item {
             margin: 1.3rem 0;
             width: 356px;

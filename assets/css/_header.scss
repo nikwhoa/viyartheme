@@ -12,7 +12,10 @@
 	overflow: hidden;
 	transform: skewY(-8deg);
 	transform-origin: 100%;
-
+	@include md {
+		max-height: unset;
+		height: 1200px;
+	}
 	@include wide-screen {
 		top: -360px;
 		max-height: 1000px;
@@ -109,7 +112,7 @@
 		width: 22px;
 		// display: flex;
 		flex-direction: column;
-
+		transition: all .6s ease-in-out;
 		margin-top: -12px;
 
 
@@ -120,7 +123,7 @@
 			margin: 5px 0;
 		}
 
-		&__lines {
+		.open-btn {
 			height: 2.6px;
 			width: 22px;
 			margin: 5px 0;
@@ -150,10 +153,30 @@
 			}
 		}
 
-		&__second-line {
-			height: 2px;
-			width: 16px;
-			background: $main-blue;
+		.close-btn {
+			position: absolute;
+			width: 32px;
+			height: 32px;
+			top: 6px;
+			left: 20px;
+		}
+
+		.close-btn:before,
+		.close-btn:after {
+			position: absolute;
+			left: 15px;
+			content: ' ';
+			height: 25px;
+			width: 2px;
+			background-color: $main-blue;
+		}
+
+		.close-btn:before {
+			transform: rotate(45deg);
+		}
+
+		.close-btn:after {
+			transform: rotate(-45deg);
 		}
 	}
 
@@ -338,6 +361,10 @@
 		max-width: 1344px;
 		margin: 0 auto 10rem auto;
 		padding: 9.4rem 0 0 7.6rem;
+		@include md {
+			margin: 30rem auto 0 auto;
+			padding: unset;
+		}
 
 		@include xl {
 			margin: 0 auto 16rem auto;
@@ -349,9 +376,14 @@
 				line-height: 2.3rem;
 				font-size: 3rem;
 				font-weight: normal;
-
+				@include md {
+					font-size: 2.1rem;
+				}
 				span {
 					font-family: 'Roboto Bold';
+					@include md {
+						display: block;
+					}
 					// font-weight: 900;
 				}
 			}
@@ -366,6 +398,10 @@
 			align-items: center;
 
 			margin: 0.5rem -6.76rem -1.3rem 0;
+			@include md {
+				margin: unset;
+				
+			}
 
 			div {
 				margin: 0 0.5rem;
@@ -378,12 +414,19 @@
 			line-height: 1.6rem;
 			padding: 1.2rem 0;
 			font-size: 1.1rem;
+			@include md {
+				margin: unset;
+				width: 100%;
+				padding: unset;
+			}
 		}
 
 		.course-btn {
 			padding: 5rem 0 0 0;
 			text-align: right;
-
+			@include md {
+				text-align: center;
+			}
 			.btn {
 				padding: 1rem 2.7rem;
 			}
@@ -393,9 +436,11 @@
 
 
 .hamburger-navigation {
+	
 	display: flex !important;
 	flex-direction: column !important;
 	position: fixed;
+	color: rgba(0, 128, 224, 0.9);
 	top: 48px;
 	left: 0;
 	z-index: 1000;
@@ -406,7 +451,7 @@
 	font-size: 1.1rem !important;
 	text-align: left;
 	padding: 1.5rem 1.63rem;
-
+    
 	a {
 		color: $main-blue;
 	}
@@ -435,18 +480,25 @@
 	flex-direction: row;
 	align-items: center;
 	justify-content: center;
+
 	.phone-icon {
 		margin: 0 1rem 0 0;
 		padding: .2rem 0;
 	}
+
 	.phone__link {
 		font-weight: bold;
-			display: flex;
-			text-decoration: none;
-			
-			transition: all 0.4s ease-in-out;
+		display: flex;
+		text-decoration: none;
+
+		transition: all 0.4s ease-in-out;
 	}
+
 	#phone-icon {
 		fill: $main-blue;
 	}
+}
+
+.hidden-btn {
+	display: none;
 }

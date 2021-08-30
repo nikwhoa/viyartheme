@@ -1,5 +1,8 @@
 .benefits {
     margin: -3.5rem 0;
+    @include md {
+        margin: 1rem 0;
+    }
     &__title {
         text-align: center;
         color: $main-blue;
@@ -9,6 +12,16 @@
         margin: 3rem auto 0 auto;
         padding: 0 2rem;
         justify-content: center;
+        
+        @include md {
+            width: 100%;
+            display: flex;
+            flex-wrap: wrap;
+            flex-direction: row;
+            margin: 1rem auto;
+            padding: unset;
+        }
+
         .benefit-item {
             width: 264px;
             background: $main-white;
@@ -17,6 +30,16 @@
             box-shadow: 0px 4px 10px rgba(0, 96, 192, 0.08);
             border-radius: 1.1rem;
             margin: 0 1rem;
+            @include sm {
+                flex: 35%;
+                padding: .5rem;
+                margin: .5rem;
+            }
+            @include md {
+                flex: 40%;
+                padding: .7rem;
+                margin: .7rem;
+            }
             &__feature-image {
                 padding: 1rem 0;
                 text-align: center;
