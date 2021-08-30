@@ -45,12 +45,15 @@ template{display:none}
 .navigation a{color:#fff}
 .navigation .navigation.flex-container{-webkit-box-pack:justify;-ms-flex-pack:justify;justify-content:space-between}
 .navigation__mobile-menu{display:none;height:48px;margin:0 .8rem 0 1.2rem}
-.navigation .mobile-menu-btn{width:22px;-webkit-box-orient:vertical;-webkit-box-direction:normal;-ms-flex-direction:column;flex-direction:column;margin-top:-12px}
+.navigation .mobile-menu-btn{width:22px;-webkit-box-orient:vertical;-webkit-box-direction:normal;-ms-flex-direction:column;flex-direction:column;-webkit-transition:all .6s ease-in-out;transition:all .6s ease-in-out;margin-top:-12px}
 .navigation .mobile-menu-btn div{margin:5px 0}
-.navigation .mobile-menu-btn__lines{height:2.6px;width:22px;margin:5px 0;background:#0080e0}
-.navigation .mobile-menu-btn__lines::before{display:block;margin:14px 0;position:absolute;content:' ';height:2px;width:22px;background:#0080e0}
-.navigation .mobile-menu-btn__lines::after{display:block;margin:7px 0;position:absolute;content:' ';height:2px;width:14px;background:#0080e0}
-.navigation .mobile-menu-btn__second-line{height:2px;width:16px;background:#0080e0}
+.navigation .mobile-menu-btn .open-btn{height:2.6px;width:22px;margin:5px 0;background:#0080e0}
+.navigation .mobile-menu-btn .open-btn::before{display:block;margin:14px 0;position:absolute;content:' ';height:2px;width:22px;background:#0080e0}
+.navigation .mobile-menu-btn .open-btn::after{display:block;margin:7px 0;position:absolute;content:' ';height:2px;width:14px;background:#0080e0}
+.navigation .mobile-menu-btn .close-btn{position:absolute;width:32px;height:32px;top:6px;left:20px}
+.navigation .mobile-menu-btn .close-btn:before,.navigation .mobile-menu-btn .close-btn:after{position:absolute;left:15px;content:' ';height:25px;width:2px;background-color:#0080e0}
+.navigation .mobile-menu-btn .close-btn:before{-webkit-transform:rotate(45deg);transform:rotate(45deg)}
+.navigation .mobile-menu-btn .close-btn:after{-webkit-transform:rotate(-45deg);transform:rotate(-45deg)}
 .navigation__logo{display:-webkit-box;display:-ms-flexbox;display:flex}
 .navigation__logo .custom-logo-link{-webkit-box-align:center;-ms-flex-align:center;align-items:center;display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-transition:all .4s ease-in-out;transition:all .4s ease-in-out}
 .navigation__logo .custom-logo-link img{display:block}
@@ -83,6 +86,7 @@ template{display:none}
 .hamburger-phone .phone-icon{margin:0 1rem 0 0;padding:.2rem 0}
 .hamburger-phone .phone__link{font-weight:bold;display:-webkit-box;display:-ms-flexbox;display:flex;text-decoration:none;-webkit-transition:all .4s ease-in-out;transition:all .4s ease-in-out}
 .hamburger-phone #phone-icon{fill:#0080e0}
+.hidden-btn{display:none}
 .approaches-bg{background:radial-gradient(72.36% 93.57% at 84.38% 26.1%,#60bafb 0,#30a0f0 50.68%,#0080e0 100%);-webkit-box-shadow:0 -4px 20px rgba(96,96,96,0.2);box-shadow:0 -4px 20px rgba(96,96,96,0.2);position:absolute;width:100%;left:0;right:0;margin:0 auto;z-index:1;margin-top:-100px;min-height:580px;max-height:960px;overflow:hidden;-webkit-transform:skewY(-8deg);transform:skewY(-8deg);-webkit-transform-origin:100%;transform-origin:100%}
 .approaches{height:auto;color:#fff;position:relative;z-index:2;padding:18rem 0 10rem 0}
 .approaches__title .subtitle{-webkit-box-pack:center;-ms-flex-pack:center;justify-content:center;-webkit-box-align:center;-ms-flex-align:center;align-items:center}
