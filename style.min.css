@@ -146,7 +146,7 @@ h2{font-family:'Roboto Bold';text-align:center;font-size:1.5rem}
 }@media(max-width:1110px){.navigation{font-size:.75rem}
 .navigation__nav .menu .menu-item{margin:.8rem}
 .navigation__phone .phone-number{line-height:90px}
-}@media(max-width:794.98px){.header-bg{max-height:unset;height:1054.5px;background:#0080e0;-webkit-transform:unset;transform:unset;-webkit-box-shadow:unset;box-shadow:unset}
+}@media(max-width:794.98px){.header-bg{max-height:unset;height:1056px;background:#0080e0;-webkit-transform:unset;transform:unset;-webkit-box-shadow:unset;box-shadow:unset}
 .navigation{background:#fff;width:100%}
 .navigation__mobile-menu{display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-align:center;-ms-flex-align:center;align-items:center}
 .navigation__nav{display:none}
