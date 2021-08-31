@@ -128,7 +128,7 @@ template{display:none}
 .course-programme__modules .module__content{color:#606060;line-height:1.2rem;margin:0 0 0 26%}
 .course-programme__modules .module__content ul{list-style:none}
 .course-programme__modules .module__content ul li::before{content:"\2022";color:#ff8000;font-weight:bold;display:inline-block;width:1em;margin-left:-1em}
-html,body{font-family:"Roboto",sans-serif;-webkit-box-sizing:border-box;box-sizing:border-box;overflow-x:hidden;background:url("assets/img/body-bg-3-min.png") no-repeat;background-position:50% 10%}
+html,body{font-family:"Roboto",sans-serif;-webkit-box-sizing:border-box;box-sizing:border-box;overflow-x:hidden;-webkit-font-smoothing:subpixel-antialiased;-webkit-text-stroke:1px transparent;background:url("assets/img/body-bg-3-min.png") no-repeat;background-position:50% 10%}
 *,*:before,*:after{-webkit-box-sizing:inherit;box-sizing:inherit}
 html,body.disable-scroll{overflow-x:hidden;height:100%}
 main{margin:-11.7rem auto 4rem;max-width:1344px}
