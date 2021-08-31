@@ -165,6 +165,12 @@ h2{font-family:'Roboto Bold';text-align:center;font-size:1.5rem}
 .benefits{margin:1rem 0}
 .benefits__list{width:100%;display:-webkit-box;display:-ms-flexbox;display:flex;-ms-flex-wrap:wrap;flex-wrap:wrap;-webkit-box-orient:horizontal;-webkit-box-direction:normal;-ms-flex-direction:row;flex-direction:row;margin:1rem auto;padding:unset}
 .benefits__list .benefit-item{-webkit-box-flex:40%;-ms-flex:40%;flex:40%;padding:.7rem;margin:.7rem}
+.course-programme-line{margin-left:1.2rem;margin-top:-12.1rem;height:1850px}
+.course-programme__modules .module__header{-ms-flex-wrap:wrap;flex-wrap:wrap}
+.course-programme__modules .module__header .number{font-size:1.8rem;line-height:2.71rem;margin:0 1rem 0 .5rem}
+.course-programme__modules .module__header .ext{font-size:1.4rem}
+.course-programme__modules .module__header .title{width:90%;margin:0 0 0 3.5rem;font-size:1rem}
+.course-programme__modules .module__content{padding-left:2.1rem;margin:unset}
 main{margin:unset}
 .pc{width:100%;left:unset;top:4.9rem;padding:0 3rem;max-width:unset;position:absolute}
 .pc .pc-image img{width:100%;height:auto}
