@@ -146,20 +146,20 @@ h2{font-family:'Roboto Bold';text-align:center;font-size:1.5rem}
 }@media(max-width:1110px){.navigation{font-size:.75rem}
 .navigation__nav .menu .menu-item{margin:.8rem}
 .navigation__phone .phone-number{line-height:90px}
-}@media(max-width:794.98px){.header-bg{max-height:unset;height:1200px}
+}@media(max-width:794.98px){.header-bg{max-height:unset;height:1054.5px;background:#0080e0;-webkit-transform:unset;transform:unset;-webkit-box-shadow:unset;box-shadow:unset}
 .navigation{background:#fff;width:100%}
 .navigation__mobile-menu{display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-align:center;-ms-flex-align:center;align-items:center}
 .navigation__nav{display:none}
 .navigation__phone .phone__link{color:#0080e0}
 .navigation__phone .phone-number{line-height:3rem}
-.header__title{margin:30rem auto 0 auto;padding:unset}
+.header__title{margin:24rem auto 0 auto;padding:unset}
 .header__title .title h1{font-size:2.1rem}
 .header__title .title h1 span{display:block}
-.header__title .academy-logo{margin:unset}
+.header__title .academy-logo{margin:.5rem 1rem -3.3rem 0}
 .header__title .sub-title{margin:unset;width:100%;padding:unset}
 .header__title .course-btn{text-align:center}
-.approaches-bg{margin-top:unset;-webkit-transform:unset;transform:unset;max-height:unset;height:890px}
-.approaches{padding:1rem 0}
+.approaches-bg{background:#0080e0;margin-top:unset;-webkit-transform:unset;transform:unset;max-height:unset;height:890px;-webkit-box-shadow:unset;box-shadow:unset}
+.approaches{padding:1rem 0;background:url(assets/img/header-bg--drawing.svg) top/cover no-repeat}
 .approaches__dash-line{width:100%}
 .approaches__list{padding:0}
 .benefits{margin:1rem 0}
