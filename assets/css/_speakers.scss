@@ -1,0 +1,52 @@
+.speakers {
+	background: radial-gradient(53.94% 130.48% at 73.95% 38.76%, #30A0F0 0%, #0080E0 45.12%, #0060C0 100%);
+	box-shadow: 0px 4px 20px rgba(0, 32, 64, 0.19);
+    width: 100%;
+    &__title {
+        color: $main-white;
+    }
+    &__list {
+        width: 90%;
+        margin: 0 auto;
+        margin: 3rem auto 0 auto;
+        padding: 0 2rem !important;
+        justify-content: center;
+        .speaker {
+            width: 208px;
+            text-align: center;
+            // margin: 0 1rem;
+            &__photo {
+                padding: 1rem;
+                img {
+                    width: 168px;
+                    height: 168px;
+                    border-radius: 50%;
+                }
+            }
+            &__name {
+                color: $main-white;
+                font-weight: 700;
+                
+            }
+            &__info {
+                color: $main-white;
+                font-size: .9rem;
+                padding: 1rem 0;
+            }
+            &__text {
+                color: $main-white;
+                font-weight: 700;
+            }
+        }
+    }
+}
+
+/* slider */
+.swiper {
+    // width: 1136px;
+    height: 480px;
+    padding: 0 2rem;
+}
+.swiper-button-prev::after, .swiper-button-next::after {
+    font-weight: bold;
+}

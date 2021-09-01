@@ -6,6 +6,8 @@
 @import 'approaches';
 @import 'benefits';
 @import 'course-programme';
+@import 'speakers';
+@import 'swiper';
 
 html,
 body {
@@ -32,7 +34,7 @@ body.disable-scroll {
 }
 main {
     margin: -11.7rem auto 4rem;
-    max-width: 1344px;
+    // max-width: 1344px;
     @include md {
       margin: unset;
     }

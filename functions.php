@@ -12,6 +12,8 @@ function scripts()
 
     wp_register_script('app', get_template_directory_uri() . '/assets/js/custom.min.js', [], 1, true);
     wp_enqueue_script('app');
+    wp_register_script('vendor-js', get_template_directory_uri() . '/assets/js/vendor.min.js', [], 1, true);
+    wp_enqueue_script('vendor-js');
 }
 add_action('wp_enqueue_scripts', 'scripts');
 
