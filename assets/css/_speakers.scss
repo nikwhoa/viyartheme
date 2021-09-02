@@ -39,6 +39,14 @@
             }
         }
     }
+        &__mail-us {
+            text-align: center;
+            color: $main-white;
+            a {
+                color: inherit;
+                text-decoration: underline $main-white;
+            }
+        }
 }
 
 /* slider */

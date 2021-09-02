@@ -7,6 +7,7 @@
 @import 'benefits';
 @import 'course-programme';
 @import 'speakers';
+@import 'reviews';
 @import 'swiper';
 
 html,
@@ -32,7 +33,7 @@ body {
 html,
 body.disable-scroll {
 	overflow-x: hidden;
-	height: 100%;
+	// height: 100%;
 }
 
 main {
@@ -119,4 +120,8 @@ h2 {
 
 .register-btn {
 	padding: 1.2rem 3rem;
+}
+.register-btn-wrapper {
+  text-align: center;
+  margin: 2rem 0;
 }

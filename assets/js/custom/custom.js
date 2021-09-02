@@ -121,7 +121,7 @@ window.addEventListener('DOMContentLoaded', () => {
             // when window width is >= 320px
             320: {
                 slidesPerView: 1,
-                spaceBetween: 20
+                spaceBetween: 40
             },
             // when window width is >= 480px
             480: {
@@ -145,6 +145,29 @@ window.addEventListener('DOMContentLoaded', () => {
             }
         }
     });
-
+    const swiperReview = new Swiper('.swiper-review', {
+        
+        effect: "coverflow",
+        grabCursor: true,
+        centeredSlides: true,
+        slidesPerView: "auto",
+        coverflowEffect: {
+          rotate: 50,
+          stretch: 0,
+          depth: 100,
+          modifier: 1,
+          slideShadows: true,
+        },
+        // Navigation arrows
+        navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev'
+        }
+        });
+        document.querySelector( '.js-videoPoster', (e) => {
+            e.preventDefault();
+            let poster = this;
+            console.log(poster);
+        });
 });
 

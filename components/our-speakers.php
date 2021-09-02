@@ -1,3 +1,4 @@
+<!-- TODO: MAKE CORRECT NAMES -->
 <section class="speakers">
     <div class="speakers__title">
         <h2>НАШІ СПІКЕРИ</h2>
@@ -186,11 +187,18 @@
             </div>
 
         </div>
-            <!-- If we need pagination -->
-            <div class="swiper-pagination"></div>
+        <!-- If we need pagination -->
+        <div class="swiper-pagination"></div>
 
-            <!-- If we need navigation buttons -->
-            <div class="swiper-button-prev"></div>
-            <div class="swiper-button-next"></div>
+        <!-- If we need navigation buttons -->
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
     </div>
-</section>
+    <div class="speakers__register register-btn-wrapper">
+        <a href="#" class="link">
+            <button class="register-btn btn">Зареєструватися</button>
+        </a>
+    </div>
+    <div class="speakers__mail-us">
+    Якщо ви хочете стати нашим спікером, пишіть на <a href="mailto:norenkonikita@gmail.com">пошту</a> 
+    </div>

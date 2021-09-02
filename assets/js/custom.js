@@ -1,5 +1,7 @@
 "use strict";
 
+var _this = void 0;
+
 /* eslint-disable no-trailing-spaces */
 window.addEventListener('DOMContentLoaded', function () {
   var navWrapper = document.querySelector('.nav-wrapper'),
@@ -87,7 +89,7 @@ window.addEventListener('DOMContentLoaded', function () {
       // when window width is >= 320px
       320: {
         slidesPerView: 1,
-        spaceBetween: 20
+        spaceBetween: 40
       },
       // when window width is >= 480px
       480: {
@@ -110,5 +112,28 @@ window.addEventListener('DOMContentLoaded', function () {
         spaceBetween: 40
       }
     }
+  });
+  var swiperReview = new Swiper('.swiper-review', {
+    effect: "coverflow",
+    grabCursor: true,
+    centeredSlides: true,
+    slidesPerView: "auto",
+    coverflowEffect: {
+      rotate: 50,
+      stretch: 0,
+      depth: 100,
+      modifier: 1,
+      slideShadows: true
+    },
+    // Navigation arrows
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev'
+    }
+  });
+  document.querySelector('.js-videoPoster', function (e) {
+    e.preventDefault();
+    var poster = _this;
+    console.log(poster);
   });
 });
