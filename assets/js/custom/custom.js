@@ -116,7 +116,7 @@ window.addEventListener('DOMContentLoaded', () => {
         scrollbar: {
             el: '.swiper-scrollbar',
         },
-        breakpointsBase: 'container',
+        breakpointsBase: 'window',
         breakpoints: {
             // when window width is >= 320px
             320: {
