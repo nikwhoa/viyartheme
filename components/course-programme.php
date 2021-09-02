@@ -1,7 +1,7 @@
 <section id="course-programme" class="course-programme">
-    
+
     <div class="container">
-        <div class="course-programme-line"></div>
+    <div class="course-programme-line"></div>
         <div class="course-programme__title">
             <h2>ПРОГРАМА КУРСУ</h2>
         </div>
@@ -99,8 +99,13 @@
 
                 </div>
             </div>
-           
+        </div>
+        
+        <div class="course-programme-register">
+            <a href="#" class="link">
+                <button class="register-btn btn">Зареєструватися</button>
+            </a>
         </div>
     </div>
-  
+
 </section>
