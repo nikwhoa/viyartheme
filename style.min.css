@@ -47,7 +47,7 @@ template{display:none}
 .navigation__mobile-menu{display:none;height:48px;margin:0 .8rem 0 1.2rem}
 .navigation .mobile-menu-btn{width:22px;-webkit-box-orient:vertical;-webkit-box-direction:normal;-ms-flex-direction:column;flex-direction:column;-webkit-transition:all .6s ease-in-out;transition:all .6s ease-in-out;margin-top:-12px}
 .navigation .mobile-menu-btn div{margin:5px 0}
-.navigation .mobile-menu-btn .open-btn{height:2.6px;width:22px;margin:5px 0;background:#0080e0}
+.navigation .mobile-menu-btn .open-btn{height:2.3px;width:22px;margin:5px 0;background:#0080e0}
 .navigation .mobile-menu-btn .open-btn::before{display:block;margin:14px 0;position:absolute;content:' ';height:2px;width:22px;background:#0080e0}
 .navigation .mobile-menu-btn .open-btn::after{display:block;margin:7px 0;position:absolute;content:' ';height:2px;width:14px;background:#0080e0}
 .navigation .mobile-menu-btn .close-btn{position:absolute;width:32px;height:32px;top:6px;left:20px}
@@ -59,7 +59,7 @@ template{display:none}
 .navigation__logo .custom-logo-link img{display:block}
 .navigation__logo .custom-logo-link #phone-icon{fill:#fff}
 .navigation__nav{padding:0 1rem}
-.navigation__nav .menu{font-weight:600;display:-webkit-box;display:-ms-flexbox;display:flex;padding:0;margin:0;list-style-type:none}
+.navigation__nav .menu{font-family:'Roboto Bold';display:-webkit-box;display:-ms-flexbox;display:flex;padding:0;margin:0;list-style-type:none}
 .navigation__nav .menu .menu-item{margin:0 1.8rem}
 .navigation__nav .menu .menu-item a{padding:0 0 .3rem 0;text-decoration:none;-webkit-transition-delay:200ms;transition-delay:200ms;-webkit-transition-timing-function:ease;transition-timing-function:ease}
 .navigation__nav .menu .menu-item a:after{content:"";display:block;position:relative;top:-0.9rem;width:100%;height:2px;opacity:0;background:#fff;-webkit-transition:all .4s ease-in-out;transition:all .4s ease-in-out}
@@ -249,7 +249,7 @@ button.swiper-pagination-bullet{border:0;margin:0;padding:0;-webkit-box-shadow:n
 .swiper-creative .swiper-slide{-webkit-backface-visibility:hidden;backface-visibility:hidden;overflow:hidden;-webkit-transition-property:opacity,height,-webkit-transform;transition-property:opacity,height,-webkit-transform;transition-property:transform,opacity,height;transition-property:transform,opacity,height,-webkit-transform}
 .swiper-cards{overflow:visible}
 .swiper-cards .swiper-slide{-webkit-transform-origin:center bottom;transform-origin:center bottom;-webkit-backface-visibility:hidden;backface-visibility:hidden;overflow:hidden}
-html,body{font-family:"Roboto",sans-serif;-webkit-box-sizing:border-box;box-sizing:border-box;overflow-x:hidden;-webkit-font-smoothing:subpixel-antialiased;-webkit-text-stroke:1px transparent;background:url("assets/img/body-bg-3-min.png") no-repeat;background-position:50% 10%}
+html,body{font-family:"Roboto",sans-serif;-webkit-box-sizing:border-box;box-sizing:border-box;overflow-x:hidden;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;background:url("assets/img/body-bg-3-min.png") no-repeat;background-position:50% 10%}
 *,*:before,*:after{-webkit-box-sizing:inherit;box-sizing:inherit}
 html,body.disable-scroll{overflow-x:hidden;height:100%}
 main{margin:-11.7rem auto 4rem}

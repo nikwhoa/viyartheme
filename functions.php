@@ -1,13 +1,13 @@
 <?php
 define("WP_ROOT", __DIR__);
-define("DS", DIRECTORY_SEPARATOR);
-require_once WP_ROOT . DS . "post-types-settings/post-types-approaches.php";
-require_once WP_ROOT . DS . "post-types-settings/post-types-benefits.php";
+define("DSS", DIRECTORY_SEPARATOR);
+require_once WP_ROOT . DSS . "post-types-settings/post-types-approaches.php";
+require_once WP_ROOT . DSS . "post-types-settings/post-types-benefits.php";
 
 
 function scripts()
 {
-    wp_register_style('style', get_template_directory_uri() . '/style.min.css', [], 1, 'all');
+    wp_register_style('style', get_template_directory_uri() . '/style.min.css', [], null, 'all');
     wp_enqueue_style('style');
 
     wp_register_script('app', get_template_directory_uri() . '/assets/js/custom.min.js', [], 1, true);

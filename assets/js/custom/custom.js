@@ -128,8 +128,18 @@ window.addEventListener('DOMContentLoaded', () => {
                 slidesPerView: 2,
                 spaceBetween: 30
             },
-            // when window width is >= 640px
-            640: {
+            // when window width is >= 480px
+            700: {
+                slidesPerView: 3,
+                spaceBetween: 30
+            },
+            // when window width is >= 760px
+            760: {
+                slidesPerView: 4,
+                spaceBetween: 30
+            },
+            // when window width is >= 1160px
+            1160: {
                 slidesPerView: 5,
                 spaceBetween: 40
             }

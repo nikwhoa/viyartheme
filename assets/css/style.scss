@@ -15,8 +15,8 @@ body {
     box-sizing: border-box;
     overflow-x: hidden;
     
-    -webkit-font-smoothing: subpixel-antialiased;
-    -webkit-text-stroke:1px transparent;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
     background: url('assets/img/body-bg-3-min.png') no-repeat;
     background-position: 50% 10%;
     // background-size: cover; 
