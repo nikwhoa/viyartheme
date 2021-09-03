@@ -88,7 +88,44 @@ window.addEventListener('DOMContentLoaded', () => {
         document.body.classList.add('disable-scroll');
     });
 
+    // youtube cover
 
+
+    const videoPoster = document.querySelector( '.js-videoPoster' );
+    const videoIframe = document.querySelector( '.js-videoIframe' );
+    const videoWrapper = document.querySelector( '.js-videoWrapper' );
+    
+    function videoPlay( wrapper ) {
+        
+        let iframe = wrapper;
+        
+        // var iframe = wrapper.find('.js-videoIframe');
+        
+        // Берем ссылку видео из data
+        // var src = iframe.data('src');
+
+        let src = iframe.childNodes[3].attributes[5].nodeValue;
+        videoWrapper.classList.add( 'videoWrapperActive' );
+        videoIframe.setAttribute( 'src', videoIframe.getAttribute( 'data-src' ) );
+        // console.log( videoIframe.getAttribute( 'data' ) );
+        
+        
+        // скрываем постер
+        // wrapper.addClass('videoWrapperActive');
+        // подставляем в src параметр из data
+        // iframe.attr('src', src);
+    }
+    
+    videoPoster.addEventListener('click', (e) => {
+        e.preventDefault();
+
+        console.log('ff');
+        videoPlay( videoWrapper );
+    });
+
+
+ 
+   
 
     const swiper = new Swiper('.swiper', {
         // Optional parameters
@@ -145,29 +182,31 @@ window.addEventListener('DOMContentLoaded', () => {
             }
         }
     });
+
+    
+    
     const swiperReview = new Swiper('.swiper-review', {
-        
+
         effect: "coverflow",
         grabCursor: true,
         centeredSlides: true,
         slidesPerView: "auto",
         coverflowEffect: {
-          rotate: 50,
-          stretch: 0,
-          depth: 100,
-          modifier: 1,
-          slideShadows: true,
+            rotate: 50,
+            stretch: 0,
+            depth: 100,
+            modifier: 1,
+            slideShadows: true,
         },
         // Navigation arrows
         navigation: {
             nextEl: '.swiper-button-next',
             prevEl: '.swiper-button-prev'
         }
-        });
-        document.querySelector( '.js-videoPoster', (e) => {
-            e.preventDefault();
-            let poster = this;
-            console.log(poster);
-        });
+    });
+   
+
+
+    
 });
 

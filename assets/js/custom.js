@@ -1,7 +1,5 @@
 "use strict";
 
-var _this = void 0;
-
 /* eslint-disable no-trailing-spaces */
 window.addEventListener('DOMContentLoaded', function () {
   var navWrapper = document.querySelector('.nav-wrapper'),
@@ -60,6 +58,30 @@ window.addEventListener('DOMContentLoaded', function () {
     }
 
     document.body.classList.add('disable-scroll');
+  }); // youtube cover
+
+  var videoPoster = document.querySelector('.js-videoPoster');
+  var videoIframe = document.querySelector('.js-videoIframe');
+  var videoWrapper = document.querySelector('.js-videoWrapper');
+
+  function videoPlay(wrapper) {
+    var iframe = wrapper; // var iframe = wrapper.find('.js-videoIframe');
+    // Берем ссылку видео из data
+    // var src = iframe.data('src');
+
+    var src = iframe.childNodes[3].attributes[5].nodeValue;
+    videoWrapper.classList.add('videoWrapperActive');
+    videoIframe.setAttribute('src', videoIframe.getAttribute('data-src')); // console.log( videoIframe.getAttribute( 'data' ) );
+    // скрываем постер
+    // wrapper.addClass('videoWrapperActive');
+    // подставляем в src параметр из data
+    // iframe.attr('src', src);
+  }
+
+  videoPoster.addEventListener('click', function (e) {
+    e.preventDefault();
+    console.log('ff');
+    videoPlay(videoWrapper);
   });
   var swiper = new Swiper('.swiper', {
     // Optional parameters
@@ -130,10 +152,5 @@ window.addEventListener('DOMContentLoaded', function () {
       nextEl: '.swiper-button-next',
       prevEl: '.swiper-button-prev'
     }
-  });
-  document.querySelector('.js-videoPoster', function (e) {
-    e.preventDefault();
-    var poster = _this;
-    console.log(poster);
   });
 });
