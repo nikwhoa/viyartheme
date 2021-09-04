@@ -58,30 +58,6 @@ window.addEventListener('DOMContentLoaded', function () {
     }
 
     document.body.classList.add('disable-scroll');
-  }); // youtube cover
-
-  var videoPoster = document.querySelector('.js-videoPoster');
-  var videoIframe = document.querySelector('.js-videoIframe');
-  var videoWrapper = document.querySelector('.js-videoWrapper');
-
-  function videoPlay(wrapper) {
-    var iframe = wrapper; // var iframe = wrapper.find('.js-videoIframe');
-    // Берем ссылку видео из data
-    // var src = iframe.data('src');
-
-    var src = iframe.childNodes[3].attributes[5].nodeValue;
-    videoWrapper.classList.add('videoWrapperActive');
-    videoIframe.setAttribute('src', videoIframe.getAttribute('data-src')); // console.log( videoIframe.getAttribute( 'data' ) );
-    // скрываем постер
-    // wrapper.addClass('videoWrapperActive');
-    // подставляем в src параметр из data
-    // iframe.attr('src', src);
-  }
-
-  videoPoster.addEventListener('click', function (e) {
-    e.preventDefault();
-    console.log('ff');
-    videoPlay(videoWrapper);
   });
   var swiper = new Swiper('.swiper', {
     // Optional parameters
@@ -136,10 +112,10 @@ window.addEventListener('DOMContentLoaded', function () {
     }
   });
   var swiperReview = new Swiper('.swiper-review', {
-    effect: "coverflow",
+    effect: 'coverflow',
     grabCursor: true,
     centeredSlides: true,
-    slidesPerView: "auto",
+    slidesPerView: 'auto',
     coverflowEffect: {
       rotate: 50,
       stretch: 0,
@@ -147,10 +123,48 @@ window.addEventListener('DOMContentLoaded', function () {
       modifier: 1,
       slideShadows: true
     },
-    // Navigation arrows
     navigation: {
       nextEl: '.swiper-button-next',
       prevEl: '.swiper-button-prev'
+    },
+    pagination: {
+      el: '.swiper-pagination',
+      clickable: true
     }
   });
 });
+"use strict";
+
+// youtube cover
+
+/* --
+    1. пройтись по всем детям js-youtube и собрать все js-videoWrapper
+
+--
+*/
+function videoPlay(selector) {
+  console.log(selector);
+  alert('ff');
+}
+/* const videoPoster = document.querySelector( '.js-videoPoster' );
+const videoIframe = document.querySelector( '.js-videoIframe' );
+const videoWrapper = document.querySelector( '.js-videoWrapper' );
+
+function videoPlay( wrapper, iframe, button, videoPoster ) {
+    
+    let iframe = wrapper;
+    
+    let src = iframe.childNodes[3].attributes[5].nodeValue;
+    videoWrapper.classList.add( 'videoWrapperActive' );
+    videoIframe.setAttribute( 'src', videoIframe.getAttribute( 'data-src' ) );
+    
+}
+
+videoPoster.addEventListener('click', (e) => {
+    e.preventDefault();
+
+    console.log('ff');
+    videoPlay( videoWrapper );
+});
+
+export {videoPlay}; */
