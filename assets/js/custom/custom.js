@@ -170,6 +170,6 @@ window.addEventListener('DOMContentLoaded', () => {
         }   
     });
 
-    
+    videoPlay( '.js-videoPoster' );
 });
 

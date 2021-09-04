@@ -1,36 +1,16 @@
-// youtube cover
+// eslint-disable-next-line no-unused-vars
+function videoPlay( button ) {
+    let youTubeButton = document.querySelectorAll( button );
 
-/* --
-    1. пройтись по всем детям js-youtube и собрать все js-videoWrapper
+    youTubeButton.forEach(el => {
+        el.addEventListener('click', (e) => {
+            e.preventDefault();
 
---
-*/
+            e.target.previousElementSibling.setAttribute( 'src', e.target.previousElementSibling.getAttribute( 'data-src' ) );
 
+            e.target.parentNode.classList.add( 'videoWrapperActive' );
 
-function videoPlay( selector ) {
-    console.log( selector );
-    alert('ff')
+        });
+    });
 }
 
-/* const videoPoster = document.querySelector( '.js-videoPoster' );
-const videoIframe = document.querySelector( '.js-videoIframe' );
-const videoWrapper = document.querySelector( '.js-videoWrapper' );
-
-function videoPlay( wrapper, iframe, button, videoPoster ) {
-    
-    let iframe = wrapper;
-    
-    let src = iframe.childNodes[3].attributes[5].nodeValue;
-    videoWrapper.classList.add( 'videoWrapperActive' );
-    videoIframe.setAttribute( 'src', videoIframe.getAttribute( 'data-src' ) );
-    
-}
-
-videoPoster.addEventListener('click', (e) => {
-    e.preventDefault();
-
-    console.log('ff');
-    videoPlay( videoWrapper );
-});
-
-export {videoPlay}; */
