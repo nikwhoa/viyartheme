@@ -15,8 +15,12 @@ window.addEventListener('DOMContentLoaded', () => {
     window.addEventListener('scroll', () => {
         if (200 < window.pageYOffset /* added pageYOffset for ie */) {
             navWrapper.classList.add('sticky-nav');
+            let logoJs = document.querySelector('.logo-js');
+            logoJs.src = './wp-content/themes/viyartheme/assets/img/logo-svg-sticky.svg';
         } else if (100 > window.pageYOffset) {
             navWrapper.classList.remove('sticky-nav');
+            let logoJs = document.querySelector('.logo-js');
+            logoJs.src = './wp-content/themes/viyartheme/assets/img/logo-svg.svg';
         }
     });
 

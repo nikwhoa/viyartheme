@@ -13,8 +13,14 @@ window.addEventListener('DOMContentLoaded', function () {
     /* added pageYOffset for ie */
     ) {
       navWrapper.classList.add('sticky-nav');
+      var logoJs = document.querySelector('.logo-js');
+      logoJs.src = './wp-content/themes/viyartheme/assets/img/logo-svg-sticky.svg';
     } else if (100 > window.pageYOffset) {
       navWrapper.classList.remove('sticky-nav');
+
+      var _logoJs = document.querySelector('.logo-js');
+
+      _logoJs.src = './wp-content/themes/viyartheme/assets/img/logo-svg.svg';
     }
   }); // eslint-disable-next-line yoda
 
