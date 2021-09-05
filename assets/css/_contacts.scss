@@ -1,0 +1,17 @@
+.contacts {
+    margin: -1.25rem 0 0 0;
+    background: #0080E0;
+    font-style: normal;
+    .contacts-wrapper {
+        width: 90%;
+        margin: 0  auto;
+    }
+    &__info {
+        width: 50%;
+        margin: 0 auto 0 0;
+        padding: 2rem 0;
+        .title {
+            color: $main-white;
+        }
+    }
+}

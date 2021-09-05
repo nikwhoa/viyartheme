@@ -6,4 +6,5 @@
 <?php get_template_part( 'components/reviews' ); ?>
 <?php get_template_part( 'components/prices' ); ?>
 <?php get_template_part( 'components/faq' ); ?>
+<?php get_template_part( 'components/contacts' ); ?>
 <?php get_footer(); ?>
