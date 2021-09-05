@@ -6,12 +6,27 @@
 	}
 
 	&__list {
+		height: 315px;
+		// padding: 0 2rem !important;
 		width: 80%;
-
 		.review {
 			width: 560px !important;
-			background-color: #fff;
+			background-color: black;
+			transition: height 0.8s ease-in-out;
+			height: 260px !important;
 		}
+		.swiper-wrapper {
+			align-items: center;
+		}
+		.swiper-slide-active {
+			height: inherit !important;
+		}
+		.swiper-slide-prev, .swiper-slide-next {
+			height: 260px;
+		}
+	}
+	.reviews-btn {
+		// top: initial !important;
 	}
 }
 
@@ -30,14 +45,14 @@
 	position: absolute;
 	top: 0px;
 	left: 0px;
-	width: 100%;
-	height: 100%;
+	width: 97.8%;
+	height: 99.2%;
 	background-image: url(http://c.fastcompany.net/multisite_files/cocreate/imagecache/inline-large/inline/2013/01/1682283-inline-inline-2-music-veteran-amani-duncan-on-marketing-cf-martin-the-worlds-oldest-guitar-maker.jpg);
 	background-size: 100%;
 	border: none;
      text-indent: -999em;
 	overflow: hidden;
-	opacity: 1;
+	opacity: 0.3;
 	-webkit-transition: opacity 800ms, height 0s;
 	-moz-transition: opacity 800ms, height 0s;
 	transition: opacity 800ms, height 0s;
@@ -97,4 +112,8 @@
 	-webkit-transition-delay: 0s, 800ms;
 	-moz-transition-delay: 0s, 800ms;
 	transition-delay: 0s, 800ms;
+}
+
+.swiper-slide-active .videoPoster {
+	opacity: 1;
 }

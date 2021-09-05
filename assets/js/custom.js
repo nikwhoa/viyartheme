@@ -60,25 +60,17 @@ window.addEventListener('DOMContentLoaded', function () {
     document.body.classList.add('disable-scroll');
   });
   var swiper = new Swiper('.swiper', {
-    // Optional parameters
     direction: 'horizontal',
-    // loop: true,
     centerInsufficientSlides: true,
-    // cssMode: true,
-    // freeMode: true,
     slidesPerView: 5,
-    // spaceBetween: 0,
-    // If we need pagination
     pagination: {
       el: '.swiper-pagination',
       clickable: true
     },
-    // Navigation arrows
     navigation: {
       nextEl: '.swiper-button-next',
       prevEl: '.swiper-button-prev'
     },
-    // And if we need scrollbar
     scrollbar: {
       el: '.swiper-scrollbar'
     },
@@ -112,20 +104,24 @@ window.addEventListener('DOMContentLoaded', function () {
     }
   });
   var swiperReview = new Swiper('.swiper-review', {
-    effect: 'coverflow',
-    grabCursor: true,
+    // effect: 'coverflow',
+    // grabCursor: true,
     centeredSlides: true,
+    initialSlide: 1,
+    loopedSlides: 1,
+    loop: true,
     slidesPerView: 'auto',
-    coverflowEffect: {
-      rotate: 50,
-      stretch: 0,
-      depth: 100,
-      modifier: 1,
-      slideShadows: true
-    },
+    noSwiping: true,
+    // coverflowEffect: {
+    //     rotate: 0,
+    //     stretch: 0,
+    //     depth: 10,
+    //     modifier: 1,
+    //     slideShadows: false
+    // },
     navigation: {
-      nextEl: '.swiper-button-next',
-      prevEl: '.swiper-button-prev'
+      nextEl: '.reviews-btn-next',
+      prevEl: '.reviews-btn-prev'
     },
     pagination: {
       el: '.swiper-pagination',
