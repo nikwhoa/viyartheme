@@ -1,36 +1,110 @@
-.faq-bg {
-    background-image: url('assets/img/faq-bg.jpg');
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    height: 1288px;
-    position: absolute;
-    width: 100%;
-    z-index: 1;
+.faq-wrapper {
+	background-image: url('assets/img/faq-bg.jpg');
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	
+	position: absolute;
+	width: 100%;
+	z-index: 1;
 }
+
 .faq {
-    z-index: 10;
-    position: relative;
-    &__title {
-        color: $main-white;
-        span {
-            display: block;
-            font-family: 'Roboto Regular';
-            font-weight: normal;
-        }
-    }
-    &__questions {
-        width: 70%;
-        margin: 1rem auto;
-        text-align: center;
-        .question-item {
-            margin: 2rem 0;
-            .answer {
-                display: none;
-            }
-            .show {
-                display: block;
-            }
-        }
-    }
+	z-index: 10;
+	position: relative;
+
+	&__title {
+		color: $main-white;
+
+		span {
+			display: block;
+			font-family: 'Roboto Regular';
+			font-weight: normal;
+		}
+	}
+
+	&__questions {
+		width: 70%;
+		margin: 1rem auto;
+
+		// text-align: center;
+		.question-item {
+			margin: 2rem 0;
+			color: $main-white;
+			border: 1px solid $main-white;
+			border-left: none;
+			border-right: none;
+			padding: 1rem 0 1.2rem 0;
+
+			.question {
+				cursor: pointer;
+				font-size: 1.2rem;
+				font-weight: bold;
+				position: relative;
+
+				&__btn {
+					position: absolute;
+					display: inline;
+					// right: auto;
+					right: 20px;
+					top: -7px;
+					width: 40px;
+					height: 40px;
+					border: 1px solid $main-white;
+					border-radius: 50%;
+
+					.button {
+						position: relative;
+
+						&::before {
+							content: '';
+							top: 19px;
+							left: 11.5px;
+							transform: rotate(50deg);
+							display: block;
+							position: absolute;
+							width: 10px;
+							height: 2px;
+							background: $main-white;
+						}
+
+						&::after {
+							content: '';
+							top: 19px;
+							left: 17.5px;
+							transform: rotate(130deg);
+							display: block;
+							position: absolute;
+							width: 10px;
+							height: 2px;
+							background: $main-white;
+						}
+					}
+				}
+			}
+
+
+			.answer {
+				display: none;
+				width: 72%;
+				// position: absolute;
+				margin: 10px 0 0 60px;
+				line-height: 20px;
+				padding: .3rem 0 .3rem .5rem;
+				border-left: 1px solid $main-white;
+			}
+
+
+
+			.show {
+				display: block;
+			}
+		}
+	}
+}
+.question.active > .question__btn > .button::before {
+    transform: rotate(312deg);
+}
+.question.active > .question__btn > .button::after {
+    transform: rotate(-130deg);
 }

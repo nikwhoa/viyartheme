@@ -142,21 +142,37 @@ window.addEventListener('DOMContentLoaded', function () {
 });
 "use strict";
 
-var question = document.querySelectorAll('.question-item');
-question.forEach(function (el) {
-  el.addEventListener('click', function (e) {
-    hideAll();
-    el.children[1].classList.add('show');
-  });
-});
+var question = document.querySelectorAll('.question'),
+    answers = document.querySelectorAll('.answer');
 
-function hideAll() {
-  for (var i = 0; i < question.length; i++) {
-    question[i].children[1].classList.toggle('show', false);
-  }
+for (var i = 0; i < question.length; i++) {
+  question[i].addEventListener('click', function () {
+    var setClasses = !this.classList.contains('active');
+    setClass(question, 'active', 'remove');
+    setClass(answers, 'show', 'remove');
+
+    if (setClasses) {
+      this.classList.toggle('active');
+      this.nextElementSibling.classList.toggle('show');
+    }
+  });
 }
 
-;
+function setClass(els, className, fnName) {
+  for (var _i = 0; _i < els.length; _i++) {
+    els[_i].classList[fnName](className);
+  }
+} // question.forEach(el => {
+//     el.addEventListener('click', (e) => {
+//         hideAll();
+//         el.children[1].classList.toggle( 'show' );
+//     });
+// });
+// function hideAll() {
+//     for ( let i = 0; i < question.length; i++ ) {
+//         question[i].children[1].classList.toggle( 'show', false );
+//     }
+// };
 "use strict";
 
 function tabs(tabsSelector, tabsContentSelector, tabsParentSelector, activeClass) {
