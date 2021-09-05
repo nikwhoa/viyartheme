@@ -142,6 +142,23 @@ window.addEventListener('DOMContentLoaded', function () {
 });
 "use strict";
 
+var question = document.querySelectorAll('.question-item');
+question.forEach(function (el) {
+  el.addEventListener('click', function (e) {
+    hideAll();
+    el.children[1].classList.add('show');
+  });
+});
+
+function hideAll() {
+  for (var i = 0; i < question.length; i++) {
+    question[i].children[1].classList.toggle('show', false);
+  }
+}
+
+;
+"use strict";
+
 function tabs(tabsSelector, tabsContentSelector, tabsParentSelector, activeClass) {
   var tabs = document.querySelectorAll(tabsSelector),
       tabsContent = document.querySelectorAll(tabsContentSelector),

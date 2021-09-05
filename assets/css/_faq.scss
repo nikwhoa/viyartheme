@@ -1,0 +1,36 @@
+.faq-bg {
+    background-image: url('assets/img/faq-bg.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 1288px;
+    position: absolute;
+    width: 100%;
+    z-index: 1;
+}
+.faq {
+    z-index: 10;
+    position: relative;
+    &__title {
+        color: $main-white;
+        span {
+            display: block;
+            font-family: 'Roboto Regular';
+            font-weight: normal;
+        }
+    }
+    &__questions {
+        width: 70%;
+        margin: 1rem auto;
+        text-align: center;
+        .question-item {
+            margin: 2rem 0;
+            .answer {
+                display: none;
+            }
+            .show {
+                display: block;
+            }
+        }
+    }
+}

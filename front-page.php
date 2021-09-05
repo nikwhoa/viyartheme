@@ -5,4 +5,5 @@
 <?php get_template_part( 'components/our-speakers' ); ?>
 <?php get_template_part( 'components/reviews' ); ?>
 <?php get_template_part( 'components/prices' ); ?>
+<?php get_template_part( 'components/faq' ); ?>
 <?php get_footer(); ?>
