@@ -6,28 +6,71 @@
 	}
 
 	&__list {
+
 		height: 315px;
 		// padding: 0 2rem !important;
 		width: 80%;
+
 		.review {
 			width: 560px !important;
 			background-color: black;
 			transition: height 0.8s ease-in-out;
 			height: 260px !important;
 		}
+
 		.swiper-wrapper {
 			align-items: center;
 		}
+
 		.swiper-slide-active {
 			height: inherit !important;
 		}
-		.swiper-slide-prev, .swiper-slide-next {
+
+		.swiper-slide-prev,
+		.swiper-slide-next {
 			height: 260px;
 		}
 	}
+
 	.reviews-btn {
 		// top: initial !important;
+		position: absolute;
+		// top: 50%;
+		width: calc(var(--swiper-navigation-size) / 44 * 27);
+		height: var(--swiper-navigation-size);
+		margin-top: calc(0px - (var(--swiper-navigation-size) / 2));
+		z-index: 10;
+		cursor: pointer;
+		display: -webkit-box;
+		display: -ms-flexbox;
+		display: flex;
+		-webkit-box-align: center;
+		-ms-flex-align: center;
+		align-items: center;
+		-webkit-box-pack: center;
+		-ms-flex-pack: center;
+		justify-content: center;
+		color: var(--swiper-navigation-color, var(--swiper-theme-color));
+		&::after {
+				font-family: swiper-icons;
+				font-size: var(--swiper-navigation-size);
+				text-transform: none !important;
+				letter-spacing: 0;
+				text-transform: none;
+				font-variant: initial;
+				line-height: 1;
+		}
 	}
+}
+.reviews-btn-prev::after {
+	content: 'prev';
+}
+.reviews-btn-next::after {
+	content: 'next'
+}
+.reviews-btn-next {
+	right: 10px;
+    left: auto;
 }
 
 .videoIframe {
@@ -50,7 +93,7 @@
 	background-image: url(http://c.fastcompany.net/multisite_files/cocreate/imagecache/inline-large/inline/2013/01/1682283-inline-inline-2-music-veteran-amani-duncan-on-marketing-cf-martin-the-worlds-oldest-guitar-maker.jpg);
 	background-size: 100%;
 	border: none;
-     text-indent: -999em;
+	text-indent: -999em;
 	overflow: hidden;
 	opacity: 0.3;
 	-webkit-transition: opacity 800ms, height 0s;

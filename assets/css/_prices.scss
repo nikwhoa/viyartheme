@@ -1,0 +1,165 @@
+.prices {
+	&__title {
+		color: $main-blue;
+	}
+
+	&__tabs {
+		padding: 1rem 0;
+
+		.content {
+			
+            @include lg {
+                box-shadow: 0px 4px 10px rgba(74, 74, 74, 0.1);
+            }
+
+			.tabs {
+				width: 100%;
+				justify-content: space-around;
+				align-items: stretch;
+				display: none;
+				flex-direction: row;
+
+				@include lg {
+					display: flex;
+				}
+
+				.tab {
+					background: linear-gradient(272.04deg, #139AFF 6.2%, #0080E0 96.57%);
+					border-radius: 12px 12px 0px 0px;
+					height: 56px;
+					display: flex;
+					justify-content: center;
+					align-items: center;
+					vertical-align: middle;
+					// padding: 1.1rem 0;
+					width: 100%;
+					position: relative;
+					text-align: center;
+					color: $main-white;
+					font-weight: bold;
+					cursor: pointer;
+
+				}
+
+				.active {
+					background: $main-white;
+					color: $main-blue;
+					border-radius: 12px 12px 0px 0px;
+					border: 1px solid #D0D0D0;
+					border-bottom: none;
+				}
+			}
+
+			.info {
+
+				/* tabs-item */
+				text-align: center;
+				width: 80%;
+				margin: 0 auto;
+				display: flex;
+				justify-content: space-around;
+
+				@include lg {
+					border-radius: 12px;
+					border: 1px solid #D0D0D0;
+					border-top: none;
+					width: unset;
+					margin: unset;
+					display: block;
+					justify-content: unset;
+				}
+
+				.tab_block {
+					padding: 1rem 0 0 0;
+					width: 352px;
+					border: 1px solid #D0D0D0;
+					box-sizing: border-box;
+					box-shadow: 0px 4px 10px rgba(74, 74, 74, 0.1);
+					border-radius: 12px;
+
+					@include lg {
+						border: unset;
+						box-shadow: unset;
+						width: 100%;
+					}
+				}
+
+				.info-row {
+					display: flex;
+					flex-direction: row;
+					justify-content: center;
+					align-items: center;
+
+					svg {
+						position: absolute;
+						margin-left: -80px;
+					}
+				}
+
+				div {
+					margin: 1rem 0;
+				}
+
+
+
+				.show {
+					display: block;
+
+					@include lg {}
+				}
+
+				.hide {
+
+					@include lg {
+						display: none;
+					}
+				}
+
+				.blue-text {
+					text-align: center;
+					color: $main-blue;
+					font-weight: bold;
+					font-size: 1.2rem;
+				}
+
+				&__date {}
+
+				&__price {
+					.price {
+						color: $main-white;
+						background: $main-blue;
+						position: static;
+						left: 16px;
+						height: 48px;
+						vertical-align: middle;
+						right: 16px;
+						padding: .4rem 0;
+						font-size: 2rem;
+
+						@include lg {
+							position: absolute;
+						}
+					}
+
+					.price-extra {
+						margin: 20px auto 0;
+
+						@include lg {
+							margin: 90px auto 0;
+						}
+
+						color: #009020;
+						text-align: center;
+						width: 70%;
+					}
+				}
+
+				&__register {
+					button {
+						padding: 1.2rem 3.5rem;
+					}
+				}
+			}
+		}
+	}
+}

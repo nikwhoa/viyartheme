@@ -136,7 +136,7 @@ window.addEventListener('DOMContentLoaded', () => {
         }
     });
 
-    
+
     const swiperReview = new Swiper('.swiper-review', {
         // effect: 'coverflow',
         // grabCursor: true,
@@ -160,9 +160,15 @@ window.addEventListener('DOMContentLoaded', () => {
         pagination: {
             el: '.swiper-pagination',
             clickable: true
-        }   
+        }
     });
 
     videoPlay( '.js-videoPoster' );
+
+    if (window.outerWidth <= 991.98) {
+        tabs( '.tab', '.tab_block', '.tabs', 'active' );
+    }
+    
+
 });
 

@@ -2,7 +2,7 @@
     <div class="reviews__title">
         <h2>ВІДГУКИ УЧАСНИКІВ</h2>
     </div>
-    <div class="reviews__list swiper swiper-review">
+    <!-- <div class="reviews__list swiper swiper-review">
         <div class="swiper-wrapper">
             <div class="swiper-slide review">
                 <div class="video_wrapper video_wrapper_full js-videoWrapper">
@@ -47,11 +47,12 @@
                 <div class="review__name">Олена Васильєва</div>
             </div>
         </div>
-
+        <div class="reviews-btn-prev reviews-btn"></div>
+    <div class="reviews-btn-next reviews-btn"></div>
         <div class="swiper-pagination"></div>
-        <div class="swiper-button-prev reviews-btn-prev reviews-btn"></div>
-        <div class="swiper-button-next reviews-btn-next reviews-btn"></div>
-    </div>
+
+    </div> -->
+    
     <div class="reviews__register register-btn-wrapper">
         <a href="#" class="link">
             <button class="register-btn btn">Зареєструватися</button>
