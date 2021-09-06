@@ -333,6 +333,8 @@ h2{font-family:'Roboto Bold';text-align:center;font-size:1.5rem}
 .prices__tabs .content .info .hide{display:none}
 .prices__tabs .content .info__price .price{position:absolute}
 .prices__tabs .content .info__price .price-extra{margin:90px auto 0}
+.faq__questions{width:90%}
+.faq__questions .question-item .answer{margin-left:30px}
 }@media(max-width:794.98px){.header-bg{max-height:unset;height:1056px;background:#0080e0;-webkit-transform:unset;transform:unset;-webkit-box-shadow:unset;box-shadow:unset}
 .navigation{background:#fff;width:100%}
 .navigation__mobile-menu{display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-align:center;-ms-flex-align:center;align-items:center}
