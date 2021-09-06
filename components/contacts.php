@@ -54,11 +54,16 @@
                 </header>
                 <a href="mailto:academyviyar@gmail.com">academyviyar@gmail.com</a>
             </div>
-            <div class="register register-btn-wrapper">
-                <a href="#" class="link">
-                    <button class="register-btn btn">Зареєструватися</button>
-                </a>
-            </div>
+            <div class="register register-btn-wrapper hide-on-mobile">
+            <a href="#" class="link">
+                <button class="register-btn btn">Зареєструватися</button>
+            </a>
+        </div>
+        </div>
+        <div class="register register-btn-wrapper show-on-mobile">
+            <a href="#" class="link">
+                <button class="register-btn btn">Зареєструватися</button>
+            </a>
         </div>
         <div class="contacts__map">
             <div class="map-wrapper">
