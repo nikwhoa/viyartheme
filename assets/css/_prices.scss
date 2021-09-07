@@ -135,7 +135,10 @@
 						right: 16px;
 						padding: .4rem 0;
 						font-size: 2rem;
-
+						@include sm {
+							left: 9px;
+							right: 9px;
+						}
 						@include lg {
 							position: absolute;
 						}

@@ -28,10 +28,20 @@
         margin-top: unset;
         transform: unset;
         max-height: unset;
-        height: 890px;
+        height: 600px;
         box-shadow: unset;
      
     }
+    @include lg {
+        margin-top: -60px;
+    }
+    @media (max-width: 721.8px) {
+        height: 900px;
+    }
+    @media (max-width: 1173.8px) {
+        height: 750px;
+    }
+    
 }
 .approaches {
 	// height: 850px;

@@ -109,11 +109,13 @@
 		display: none;
 		height: 48px;
 		margin: 0 .8rem 0 1.2rem;
-
+		@include sm {
+			height: 48px;
+		}
 		@include md {
 			display: flex;
 			align-items: center;
-
+			height: 61px;
 		}
 	}
 
@@ -385,10 +387,13 @@
 			padding: unset;
 			justify-content: center;
 		}
-
+		@include lg {
+			margin-bottom: 10rem;
+		}
 		@include xl {
 			margin: 0 auto 16rem -3rem;
 		}
+		
 		
 
 		// justify-content: space-around!important;

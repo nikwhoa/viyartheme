@@ -34,10 +34,9 @@ body {
 	box-sizing: inherit;
 }
 
-html,
-body.disable-scroll {
-	overflow-x: hidden;
-	// height: 100%;
+html.disable-scroll, body.disable-scroll {
+	overflow: hidden;
+	height: 100%;
 }
 
 main {
@@ -52,7 +51,9 @@ main {
 
 section {
 	padding: 1rem;
-
+	@include sm {
+		padding: .5rem;
+	}
 }
 
 .flex-container {
@@ -92,7 +93,7 @@ section {
 		max-width: unset;
 		width: 300px;
 		position: relative;
-		margin-bottom: -18.5rem;
+		margin-bottom: -18.2rem;
 	}
 	@media (max-width: 610.98px) {
 		width: 267px;		
@@ -139,6 +140,9 @@ h2 {
 
 .register-btn {
 	padding: 1.2rem 3rem;
+	@include sm {
+		padding: 0.9rem 2.5rem;
+	}
 }
 .register-btn-wrapper {
   text-align: center;
@@ -148,5 +152,10 @@ h2 {
 	display: none;
 	@include md {
 		display: flex;
+	}
+}
+.swiper-pagination-bullets.swiper-pagination-horizontal {
+	@media (max-width: 479px) {
+		bottom: 10% !important;
 	}
 }

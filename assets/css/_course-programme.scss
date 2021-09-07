@@ -1,6 +1,6 @@
 .course-programme-line {
     height: 112%;
-    width: 1px;
+    width: 2px;
     background: $main-blue;
     position: absolute;
     margin-left: 1.5rem;
@@ -8,24 +8,63 @@
     @include md {
         margin-left: 1.5rem;
         // height: 115%;
-        margin-top: -12.1rem;
+        margin-top: -12.3rem;
+        height: 114.7%;
         // height: 1850px;
     }
+    @media (max-width: 326.8px) {
+        height: 109.36%;
+    }
+    @media (max-width: 344.8px) {
+        height: 109.7%;
+    }
+    @media (max-width: 391.8px) {
+        height: 110.05%;
+    }
+    @media (max-width: 413.8px) {
+        height: 110.8%;
+    }
+    @media (max-width: 457.8px) {
+        height: 111.25%;
+    }
+    @media (max-width: 575.8px) {
+        margin-top: -10.3rem;
+        height: 111.85%;
+    }
+    
+    @media (max-width: 843.8px) {
+        height: 110.3%;
+    }
+    @media (max-width: 1067.8px) {
+        height: 111.4%;
+    }
+    
 }
 
 .course-programme {
 	margin: 1rem 0;
-
+    @include md {
+        margin: .3rem 0;
+    }
 	.container {
 		max-width: 856px;
 		margin: 0 auto;
 		padding: 1rem;
         position: relative;
+        @include sm {
+            max-width: 100%;
+        }
+        @include xl {
+            max-width: 83%;
+        }
 	}
 
 	&__title {
 		margin: 2rem 0;
         color: $main-blue;
+        @include md {
+            margin: .3rem 0;
+        }
 	}
 
 	&__download {
@@ -34,11 +73,16 @@
 		color: $main-blue;
 		margin: 1rem 0;
         text-align: center;
+        @include md {
+            padding: .3rem 0;
+            margin: .3rem 0;
+        }
         a {
             color: $main-blue;
             display: flex;
             align-items: center;
             justify-content: center;
+            text-decoration: underline #0080E0;
             img {
                 margin: 0 1rem 0 0;
             }
@@ -47,7 +91,9 @@
 
 	&__modules {
 		padding: 2rem 0;
-
+        @include md {
+            padding: .3rem 0;
+        }
 		.module {
             margin: 1.5rem 0;
             
@@ -61,6 +107,7 @@
 					height: 48px;
 					background: url('assets/img/module-point.png') no-repeat center center;
 					background-size: cover;
+                    position: relative;
 				}
                 .number {
                     font-family: 'Roboto Bold';

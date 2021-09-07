@@ -63,7 +63,8 @@ window.addEventListener('DOMContentLoaded', function () {
       navigation.appendChild(hamburgerPhone);
     }
 
-    document.body.classList.add('disable-scroll');
+    document.documentElement.classList.toggle('disable-scroll');
+    document.body.classList.toggle('disable-scroll');
   });
   var swiper = new Swiper('.swiper', {
     direction: 'horizontal',
@@ -99,6 +100,11 @@ window.addEventListener('DOMContentLoaded', function () {
       },
       // when window width is >= 760px
       760: {
+        slidesPerView: 3,
+        spaceBetween: 30
+      },
+      // when window width is >= 991px
+      991: {
         slidesPerView: 4,
         spaceBetween: 30
       },

@@ -92,7 +92,8 @@ window.addEventListener('DOMContentLoaded', () => {
         }
 
 
-        document.body.classList.add('disable-scroll');
+        document.documentElement.classList.toggle('disable-scroll');
+        document.body.classList.toggle('disable-scroll');
     });
 
     const swiper = new Swiper('.swiper', {
@@ -129,6 +130,11 @@ window.addEventListener('DOMContentLoaded', () => {
             },
             // when window width is >= 760px
             760: {
+                slidesPerView: 3,
+                spaceBetween: 30
+            },
+            // when window width is >= 991px
+            991: {
                 slidesPerView: 4,
                 spaceBetween: 30
             },
