@@ -24,6 +24,7 @@
             <div class="navigation__logo flex-item">
                 <a href="" class="custom-logo-link">
                     <picture>
+                        <source srcset="<?php echo get_template_directory_uri(); ?>/assets/img/logo-mobile-small.svg" type="image/svg+xml" media="(max-width:395px)">
                         <source srcset="<?php echo get_template_directory_uri(); ?>/assets/img/logo-mobile-svg.svg" type="image/svg+xml" media="(max-width:794px)">
                         <source srcset="<?php echo get_template_directory_uri(); ?>/assets/img/logo-phone-landscape-white-svg.svg" type="image/svg+xml" media="(max-width:835px)">
                         <source srcset="<?php echo get_template_directory_uri(); ?>/assets/img/logo-tablet-svg.svg" type="image/svg+xml" media="(max-width:991px)">
@@ -31,7 +32,11 @@
                     </picture>
                 </a>
             </div>
-
+            <div class="navigation__call-order only-mobile">
+                <a href="#">
+                    <button class="btn">Заказать звонок</button>
+                </a>
+            </div>
             <?php
                 wp_nav_menu(array(
                     'theme_location' => 'header-nav',

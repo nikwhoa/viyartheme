@@ -11,6 +11,7 @@
 @import 'prices';
 @import 'faq';
 @import 'contacts';
+@import 'footer';
 @import 'swiper';
 
 html,
@@ -83,15 +84,27 @@ section {
 	z-index: 100;
 
 	@include md {
-		width: 100%;
-		left: unset;
-		top: 4.9rem;
-		padding: 0 3rem;
+		
+		left: auto;
+		top: -37rem;
+		padding: unset;
+		display: block;
 		max-width: unset;
-		position: absolute;
+		width: 300px;
+		position: relative;
+		margin-bottom: -18.5rem;
 	}
-
+	@media (max-width: 610.98px) {
+		width: 267px;		
+	}
+	@media (max-width: 1110.98px) {
+		left: 40.3%;		
+	}
+	
 	.pc-image img {
+		@media (max-width: 1140.98px) {
+			width: 125%;	
+		}
 		@include md {
 			width: 100%;
 			height: auto;
@@ -119,6 +132,9 @@ h2 {
 	font-family: 'Roboto Bold';
 	text-align: center;
 	font-size: 1.5rem;
+	@include md {
+		padding: 0 .15rem;
+	}
 }
 
 .register-btn {
@@ -127,4 +143,10 @@ h2 {
 .register-btn-wrapper {
   text-align: center;
   margin: 2rem 0;
+}
+.only-mobile {
+	display: none;
+	@include md {
+		display: flex;
+	}
 }
