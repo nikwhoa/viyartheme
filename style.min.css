@@ -345,10 +345,12 @@ h2{font-family:'Roboto Bold';text-align:center;font-size:1.5rem}
 .navigation__phone .phone-number{text-align:center;vertical-align:middle;line-height:100px}
 .header__title{margin:0 auto 16rem -3rem}
 .footer__nav .menu .menu-item{margin:1.2rem}
+.footer__nav .menu .menu-item{margin:1.2rem}
 }@media(max-width:1140.98px){.pc .pc-image img{width:125%}
 }@media(max-width:1110px){.navigation{font-size:.75rem}
 .navigation__nav .menu .menu-item{margin:.8rem}
 .navigation__phone .phone-number{line-height:90px}
+.footer__nav .menu .menu-item{margin:.8rem}
 .footer__nav .menu .menu-item{margin:.8rem}
 }@media(max-width:1110.98px){.header__title .title h1{font-size:2.5rem}
 .header__title .academy-logo{margin-right:-4.76rem}
