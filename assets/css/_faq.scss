@@ -28,6 +28,8 @@
 		@include lg {
 			width: 95%;
 		}
+		
+
 		// text-align: center;
 		.question-item {
 			margin: 2rem 0;
@@ -96,12 +98,14 @@
 				@include lg {
 					margin-left: 30px;
 				}
+				
 			}
 
 
 
 			.show {
 				display: block;
+				
 			}
 		}
 	}

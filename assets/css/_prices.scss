@@ -1,16 +1,17 @@
 .prices {
 	&__title {
 		color: $main-blue;
+		margin-bottom: 4rem;
 	}
 
 	&__tabs {
 		padding: 1rem 0;
 
 		.content {
-			
-            @include lg {
-                box-shadow: 0px 4px 10px rgba(74, 74, 74, 0.1);
-            }
+
+			@include lg {
+				box-shadow: 0px 4px 10px rgba(74, 74, 74, 0.1);
+			}
 
 			.tabs {
 				width: 100%;
@@ -50,11 +51,13 @@
 				}
 			}
 
+
+
 			.info {
 
 				/* tabs-item */
 				text-align: center;
-				width: 80%;
+				width: 830px;
 				margin: 0 auto;
 				display: flex;
 				justify-content: space-around;
@@ -69,6 +72,23 @@
 					justify-content: unset;
 				}
 
+				.tabs-desktop {
+					display: none;
+					width: 351px;
+					background: linear-gradient(267.47deg, #139AFF 17.22%, #0080E0 65.68%);
+					border-radius: 12px 12px 0px 0px;
+					position: absolute;
+					height: 56px;
+					top: -3.9rem;
+					color: $main-white;
+					font-weight: 700;
+						justify-content: center;
+					
+					@media (min-width: 991px) {
+						display: flex;
+					}
+				}
+
 				.tab_block {
 					padding: 1rem 0 0 0;
 					width: 352px;
@@ -76,7 +96,9 @@
 					box-sizing: border-box;
 					box-shadow: 0px 4px 10px rgba(74, 74, 74, 0.1);
 					border-radius: 12px;
-
+					@media (min-width: 991px) {
+						position: relative;
+					}
 					@include lg {
 						border: unset;
 						box-shadow: unset;
@@ -93,6 +115,9 @@
 					svg {
 						position: absolute;
 						margin-left: -80px;
+						@media (min-width: 991px) {
+						margin-left: -150px;
+						}
 					}
 				}
 
@@ -135,10 +160,12 @@
 						right: 16px;
 						padding: .4rem 0;
 						font-size: 2rem;
+
 						@include sm {
 							left: 9px;
 							right: 9px;
 						}
+
 						@include lg {
 							position: absolute;
 						}
@@ -164,5 +191,6 @@
 				}
 			}
 		}
+
 	}
 }

@@ -12,8 +12,13 @@
                     ОФЛАЙН
                 </div>
             </div>
+
             <div class="info">
+
                 <div id="info_01" class="tab_block">
+                    <div class="tabs-desktop">
+                        <div class="tab-desktop">ОНЛАЙН</div>
+                    </div>
                     <div class="info__date ">
                         <div class="date-title info-row">
                             <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -90,6 +95,9 @@
                     </div>
                 </div>
                 <div id="info_01" class="tab_block">
+                <div class="tabs-desktop">
+                        <div class="tab-desktop">ОФЛАЙН</div>
+                    </div>
                     <div class="info__date ">
                         <div class="date-title info-row">
                             <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">

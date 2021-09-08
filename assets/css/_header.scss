@@ -350,6 +350,17 @@
 		}
 	}
 }
+.phone__call-order-desktop {
+	display: none;
+}
+.navigation__phone:hover .phone__call-order-desktop {
+	position: absolute;
+	display: block;
+	top: 50px;
+	button {
+		padding: 1rem 1.5rem;
+	}
+}
 
 .header {
 	position: relative;

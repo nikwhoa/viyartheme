@@ -1,95 +1,128 @@
 .benefits {
-    margin: -3.5rem 0;
-    @include md {
-        margin: 1rem ;
-    }
-    &__title {
-        text-align: center;
-        color: $main-blue;
-    }
-    &__list {
-        width: 90%;
-        margin: 3rem auto 0 auto;
-        padding: 0 2rem;
-        justify-content: center;
-        
-        @include md {
-            width: 100%;
-            display: flex;
-            flex-wrap: wrap;
-            flex-direction: row;
-            margin: 1rem auto;
-            padding: unset;
-        }
+	margin: -3.5rem 0;
 
-        .benefit-item {
-            width: 264px;
-            background: $main-white;
-            padding: 1rem .5rem;
-            border: 0.5px solid #D0EEFF;
-            box-shadow: 0px 4px 10px rgba(0, 96, 192, 0.08);
-            border-radius: 1.1rem;
-            margin: 0 1rem;
-            @include sm {
-                flex: 35%;
-                padding: .3rem;
-                margin: .3rem;
-            }
-            @include md {
-                flex: 40%;
-                padding: .7rem;
-                margin: .7rem;
-            }
-            &__feature-image {
-                padding: 1rem 0;
-                text-align: center;
-                .image-wrapper {
-                    width: 96px;
-                    height: 96px;
-                    border: 0.5px solid #E0E0E0;
-                    border-radius: 100%;
-                    text-align: center;
-                    vertical-align: middle;
-                    display: inline-block;
-                    &:before {
-                        content: "";
-                        display: inline-block;
-                        vertical-align: middle;
-                        height: 100%;
-                      }
-                    img {
-                        display: inline-block;
-                        vertical-align: middle;
-                        width: 48px;
-                        height: 48px;
-                        // margin: 0 2px 0 0;
-                    }
+	@include md {
+		margin: 1rem;
+	}
+
+	&__title {
+		text-align: center;
+		color: $main-blue;
+	}
+
+	&__list {
+		width: 90%;
+		margin: 3rem auto 0 auto;
+		padding: 0 2rem;
+		justify-content: center;
+
+		@include md {
+			width: 100%;
+			display: flex;
+			flex-wrap: wrap;
+			flex-direction: row;
+			margin: 1rem auto;
+			padding: unset;
+		}
+
+		.benefit-item {
+			width: 264px;
+			background: $main-white;
+			padding: 1rem .5rem;
+			border: 0.5px solid #D0EEFF;
+			box-shadow: 0px 4px 10px rgba(0, 96, 192, 0.08);
+			border-radius: 1.1rem;
+			margin: 0 1rem;
+
+			@include sm {
+				flex: 35%;
+				padding: .3rem;
+				margin: .3rem;
+			}
+
+			@include md {
+				flex: 40%;
+				padding: .7rem;
+				margin: .7rem;
+			}
+
+			&__feature-image {
+				padding: 1rem 0;
+				text-align: center;
+
+				.image-wrapper {
+					width: 96px;
+					height: 96px;
+					border: 0.5px solid #E0E0E0;
+					border-radius: 100%;
+					text-align: center;
+					vertical-align: middle;
+					display: inline-flex;
+					align-content: center;
+					justify-content: center;
+					align-items: center;
+                    transition: all .6s ease-in-out;
+
+
+
+					&:before {
+						content: "";
+						display: inline-block;
+						vertical-align: middle;
+						height: 100%;
+					}
+
+					img {
+						display: inline-block;
+						vertical-align: middle;
+						width: 48px;
+						height: 48px;
+						// margin: 0 2px 0 0;
+					}
+                    
+					.benefit-icon {
+						display: inline-block;
+						vertical-align: middle;
+						width: 48px;
+						// height: 48px;
+                      
+					}
+				}
+                .image-wrapper:hover  {
+                    background: $main-blue;
                 }
-            }
-            &__divider {
-                width: 40px;
-                height: 4px;
-                background: $main-blue;
-                margin: 1rem auto;
-            }
-            &__title {
-                text-align: center;
-                line-height: 1.2rem;
-                font-weight: 700;
-                color: #606060;
-            }
-            &__description {
-                font-size: .9rem;
-                color: #909090;
-                text-align: center;
-                line-height: 1.1rem;
-                font-weight: 500;
-                padding: 0.7rem 0 0 0;
-            }
-        }
-    }
-    &__button {
-        text-align: center;
-        margin: 2rem 0;
-    }
+                .image-wrapper:hover .benefit-icon svg path  {
+                    fill: $main-white;
+                }
+			}
+
+			&__divider {
+				width: 40px;
+				height: 4px;
+				background: $main-blue;
+				margin: 1rem auto;
+			}
+
+			&__title {
+				text-align: center;
+				line-height: 1.2rem;
+				font-weight: 700;
+				color: #606060;
+			}
+
+			&__description {
+				font-size: .9rem;
+				color: #909090;
+				text-align: center;
+				line-height: 1.1rem;
+				font-weight: 500;
+				padding: 0.7rem 0 0 0;
+			}
+		}
+	}
+
+	&__button {
+		text-align: center;
+		margin: 2rem 0;
+	}
 }
