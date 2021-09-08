@@ -90,6 +90,7 @@
 				}
                 .image-wrapper:hover  {
                     background: $main-blue;
+					cursor: pointer;
                 }
                 .image-wrapper:hover .benefit-icon svg path  {
                     fill: $main-white;

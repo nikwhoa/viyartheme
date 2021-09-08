@@ -121,6 +121,10 @@ section {
 	text-align: center;
 	color: $main-white;
 	cursor: pointer;
+	transition: all 350ms ease-in-out;
+	&:hover {
+		background: #FFA61E;
+	}
 }
 
 .link {
