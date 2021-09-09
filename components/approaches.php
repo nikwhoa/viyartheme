@@ -24,10 +24,12 @@
             ?>
 
             <?php while ($loop->have_posts()) : $loop->the_post(); ?>
-                <div class="approaches-item">
+            <a href="#course-programme">
+            <div class="approaches-item">
                     <div class="approaches-item__title"> <span><img src="<?php echo get_template_directory_uri(); ?>/assets/img/view_side_r.svg" alt=""></span> <?php the_title(); ?></div>
                     <div class="approaches-item__description"> <?php the_content(); ?> </div>
                 </div>
+            </a>
             <?php endwhile;
             wp_reset_query(); ?>
         </div> 

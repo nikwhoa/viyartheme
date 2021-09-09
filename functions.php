@@ -7,7 +7,7 @@ require_once WP_ROOT . DSS . "post-types-settings/post-types-benefits.php";
 
 function scripts()
 {
-    wp_register_style('style', get_template_directory_uri() . '/style.min.css', [], null, 'all');
+    wp_register_style('style', get_template_directory_uri() . '/style.min.css', [], false, 'all');
     wp_enqueue_style('style');
 
     wp_register_script('app', get_template_directory_uri() . '/assets/js/custom.min.js', [], null, true);
