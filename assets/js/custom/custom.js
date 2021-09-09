@@ -179,6 +179,11 @@ window.addEventListener('DOMContentLoaded', () => {
         tabs( '.tab', '.tab_block', '.tabs', 'active' );
     }
     
-
+    let linkToDisable = document.querySelectorAll('.disable-default');
+    linkToDisable.forEach(el => {
+        el.addEventListener('click', (e) => {
+            e.preventDefault();
+        });
+    });
 });
 

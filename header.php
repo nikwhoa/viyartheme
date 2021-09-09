@@ -33,8 +33,8 @@
                 </a>
             </div>
             <div class="navigation__call-order only-mobile">
-                <a href="#">
-                    <button class="btn">Замовити дзвінок</button>
+                <a href="#" class="disable-default">
+                    <button id="call-order" class="btn">Замовити дзвінок</button>
                 </a>
             </div>
             <?php
@@ -59,8 +59,8 @@
                     </div>
                 </a>
                 <div class="phone__call-order-desktop">
-                <a href="#">
-                    <button class="btn">Замовити дзвінок</button>
+                    <button id="call-order" class="btn">Замовити дзвінок</button>
+                <a href="#" class="disable-default">
                 </a>
                 </div>
             </div>
