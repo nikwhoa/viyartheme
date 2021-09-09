@@ -1,0 +1,59 @@
+.hf-form {
+    display: none;
+    position: fixed; /* Stay in place */
+    z-index: 1000; /* Sit on top */
+    left: 50%;
+    transform: translate(-50%, 0);
+    top: 10%;
+    opacity: 1;
+    width: 504px; /* Full width */
+    height: 504px; /* Full height */
+    overflow: hidden; /* Enable scroll if needed */
+    background: $main-white;
+    color: $main-blue;
+    @include md {
+        width: 100%;
+    }
+}
+.hf-fields-wrap {
+    text-align: center;
+}
+.hf-form.hf-form-56 .hf-fields-wrap {
+    width: 100%;
+    
+}
+.hf-fields-wrap header {
+    background: $main-blue;
+    color: $main-white;
+    display: flex;
+    padding: 1rem 0;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 0 0 3rem 0;
+}
+.modal-title {
+    text-transform: uppercase;
+    font-weight: bold;
+    margin: 1.8rem 0 1rem 0;
+}
+.hf-fields-wrap input {
+    width: 60%;
+    padding: .7rem .3rem;
+    border: 1px solid #D0D0D0;
+    border-radius: 2px;
+}
+.hf-fields-wrap input::placeholder {
+    color: #C0C0C0;
+    font-size: .9rem;
+}
+.hf-fields-wrap .btn {
+    margin: 2rem 0 0 0;
+    padding: 1rem 1.5rem;
+}
+.close-modal {
+    position: absolute;
+    right: 0;
+    top: 10px;
+    cursor: pointer;
+}

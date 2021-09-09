@@ -8,4 +8,6 @@
 <?php get_template_part( 'components/faq' ); ?>
 <?php get_template_part( 'components/contacts' ); ?>
 <?php get_template_part( 'components/footer' ); ?>
+<?php get_template_part( 'components/order-call' ); ?>
+<?php get_template_part( 'components/register' ); ?>
 <?php get_footer(); ?>

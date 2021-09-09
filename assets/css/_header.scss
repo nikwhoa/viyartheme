@@ -356,7 +356,7 @@
 .navigation__phone:hover .phone__call-order-desktop {
 	position: absolute;
 	display: block;
-	top: 50px;
+	top: 4rem;
 	button {
 		padding: 1rem 1.5rem;
 	}
@@ -474,7 +474,7 @@
 		}
 
 		.course-btn {
-			padding: 5rem 0 0 0;
+			padding: 5rem 1rem 0 0;
 			text-align: right;
 			@include md {
 				text-align: center;

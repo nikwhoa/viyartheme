@@ -145,6 +145,13 @@ window.addEventListener('DOMContentLoaded', function () {
   if (window.outerWidth <= 991.98) {
     tabs('.tab', '.tab_block', '.tabs', 'active');
   }
+
+  var linkToDisable = document.querySelectorAll('.disable-default');
+  linkToDisable.forEach(function (el) {
+    el.addEventListener('click', function (e) {
+      e.preventDefault();
+    });
+  });
 });
 "use strict";
 
@@ -179,6 +186,50 @@ function setClass(els, className, fnName) {
 //         question[i].children[1].classList.toggle( 'show', false );
 //     }
 // };
+"use strict";
+
+// Get the modal
+var modalCall = document.querySelector('.hf-form[data-id=\'56\']');
+var modalRegister = document.querySelector('.hf-form[data-id=\'57\']');
+var callBtn = document.querySelectorAll('#call-order');
+var registerBtn = document.querySelectorAll('.register-btn');
+var closeModal = document.querySelectorAll('.close-modal');
+callBtn.forEach(function (el) {
+  el.addEventListener('click', function () {
+    modalCall.style.display = 'block';
+  });
+});
+closeModal.forEach(function (el) {
+  el.addEventListener('click', function () {
+    el.parentElement.parentElement.parentElement.parentElement.style.display = 'none';
+  });
+  document.addEventListener('keydown', function (e) {
+    if ('Escape' === e.key) {
+      el.parentElement.parentElement.parentElement.parentElement.style.display = 'none';
+    }
+  });
+});
+registerBtn.forEach(function (el) {
+  el.addEventListener('click', function () {
+    modalRegister.style.display = 'block';
+  });
+}); // Get the button that opens the modal
+
+document.querySelector('.hf-form-56').on('hf-message-success', function (e) {
+  alert('wow!');
+}); // Get the <span> element that closes the modal
+// var span = document.getElementsByClassName("close")[0];
+// When the user clicks on the button, open the modal
+// When the user clicks on <span> (x), close the modal
+// span.onclick = function() {
+//   modal.style.display = "none";
+// }
+// // When the user clicks anywhere outside of the modal, close it
+// window.onclick = function(event) {
+//   if (event.target == modal) {
+//     modal.style.display = "none";
+//   }
+// }
 "use strict";
 
 function tabs(tabsSelector, tabsContentSelector, tabsParentSelector, activeClass) {
