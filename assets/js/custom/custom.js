@@ -31,6 +31,7 @@ window.addEventListener('DOMContentLoaded', () => {
         menu.forEach(el => {
             el.addEventListener('click', () => {
                 navigation.classList.toggle('hamburger-navigation');
+                document.documentElement.classList.remove('disable-scroll');
             });
         });
 

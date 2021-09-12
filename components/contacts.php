@@ -1,5 +1,5 @@
 </main>
-<address class="contacts">
+<address class="contacts" id="contacts">
     <div class="contacts-wrapper">
         <div class="contacts__info">
             <div class="title">
@@ -67,7 +67,8 @@
         </div>
         <div class="contacts__map">
             <div class="map-wrapper">
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d449.1948189782809!2d30.407754044209728!3d50.44054893012331!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4cc72b04e87e1%3A0x16d3081047d71620!2sVatslava%20Havela%20Blvd%2C%20Kyiv%2C%2002000!5e0!3m2!1sen!2sua!4v1630930804824!5m2!1sen!2sua" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2541.1299451778377!2d30.407227141605595!3d50.43868019147208!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4cd2a0ce24b65%3A0x8d582a4d786d980b!2sViyar%20Akademiya!5e0!3m2!1sen!2sua!4v1631432061880!5m2!1sen!2sua&language=ua" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
             </div>
         </div>
     </div>

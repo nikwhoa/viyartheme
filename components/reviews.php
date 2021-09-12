@@ -1,8 +1,8 @@
-<div class="reviews">
+<div class="reviews" id="reviews">
     <div class="reviews__title">
         <h2>ВІДГУКИ УЧАСНИКІВ</h2>
     </div>
-    <!-- <div class="reviews__list swiper swiper-review">
+    <div class="reviews__list swiper swiper-review">
         <div class="swiper-wrapper">
             <div class="swiper-slide review">
                 <div class="video_wrapper video_wrapper_full js-videoWrapper">
@@ -51,7 +51,7 @@
     <div class="reviews-btn-next reviews-btn"></div>
         <div class="swiper-pagination"></div>
 
-    </div> -->
+    </div>
     
     <div class="reviews__register register-btn-wrapper">
         <a href="#" class="link">

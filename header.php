@@ -79,14 +79,14 @@
                             <img src="<?php echo get_template_directory_uri(); ?>/assets/img/viar-academy-logo.svg" alt="">
                         </div>
                     </div>
-                    <h1>Курс <span> Viyar ProBusiness</span></h1>
+                    <h1><span> Viyar ProBusiness</span></h1>
                     <div class="sub-title">
-                        Комплексний курс для розвитку меблевого бізнесу
+                        Базовий курс для розвитку меблевого бізнесу
                         Від стратегії до створення контенту за 2 місяці
                     </div>
                     <div class="course-btn">
 
-                        <a href="#" class="link">
+                        <a href="#course-programme" class="link">
                             <button class="btn"> Програма </button>
                         </a>
 

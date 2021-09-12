@@ -1,55 +1,59 @@
 
 
 // Get the modal
-let modalCall = document.querySelector( '.hf-form[data-id=\'56\']' );
-let modalRegister = document.querySelector( '.hf-form[data-id=\'57\']' );
-let callBtn = document.querySelectorAll( '#call-order' );
-let registerBtn = document.querySelectorAll( '.register-btn' );
+let modalCall = document.querySelector('.hf-form[data-id=\'56\']');
+let modalRegister = document.querySelector('.hf-form[data-id=\'57\']');
+let callBtn = document.querySelectorAll('#call-order');
+let registerBtn = document.querySelectorAll('.register-btn');
 let closeModal = document.querySelectorAll('.close-modal');
+let formModal = document.querySelectorAll('.hf-form');
+let backToHomeBtns = [document.querySelector('.form__success-56'), document.querySelector('.form__success-57')];
 
 
-callBtn.forEach( el => {
-    el.addEventListener( 'click', () => {
-        
+
+callBtn.forEach(el => {
+    el.addEventListener('click', () => {
+
         modalCall.style.display = 'block';
-        
+
     });
 });
 closeModal.forEach(el => {
-    el.addEventListener( 'click', () => {
-        el.parentElement.parentElement.parentElement.parentElement.style.display = 'none';
+    el.addEventListener('click', () => {
+        formModal.forEach(element => {
+            element.style.display = 'none';
+        });
     });
-    document.addEventListener( 'keydown', (e) => {
+    document.addEventListener('keydown', (e) => {
         if ('Escape' === e.key) {
-            el.parentElement.parentElement.parentElement.parentElement.style.display = 'none';
+            formModal.forEach(element => {
+                element.style.display = 'none';
+            });
         }
     })
 })
 
-registerBtn.forEach( el => {
-    el.addEventListener( 'click', () => {
+registerBtn.forEach(el => {
+    el.addEventListener('click', () => {
         modalRegister.style.display = 'block';
     });
 });
-// Get the button that opens the modal
 
-document.querySelector('.hf-form-56').on('hf-message-success', function(e) {
-    alert( 'wow!' );
- });
 
-// Get the <span> element that closes the modal
-// var span = document.getElementsByClassName("close")[0];
+let mutationObserver = new MutationObserver(function (mutations) {
+    mutations.forEach(function (mutation) {
+        if (mutation.oldValue === 'hf-form hf-form-56 mc4wp-loading') {
+            backToHomeBtns[0].style.display = 'block';
+        } else if (mutation.oldValue === 'hf-form hf-form-57 mc4wp-loading') {
+            backToHomeBtns[1].style.display = 'block';
+        }
+    });
+});
 
-// When the user clicks on the button, open the modal
+formModal.forEach( form => {
+    mutationObserver.observe( form, {
+        attributes: true,
+        attributeOldValue: true
+    });
+});
 
-// When the user clicks on <span> (x), close the modal
-// span.onclick = function() {
-//   modal.style.display = "none";
-// }
-
-// // When the user clicks anywhere outside of the modal, close it
-// window.onclick = function(event) {
-//   if (event.target == modal) {
-//     modal.style.display = "none";
-//   }
-// }

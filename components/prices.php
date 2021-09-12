@@ -6,10 +6,10 @@
         <div class="content">
             <div class="tabs">
                 <div class="tab">
-                    ОНЛАЙН
+                    ОФЛАЙН
                 </div>
                 <div class="tab">
-                    ОФЛАЙН
+                    ОНЛАЙН
                 </div>
             </div>
 
@@ -27,7 +27,7 @@
                             Дати курсу:
                         </div>
                         <div class="dates blue-text">
-                            05.10 — 23.12
+                            05.10 — 21.12
                         </div>
                     </div>
                     <div class="info__place">
@@ -78,7 +78,7 @@
                             10 000 грн
                         </div>
                         <div class="price-extra">
-                            *7 000 грн, <br> якщо ви зареєстровані на сервісі
+                            *7 500 грн, <br> якщо ви зареєстровані на сервісі
                         </div>
                     </div>
                     <div class="info__logo">
@@ -95,7 +95,7 @@
                     </div>
                 </div>
                 <div id="info_01" class="tab_block">
-                <div class="tabs-desktop">
+                    <div class="tabs-desktop">
                         <div class="tab-desktop">ОФЛАЙН</div>
                     </div>
                     <div class="info__date ">
@@ -106,7 +106,7 @@
                             Дати курсу:
                         </div>
                         <div class="dates blue-text">
-                            05.10 — 23.12
+                            06.10 — 01.12
                         </div>
                     </div>
                     <div class="info__place">
@@ -118,7 +118,7 @@
                             Місце:
                         </div>
                         <div class="place__address blue-text">
-                            м. Київ <br> б-р Вацлава Гавела, 16
+                            Zoom
                         </div>
                     </div>
                     <div class="info__schedule">
@@ -130,7 +130,8 @@
                             Графік занять:
                         </div>
                         <div class="schedule blue-text">
-                            Вівторок, Четвер
+                            Понеділок, Середа, П’ятниця
+
                         </div>
                     </div>
                     <div class="info__time">
@@ -157,7 +158,7 @@
                             6 000 грн
                         </div>
                         <div class="price-extra">
-                            *7 000 грн, <br> якщо ви зареєстровані на сервісі
+                            *5 000 грн, <br> якщо ви зареєстровані на сервісі
                         </div>
                     </div>
                     <div class="info__logo">

@@ -19,6 +19,8 @@
 			display: block;
 			font-family: 'Roboto Regular';
 			font-weight: normal;
+			-webkit-font-smoothing: subpixel-antialiased;
+    		-webkit-text-stroke:1px transparent;
 		}
 	}
 
@@ -44,7 +46,10 @@
 				font-size: 1.2rem;
 				font-weight: bold;
 				position: relative;
-
+				span {
+					width: 82%;
+					display: block;
+				}
 				&__btn {
 					position: absolute;
 					display: inline;
