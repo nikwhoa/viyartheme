@@ -105,6 +105,15 @@
 						width: 100%;
 					}
 				}
+				&__logo {
+					a {
+						transition: all .4s ease-in-out;
+						display: block;
+						&:hover {
+						transform: scale(1.03);
+					}
+				}
+				}
 
 				.info-row {
 					display: flex;
@@ -195,5 +204,10 @@
 	}
 }
 .place__address {
-	height: 70px;
+	
+	display: flex;
+    height: 70px;
+    justify-content: center;
+    /* align-content: center; */
+    align-items: center;
 }

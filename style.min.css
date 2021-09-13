@@ -105,8 +105,8 @@ template{display:none}
 .approaches__list .approaches-item__title{display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-align:center;-ms-flex-align:center;align-items:center;font-size:1.5rem;font-family:'Roboto Bold'}
 .approaches__list .approaches-item__title span{display:-webkit-box;display:-ms-flexbox;display:flex}
 .approaches__list .approaches-item__description{font-size:.9rem;padding:.2rem .8rem}
-.benefits{margin:-3.5rem 0}
-.benefits__title{text-align:center;color:#0080e0}
+.benefits{margin:1rem 0;padding-top:2rem}
+.benefits__title{text-align:center;color:#0080e0;margin:2rem 0}
 .benefits__list{width:90%;margin:3rem auto 0 auto;padding:0 2rem;-webkit-box-pack:center;-ms-flex-pack:center;justify-content:center}
 .benefits__list .benefit-item{width:264px;background:#fff;padding:1rem .5rem;border:.5px solid #d0eeff;-webkit-box-shadow:0 4px 10px rgba(0,96,192,0.08);box-shadow:0 4px 10px rgba(0,96,192,0.08);border-radius:1.1rem;margin:0 1rem}
 .benefits__list .benefit-item__feature-image{padding:1rem 0;text-align:center}
@@ -137,9 +137,11 @@ template{display:none}
 .course-programme__modules .module__content ul{list-style:none}
 .course-programme__modules .module__content ul li::before{content:"\2022";color:#ff8000;font-weight:bold;display:inline-block;width:1em;margin-left:-1em}
 .course-programme-register{text-align:center;margin:2rem 0}
+.course-programme__modules .module .intro{margin-bottom:3.5rem}
+.course-programme__modules .module__header.flex-container .circle.intro{width:56px}
 .course-programme__modules .module__header.flex-container .title.intro{font-size:1.2rem;margin-left:.9rem}
 .course-programme__modules .module__header.flex-container .number.intro{width:187px;display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-align:center;-ms-flex-align:center;align-items:center;font-size:1.4rem}
-.speakers{background:radial-gradient(53.94% 130.48% at 73.95% 38.76%,#30a0f0 0,#0080e0 45.12%,#0060c0 100%);-webkit-box-shadow:0 4px 20px rgba(0,32,64,0.19);box-shadow:0 4px 20px rgba(0,32,64,0.19);width:100%}
+.speakers{background:radial-gradient(53.94% 130.48% at 73.95% 38.76%,#30a0f0 0,#0080e0 45.12%,#0060c0 100%);-webkit-box-shadow:0 4px 20px rgba(0,32,64,0.19);box-shadow:0 4px 20px rgba(0,32,64,0.19);width:100%;margin-top:1rem;padding-top:3rem}
 .speakers__title{color:#fff}
 .speakers__list{width:90%;margin:0 auto;margin:3rem auto 0 auto;padding:0 2rem !important;-webkit-box-pack:center;-ms-flex-pack:center;justify-content:center}
 .speakers__list .speaker{width:208px;text-align:center}
@@ -152,7 +154,7 @@ template{display:none}
 .speakers__mail-us a{color:inherit;-webkit-text-decoration:underline #fff;text-decoration:underline #fff}
 .swiper{height:480px;padding:0 2rem}
 .swiper-button-prev::after,.swiper-button-next::after{font-weight:bold}
-.reviews{margin:4rem 0 1rem}
+.reviews{margin:4rem 0 1rem;padding-top:3rem}
 .reviews__title{color:#fff}
 .reviews__list{height:315px;width:80%}
 .reviews__list .review{width:560px !important;background-color:black;-webkit-transition:height .8s ease-in-out;transition:height .8s ease-in-out;height:260px !important}
@@ -181,6 +183,8 @@ template{display:none}
 .prices__tabs .content .info{text-align:center;width:830px;margin:0 auto;display:-webkit-box;display:-ms-flexbox;display:flex;-ms-flex-pack:distribute;justify-content:space-around}
 .prices__tabs .content .info .tabs-desktop{display:none;width:351px;background:linear-gradient(267.47deg,#139aff 17.22%,#0080e0 65.68%);border-radius:12px 12px 0 0;position:absolute;height:56px;top:-3.9rem;color:#fff;font-weight:700;-webkit-box-pack:center;-ms-flex-pack:center;justify-content:center}
 .prices__tabs .content .info .tab_block{padding:1rem 0 0 0;width:352px;border:1px solid #d0d0d0;-webkit-box-sizing:border-box;box-sizing:border-box;-webkit-box-shadow:0 4px 10px rgba(74,74,74,0.1);box-shadow:0 4px 10px rgba(74,74,74,0.1);border-radius:12px}
+.prices__tabs .content .info__logo a{-webkit-transition:all .4s ease-in-out;transition:all .4s ease-in-out;display:block}
+.prices__tabs .content .info__logo a:hover{-webkit-transform:scale(1.03);transform:scale(1.03)}
 .prices__tabs .content .info .info-row{display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-orient:horizontal;-webkit-box-direction:normal;-ms-flex-direction:row;flex-direction:row;-webkit-box-pack:center;-ms-flex-pack:center;justify-content:center;-webkit-box-align:center;-ms-flex-align:center;align-items:center}
 .prices__tabs .content .info .info-row svg{position:absolute;margin-left:-80px}
 .prices__tabs .content .info div{margin:1rem 0}
@@ -189,7 +193,7 @@ template{display:none}
 .prices__tabs .content .info__price .price{color:#fff;background:#0080e0;position:static;left:16px;height:48px;vertical-align:middle;right:16px;padding:.4rem 0;font-size:2rem}
 .prices__tabs .content .info__price .price-extra{margin:20px auto 0;color:#009020;text-align:center;width:70%}
 .prices__tabs .content .info__register button{padding:1.2rem 3.5rem}
-.place__address{height:70px}
+.place__address{display:-webkit-box;display:-ms-flexbox;display:flex;height:70px;-webkit-box-pack:center;-ms-flex-pack:center;justify-content:center;-webkit-box-align:center;-ms-flex-align:center;align-items:center}
 .faq-wrapper{background-image:url("assets/img/faq-bg.jpg");background-repeat:no-repeat;background-size:cover;background-position:center;position:relative;width:100%;z-index:1}
 .faq{z-index:10;position:relative}
 .faq__title{color:#fff}

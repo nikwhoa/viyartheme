@@ -176,6 +176,12 @@
     text-align: center;
     margin: 2rem 0;
 }
+.course-programme__modules .module .intro { 
+    margin-bottom: 3.5rem;
+} 
+.course-programme__modules .module__header.flex-container .circle.intro { 
+    width: 56px;
+}
 .course-programme__modules .module__header.flex-container .title.intro {
     font-size: 1.2rem;
     margin-left: .9rem;

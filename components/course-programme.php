@@ -12,9 +12,9 @@
         </div>
         <div class="course-programme__modules">
 
-            <div class="module">
+            <div class="module intro">
                 <div class="module__header flex-container">
-                    <div class="circle"></div>
+                    <div class="circle intro"></div>
                     <div class="number intro">Вступна лекція</div>
                     <div class="title intro">Стратегія: що це, як вона працює і чому вона потрібна вашому бізнесу</div>
                 </div>

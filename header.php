@@ -46,7 +46,7 @@
             ?>
 
             <div class="navigation__phone flex-container">
-                <a class="phone__link" href="tel:+380999999999">
+                <a class="phone__link" href="tel:+380978929786">
                     <div class="phone-icon flex-item">
 
                         <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -55,7 +55,7 @@
 
                     </div>
                     <div class="phone-number flex-item">
-                        +380 (99) 99 99 999
+                    +380 97 892 97 86
                     </div>
                 </a>
                 <div class="phone__call-order-desktop">

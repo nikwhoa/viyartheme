@@ -101,6 +101,7 @@ window.addEventListener('DOMContentLoaded', () => {
         direction: 'horizontal',
         centerInsufficientSlides: true,
         slidesPerView: 5,
+        loop: true,
         pagination: {
             el: '.swiper-pagination',
             clickable: true

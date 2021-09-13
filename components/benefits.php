@@ -1,8 +1,8 @@
-<section class="benefits">
+<section class="benefits" id="benefits">
     <div class="benefits__title">
         <h2>ПЕРЕВАГИ</h2>
     </div>
-    <div class="benefits__list flex-container" id="benefits">
+    <div class="benefits__list flex-container">
         <div class="benefit-item">
             <div class="benefit-item__feature-image">
                 <div class="image-wrapper">
