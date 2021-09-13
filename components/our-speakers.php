@@ -47,18 +47,72 @@
                 <div class="speaker__photo">
                     <div class="photo-wrapper">
                         <div class="photo">
-                            <img src="<?php echo get_template_directory_uri(); ?>/assets/img/speakers/oksana-min.jpg" alt="speaker photo">
+                            <img src="<?php echo get_template_directory_uri(); ?>/assets/img/speakers/kostyantin-min.jpg" alt="speaker photo">
                         </div>
                     </div>
                 </div>
                 <div class="speaker__name">
-                    Оксана Пономаренко
+                Костянтин Горчаков
                 </div>
                 <div class="speaker__info">
-                    Юрист із 25-річним досвідом роботи, дизайнер інтер'єрів в студії Striha
+                Фінансовий директор у «ВіЯр» з 18-річним досвідом у фінансах і 4-річним викладацьким стажем
                 </div>
                 <div class="speaker__text">
-                    Розповім про юридичні моменти ведення бізнесу, навчу правильно складати договори й уникати ризиків
+                Навчу грамотно розпоряджатися фінансами, мінімізувати ризики, прогнозувати витрати та дохід.
+                </div>
+            </div>
+            <div class="swiper-slide speaker">
+                <div class="speaker__photo">
+                    <div class="photo-wrapper">
+                        <div class="photo">
+                            <img src="<?php echo get_template_directory_uri(); ?>/assets/img/speakers/evgeniya-min.jpg" alt="speaker photo">
+                        </div>
+                    </div>
+                </div>
+                <div class="speaker__name">
+                Євгенія Лук’яненко
+                </div>
+                <div class="speaker__info">
+                Сертифікований бізнес-тренер із сервісних продажів
+                </div>
+                <div class="speaker__text">
+                Навчу вас перетворювати продажі в хобі.
+                </div>
+            </div>
+            <div class="swiper-slide speaker">
+                <div class="speaker__photo">
+                    <div class="photo-wrapper">
+                        <div class="photo">
+                            <img src="<?php echo get_template_directory_uri(); ?>/assets/img/speakers/olga-min.jpg" alt="speaker photo">
+                        </div>
+                    </div>
+                </div>
+                <div class="speaker__name">
+                Ольга Мохненко
+                </div>
+                <div class="speaker__info">
+                Project-менеджер у компанії «ВіЯр» (основний напрям – Viyar Bazar), аналітик програмного забезпечення
+                </div>
+                <div class="speaker__text">
+                Розповім, як працювати з сервісом Viyar Bazar, щоб отримувати максимум замовлень і нових клієнтів.
+                </div>
+            </div>
+            <div class="swiper-slide speaker">
+                <div class="speaker__photo">
+                    <div class="photo-wrapper">
+                        <div class="photo">
+                            <img src="<?php echo get_template_directory_uri(); ?>/assets/img/speakers/anna-min.jpg" alt="speaker photo">
+                        </div>
+                    </div>
+                </div>
+                <div class="speaker__name">
+                Анна Пелип
+                </div>
+                <div class="speaker__info">
+                Бізнес-тренер, що практикує з 2008 року, засновник тренінгового центру «ENOT»
+                </div>
+                <div class="speaker__text">
+                Навчу вас продавати без типових помилок, не плутаючись у міфах і з огляду на потреби різних клієнтів.
                 </div>
             </div>
             <div class="swiper-slide speaker">
