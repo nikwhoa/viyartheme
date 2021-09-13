@@ -233,7 +233,7 @@
         <div class="swiper-button-next"></div>
     </div>
     <div class="speakers__register register-btn-wrapper">
-        <a href="#" class="link">
+        <a href="#prices" class="link">
             <button class="register-btn btn">Зареєструватися</button>
         </a>
     </div>

@@ -33,7 +33,7 @@
     <div class="reviews-btn-next reviews-btn"></div>
 
     <div class="reviews__register register-btn-wrapper">
-        <a href="#" class="link">
+        <a href="#prices" class="link">
             <button class="register-btn btn">Зареєструватися</button>
         </a>
     </div>

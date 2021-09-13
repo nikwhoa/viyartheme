@@ -104,7 +104,7 @@
         </div>
         
         <div class="course-programme-register">
-            <a href="#" class="link">
+            <a href="#prices" class="link">
                 <button class="register-btn btn">Зареєструватися</button>
             </a>
         </div>

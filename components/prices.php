@@ -1,4 +1,4 @@
-<section class="prices">
+<section class="prices" id="prices">
     <div class="prices__title">
         <h2>ВАРТІСТЬ</h2>
     </div>
@@ -17,7 +17,7 @@
 
                 <div id="info_01" class="tab_block">
                     <div class="tabs-desktop">
-                        <div class="tab-desktop">ОНЛАЙН</div>
+                        <div class="tab-desktop">ОФЛАЙН</div>
                     </div>
                     <div class="info__date ">
                         <div class="date-title info-row">
@@ -90,14 +90,14 @@
                         </a>
                     </div>
                     <div class="info__register">
-                        <button class="register-btn btn">
+                        <button class="register-btn btn" id="register-button-offline">
                             Реєстрація
                         </button>
                     </div>
                 </div>
                 <div id="info_01" class="tab_block">
                     <div class="tabs-desktop">
-                        <div class="tab-desktop">ОФЛАЙН</div>
+                        <div class="tab-desktop">ОНЛАЙН</div>
                     </div>
                     <div class="info__date ">
                         <div class="date-title info-row">
@@ -172,7 +172,7 @@
 
                     </div>
                     <div class="info__register">
-                        <button class="register-btn btn">
+                        <button class="register-btn btn" id="register-button-online">
                             Реєстрація
                         </button>
                     </div>

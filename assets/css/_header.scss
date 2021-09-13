@@ -413,6 +413,9 @@
 				line-height: 2.3rem;
 				font-size: 3rem;
 				font-weight: normal;
+				@include lg {
+					padding-top: 30px;
+				}
 				@include md {
 					font-size: 2.1rem;
 				}

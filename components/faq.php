@@ -98,7 +98,7 @@
         </div>
     </div>
     <div class="faq__register register-btn-wrapper">
-        <a href="#" class="link">
+        <a href="#prices" class="link">
             <button class="register-btn btn">Зареєструватися</button>
         </a>
     </div>

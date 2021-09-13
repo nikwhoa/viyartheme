@@ -184,9 +184,11 @@ function setClass(els, className, fnName) {
 
 // Get the modal
 var modalCall = document.querySelector('.hf-form[data-id=\'56\']');
-var modalRegister = document.querySelector('.hf-form[data-id=\'57\']');
+var modalRegisterOffline = document.querySelector('.hf-form[data-id=\'57\']');
+var modalRegisterOnline = document.querySelector('.hf-form[data-id=\'58\']');
 var callBtn = document.querySelectorAll('#call-order');
-var registerBtn = document.querySelectorAll('.register-btn');
+var registerBtnOffline = document.querySelector('#register-button-offline');
+var registerBtnOnline = document.querySelector('#register-button-online');
 var closeModal = document.querySelectorAll('.close-modal');
 var formModal = document.querySelectorAll('.hf-form');
 var backToHomeBtns = [document.querySelector('.form__success-56'), document.querySelector('.form__success-57')];
@@ -209,14 +211,15 @@ closeModal.forEach(function (el) {
     }
   });
 });
-registerBtn.forEach(function (el) {
-  el.addEventListener('click', function () {
-    modalRegister.style.display = 'block';
-  });
+registerBtnOffline.addEventListener('click', function () {
+  modalRegisterOffline.style.display = 'block';
+});
+registerBtnOnline.addEventListener('click', function () {
+  modalRegisterOnline.style.display = 'block';
 });
 var mutationObserver = new MutationObserver(function (mutations) {
   mutations.forEach(function (mutation) {
-    if (mutation.oldValue === 'hf-form hf-form-56 mc4wp-loading') {
+    if (mutation.oldValue === 'hf-form hf-form-56 mc4wp-loading' || mutation.oldValue === 'hf-form hf-form-58 mc4wp-loading') {
       backToHomeBtns[0].style.display = 'block';
     } else if (mutation.oldValue === 'hf-form hf-form-57 mc4wp-loading') {
       backToHomeBtns[1].style.display = 'block';
