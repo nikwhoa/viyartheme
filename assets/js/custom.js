@@ -219,9 +219,11 @@ registerBtnOnline.addEventListener('click', function () {
 });
 var mutationObserver = new MutationObserver(function (mutations) {
   mutations.forEach(function (mutation) {
-    if (mutation.oldValue === 'hf-form hf-form-56 mc4wp-loading' || mutation.oldValue === 'hf-form hf-form-58 mc4wp-loading') {
+    if (mutation.oldValue === 'hf-form hf-form-56 mc4wp-loading') {
       backToHomeBtns[0].style.display = 'block';
     } else if (mutation.oldValue === 'hf-form hf-form-57 mc4wp-loading') {
+      backToHomeBtns[1].style.display = 'block';
+    } else if (mutation.oldValue === 'hf-form hf-form-58 mc4wp-loading') {
       backToHomeBtns[1].style.display = 'block';
     }
   });

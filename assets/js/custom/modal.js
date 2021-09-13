@@ -51,7 +51,6 @@ let mutationObserver = new MutationObserver(function (mutations) {
             backToHomeBtns[0].style.display = 'block';
         } else if (mutation.oldValue === 'hf-form hf-form-57 mc4wp-loading') {
             backToHomeBtns[1].style.display = 'block';
-        }
         } else if (mutation.oldValue === 'hf-form hf-form-58 mc4wp-loading') {
             backToHomeBtns[1].style.display = 'block';
         }
