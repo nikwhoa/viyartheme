@@ -67,7 +67,7 @@ window.addEventListener('DOMContentLoaded', function () {
     document.documentElement.classList.toggle('disable-scroll');
     document.body.classList.toggle('disable-scroll');
   });
-  var swiper = new Swiper('.swiper', {
+  var swiper = new Swiper('.swiper-speakers', {
     direction: 'horizontal',
     centerInsufficientSlides: true,
     slidesPerView: 5,
@@ -79,9 +79,6 @@ window.addEventListener('DOMContentLoaded', function () {
     navigation: {
       nextEl: '.swiper-button-next',
       prevEl: '.swiper-button-prev'
-    },
-    scrollbar: {
-      el: '.swiper-scrollbar'
     },
     breakpointsBase: 'window',
     breakpoints: {
@@ -118,27 +115,22 @@ window.addEventListener('DOMContentLoaded', function () {
     }
   });
   var swiperReview = new Swiper('.swiper-review', {
-    // effect: 'coverflow',
-    // grabCursor: true,
+    init: true,
+    slidesPerView: "auto",
+    noSwipingClass: 'swiper-no-swiping',
     centeredSlides: true,
+    watchOverflow: false,
+    preventInteractionOnTransition: true,
+    loopAdditionalSlides: 0,
     initialSlide: 1,
-    loopedSlides: 1,
+    loopPreventsSlide: false,
     loop: true,
-    slidesPerView: 'auto',
-    noSwiping: true,
-    // coverflowEffect: {
-    //     rotate: 0,
-    //     stretch: 0,
-    //     depth: 10,
-    //     modifier: 1,
-    //     slideShadows: false
-    // },
     navigation: {
       nextEl: '.reviews-btn-next',
       prevEl: '.reviews-btn-prev'
     },
     pagination: {
-      el: '.swiper-pagination',
+      el: '.swiper-pagination-reviews',
       clickable: true
     }
   });

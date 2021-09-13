@@ -92,8 +92,8 @@
     position: fixed;
     top: 60%;
     display: none;
-    left: 45%;
-    right: auto;
+    left: 50%;
+    transform: translate(-50%, 0);
     z-index: 999;
     button {
         padding: 1rem 1.7rem;

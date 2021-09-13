@@ -3,7 +3,7 @@
     <div class="speakers__title">
         <h2>НАШІ СПІКЕРИ</h2>
     </div>
-    <div class="speakers__list swiper">
+    <div class="speakers__list swiper swiper-speakers">
         <div class="swiper-wrapper">
           
             <div class="swiper-slide speaker">

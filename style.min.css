@@ -156,16 +156,19 @@ template{display:none}
 .swiper-button-prev::after,.swiper-button-next::after{font-weight:bold}
 .reviews{margin:4rem 0 1rem;padding-top:3rem}
 .reviews__title{color:#fff}
-.reviews__list{height:315px;width:80%}
+.reviews__list{height:415px;width:80%}
 .reviews__list .review{width:560px !important;background-color:black;-webkit-transition:height .8s ease-in-out;transition:height .8s ease-in-out;height:260px !important}
 .reviews__list .swiper-wrapper{-webkit-box-align:center;-ms-flex-align:center;align-items:center}
-.reviews__list .swiper-slide-active{height:inherit !important}
-.reviews__list .swiper-slide-prev,.reviews__list .swiper-slide-next{height:260px}
-.reviews .reviews-btn{position:absolute;width:calc(var(--swiper-navigation-size) / 44 * 27);height:var(--swiper-navigation-size);margin-top:calc(0px - (var(--swiper-navigation-size) / 2));z-index:10;cursor:pointer;display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-align:center;-ms-flex-align:center;align-items:center;-webkit-box-pack:center;-ms-flex-pack:center;justify-content:center;color:var(--swiper-navigation-color,var(--swiper-theme-color))}
+.reviews__list .swiper-slide-active{height:320px !important}
+.reviews__list .swiper-slide-active .review__name{position:absolute;text-align:center;color:#fff;font-weight:bold;width:100%;bottom:-50px}
+.reviews__list .swiper-slide-prev,.reviews__list .swiper-slide-next{height:260px;pointer-events:none}
+.reviews .reviews-btn{position:absolute;width:calc(var(--swiper-navigation-size) / 44 * 27);height:var(--swiper-navigation-size);margin-top:calc(0px - (var(--swiper-navigation-size) / 2));z-index:10;cursor:pointer;display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-align:center;-ms-flex-align:center;align-items:center;font-weight:bold;margin-top:-245px;-webkit-box-pack:center;-ms-flex-pack:center;justify-content:center;color:var(--swiper-navigation-color,var(--swiper-theme-color))}
 .reviews .reviews-btn::after{font-family:swiper-icons;font-size:var(--swiper-navigation-size);text-transform:none !important;letter-spacing:0;text-transform:none;font-variant:initial;line-height:1}
+.reviews .swiper-pagination-reviews{text-align:center;margin-top:1rem}
 .reviews-btn-prev::after{content:'prev'}
 .reviews-btn-next::after{content:'next'}
-.reviews-btn-next{right:10px;left:auto}
+.reviews-btn-next{right:7%}
+.reviews-btn-prev{left:7%}
 .videoIframe{position:absolute;top:0;bottom:0;right:0;left:0;width:100%;height:100%;background-color:transparent}
 .videoPoster{position:absolute;top:0;left:0;width:97.8%;height:99.2%;background-image:url(http://c.fastcompany.net/multisite_files/cocreate/imagecache/inline-large/inline/2013/01/1682283-inline-inline-2-music-veteran-amani-duncan-on-marketing-cf-martin-the-worlds-oldest-guitar-maker.jpg);background-size:100%;border:0;text-indent:-999em;overflow:hidden;opacity:.3;-webkit-transition:opacity 800ms,height 0s;transition:opacity 800ms,height 0s;-webkit-transition-delay:0s,0s;transition-delay:0s,0s}
 .videoPoster:hover{cursor:pointer}
@@ -248,7 +251,7 @@ template{display:none}
 .close-modal{position:absolute;right:0;top:10px;cursor:pointer}
 .checkbox-oferta{width:5% !important}
 .hf-message{color:white;font-weight:bold;text-align:center;display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-pack:center;-ms-flex-pack:center;justify-content:center;-webkit-box-align:center;-ms-flex-align:center;align-items:center;-ms-flex-line-pack:center;align-content:center;position:absolute;left:0;top:0;width:100%;height:100%}
-.form__success{position:fixed;top:60%;display:none;left:45%;right:auto;z-index:999}
+.form__success{position:fixed;top:60%;display:none;left:50%;-webkit-transform:translate(-50%,0);transform:translate(-50%,0);z-index:999}
 .form__success button{padding:1rem 1.7rem}
 @font-face{font-family:'swiper-icons';src:url("data:application/font-woff;charset=utf-8;base64,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");font-weight:400;font-style:normal}
 :root{--swiper-theme-color:#fff}
@@ -469,6 +472,10 @@ h2{padding:0 .15rem}
 .navigation__phone .phone-number{line-height:3rem}
 .benefits__list .benefit-item{-webkit-box-flex:35%;-ms-flex:35%;flex:35%;padding:.3rem;margin:.3rem}
 .course-programme .container{max-width:100%}
+.reviews__list{height:215px}
+.reviews .reviews-btn{margin-top:-140px}
+.reviews-btn-next{right:4%}
+.reviews-btn-prev{left:4%}
 .prices__tabs .content .info__price .price{left:9px;right:9px}
 section{padding:.5rem}
 .register-btn{padding:.9rem 2.5rem}

@@ -8,15 +8,18 @@
 
 	&__list {
 
-		height: 315px;
+		height: 415px;
 		// padding: 0 2rem !important;
 		width: 80%;
-
+		@include sm {
+			height: 215px;
+		}
 		.review {
 			width: 560px !important;
 			background-color: black;
 			transition: height 0.8s ease-in-out;
 			height: 260px !important;
+			
 		}
 
 		.swiper-wrapper {
@@ -24,12 +27,22 @@
 		}
 
 		.swiper-slide-active {
-			height: inherit !important;
+			// height: inherit !important;
+			height: 320px !important;
+			.review__name {
+				position: absolute;
+				text-align: center;
+				color: $main-white;
+				font-weight: bold;
+				width: 100%;
+				bottom: -50px;
+			}
 		}
 
 		.swiper-slide-prev,
 		.swiper-slide-next {
 			height: 260px;
+			pointer-events: none;
 		}
 	}
 
@@ -45,11 +58,12 @@
 		display: -webkit-box;
 		display: -ms-flexbox;
 		display: flex;
-		-webkit-box-align: center;
-		-ms-flex-align: center;
 		align-items: center;
-		-webkit-box-pack: center;
-		-ms-flex-pack: center;
+		font-weight: bold;
+		margin-top: -245px;
+		@include sm {
+			margin-top: -140px;
+		}
 		justify-content: center;
 		color: var(--swiper-navigation-color, var(--swiper-theme-color));
 		&::after {
@@ -62,6 +76,10 @@
 				line-height: 1;
 		}
 	}
+	.swiper-pagination-reviews {
+		text-align: center;
+		margin-top: 1rem;
+	}
 }
 .reviews-btn-prev::after {
 	content: 'prev';
@@ -70,8 +88,16 @@
 	content: 'next'
 }
 .reviews-btn-next {
-	right: 10px;
-    left: auto;
+	right: 7%;
+    @include sm {
+		right: 4%;
+	}
+}
+.reviews-btn-prev {
+    left: 7%;
+	@include sm {
+		left: 4%;
+	}
 }
 
 .videoIframe {
