@@ -1,31 +1,31 @@
 .course-programme-line {
-    height: 112%;
+    height: 113.7%;
     width: 2px;
     background: $main-blue;
     position: absolute;
     margin-left: 1.5rem;
-    margin-top: -8.1rem;
+    margin-top: -11.5rem;
     @include md {
         margin-left: 1.5rem;
         // height: 115%;
         margin-top: -12.3rem;
-        height: 114.7%;
+        height: 113%;
         // height: 1850px;
     }
     @media (max-width: 326.8px) {
-        height: 109.36%;
+        height: 107.5%;
     }
     @media (max-width: 344.8px) {
-        height: 109.7%;
+        height: 107.9%;
     }
     @media (max-width: 391.8px) {
-        height: 110.05%;
+        height: 108.1%;
     }
     @media (max-width: 413.8px) {
         height: 110.8%;
     }
     @media (max-width: 457.8px) {
-        height: 111.25%;
+        height: 108.8%;
     }
     @media (max-width: 575.8px) {
         margin-top: -10.3rem;
@@ -33,10 +33,10 @@
     }
     
     @media (max-width: 843.8px) {
-        height: 110.3%;
+        height: 108.84%;
     }
     @media (max-width: 1067.8px) {
-        height: 111.4%;
+        height: 113.7%;
     }
     
 }
@@ -176,17 +176,24 @@
     text-align: center;
     margin: 2rem 0;
 }
-.course-programme__modules .module .intro { 
-    margin-bottom: 3.5rem;
+.module .intro { 
+    // margin-bottom: 3.5rem;
+    @include md {
+        margin-bottom: unset;
+    }
 } 
 .course-programme__modules .module__header.flex-container .circle.intro { 
     width: 56px;
+    @include lg {
+        width: 48px;
+    }
 }
 .course-programme__modules .module__header.flex-container .title.intro {
     font-size: 1.2rem;
     margin-left: .9rem;
     @include lg {
         margin-left: 3.5rem;
+        margin-top: -1.5rem;
     }
 }      
 .course-programme__modules .module__header.flex-container .number.intro {
@@ -194,5 +201,8 @@
     display: flex;
     align-items: center;
     font-size: 1.4rem;
-    
+    margin-bottom: 3.5rem;
+}
+.module.intro {
+    margin-bottom: 5rem;
 }

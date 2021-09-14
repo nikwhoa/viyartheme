@@ -120,7 +120,7 @@ template{display:none}
 .benefits__list .benefit-item__title{text-align:center;line-height:1.2rem;font-weight:700;color:#606060}
 .benefits__list .benefit-item__description{font-size:.9rem;color:#909090;text-align:center;line-height:1.1rem;font-weight:500;padding:.7rem 0 0 0}
 .benefits__button{text-align:center;margin:2rem 0}
-.course-programme-line{height:112%;width:2px;background:#0080e0;position:absolute;margin-left:1.5rem;margin-top:-8.1rem}
+.course-programme-line{height:113.7%;width:2px;background:#0080e0;position:absolute;margin-left:1.5rem;margin-top:-11.5rem}
 .course-programme{margin:1rem 0}
 .course-programme .container{max-width:856px;margin:0 auto;padding:1rem;position:relative}
 .course-programme__title{margin:2rem 0;color:#0080e0}
@@ -137,10 +137,10 @@ template{display:none}
 .course-programme__modules .module__content ul{list-style:none}
 .course-programme__modules .module__content ul li::before{content:"\2022";color:#ff8000;font-weight:bold;display:inline-block;width:1em;margin-left:-1em}
 .course-programme-register{text-align:center;margin:2rem 0}
-.course-programme__modules .module .intro{margin-bottom:3.5rem}
 .course-programme__modules .module__header.flex-container .circle.intro{width:56px}
 .course-programme__modules .module__header.flex-container .title.intro{font-size:1.2rem;margin-left:.9rem}
-.course-programme__modules .module__header.flex-container .number.intro{width:187px;display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-align:center;-ms-flex-align:center;align-items:center;font-size:1.4rem}
+.course-programme__modules .module__header.flex-container .number.intro{width:187px;display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-align:center;-ms-flex-align:center;align-items:center;font-size:1.4rem;margin-bottom:3.5rem}
+.module.intro{margin-bottom:5rem}
 .speakers{background:radial-gradient(53.94% 130.48% at 73.95% 38.76%,#30a0f0 0,#0080e0 45.12%,#0060c0 100%);-webkit-box-shadow:0 4px 20px rgba(0,32,64,0.19);box-shadow:0 4px 20px rgba(0,32,64,0.19);width:100%;margin-top:1rem;padding-top:3rem}
 .speakers__title{color:#fff}
 .speakers__list{width:90%;margin:0 auto;margin:3rem auto 0 auto;padding:0 2rem !important;-webkit-box-pack:center;-ms-flex-pack:center;justify-content:center}
@@ -160,7 +160,7 @@ template{display:none}
 .reviews__list .review{width:560px !important;background-color:black;-webkit-transition:height .8s ease-in-out;transition:height .8s ease-in-out;height:260px !important}
 .reviews__list .swiper-wrapper{-webkit-box-align:center;-ms-flex-align:center;align-items:center}
 .reviews__list .swiper-slide-active{height:320px !important}
-.reviews__list .swiper-slide-active .review__name{position:absolute;text-align:center;color:#fff;font-weight:bold;width:100%;bottom:-50px}
+.reviews__list .swiper-slide-active .review__name{position:absolute;text-align:center;color:#fff;font-weight:bold;width:100%;bottom:-40px}
 .reviews__list .swiper-slide-prev,.reviews__list .swiper-slide-next{height:260px;pointer-events:none}
 .reviews .reviews-btn{position:absolute;width:calc(var(--swiper-navigation-size) / 44 * 27);height:var(--swiper-navigation-size);margin-top:calc(0px - (var(--swiper-navigation-size) / 2));z-index:10;cursor:pointer;display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-align:center;-ms-flex-align:center;align-items:center;font-weight:bold;margin-top:-245px;-webkit-box-pack:center;-ms-flex-pack:center;justify-content:center;color:var(--swiper-navigation-color,var(--swiper-theme-color))}
 .reviews .reviews-btn::after{font-family:swiper-icons;font-size:var(--swiper-navigation-size);text-transform:none !important;letter-spacing:0;text-transform:none;font-variant:initial;line-height:1}
@@ -170,7 +170,7 @@ template{display:none}
 .reviews-btn-next{right:7%}
 .reviews-btn-prev{left:7%}
 .videoIframe{position:absolute;top:0;bottom:0;right:0;left:0;width:100%;height:100%;background-color:transparent}
-.videoPoster{position:absolute;top:0;left:0;width:97.8%;height:99.2%;background-image:url(http://c.fastcompany.net/multisite_files/cocreate/imagecache/inline-large/inline/2013/01/1682283-inline-inline-2-music-veteran-amani-duncan-on-marketing-cf-martin-the-worlds-oldest-guitar-maker.jpg);background-size:100%;border:0;text-indent:-999em;overflow:hidden;opacity:.3;-webkit-transition:opacity 800ms,height 0s;transition:opacity 800ms,height 0s;-webkit-transition-delay:0s,0s;transition-delay:0s,0s}
+.videoPoster{position:absolute;top:0;left:0;width:98%;height:100%;background-image:url(http://c.fastcompany.net/multisite_files/cocreate/imagecache/inline-large/inline/2013/01/1682283-inline-inline-2-music-veteran-amani-duncan-on-marketing-cf-martin-the-worlds-oldest-guitar-maker.jpg);background-size:cover;background-position:center;border:0;text-indent:-999em;overflow:hidden;opacity:.3;-webkit-transition:opacity 800ms,height 0s;transition:opacity 800ms,height 0s;-webkit-transition-delay:0s,0s;transition-delay:0s,0s}
 .videoPoster:hover{cursor:pointer}
 .videoPoster:before{content:'';position:absolute;top:50%;left:50%;width:80px;height:80px;margin:-40px 0 0 -40px;border:5px solid #fff;border-radius:100%;-webkit-transition:border-color 300ms;transition:border-color 300ms}
 .videoPoster:after{content:'';position:absolute;top:50%;left:50%;width:0;height:0;margin:-20px 0 0 -10px;border-left:40px solid #fff;border-top:25px solid transparent;border-bottom:25px solid transparent;-webkit-transition:border-color 300ms;transition:border-color 300ms}
@@ -178,7 +178,7 @@ template{display:none}
 .videoPoster:hover:after,.videoPoster:focus:after{border-left-color:red}
 .videoWrapperActive .videoPoster{opacity:0;height:0;-webkit-transition-delay:0s,800ms;transition-delay:0s,800ms}
 .swiper-slide-active .videoPoster{opacity:1}
-.prices__title{color:#0080e0;margin:2rem 0 4rem 0;padding:1rem 0}
+.prices__title{color:#0080e0;margin:2rem 0 1rem;padding:1rem 0}
 .prices__tabs{padding:1rem 0}
 .prices__tabs .content .tabs{width:100%;-ms-flex-pack:distribute;justify-content:space-around;-webkit-box-align:stretch;-ms-flex-align:stretch;align-items:stretch;display:none;-webkit-box-orient:horizontal;-webkit-box-direction:normal;-ms-flex-direction:row;flex-direction:row}
 .prices__tabs .content .tabs .tab{background:linear-gradient(272.04deg,#139aff 6.2%,#0080e0 96.57%);border-radius:12px 12px 0 0;height:56px;display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-pack:center;-ms-flex-pack:center;justify-content:center;-webkit-box-align:center;-ms-flex-align:center;align-items:center;vertical-align:middle;width:100%;position:relative;text-align:center;color:#fff;font-weight:bold;cursor:pointer}
@@ -197,7 +197,7 @@ template{display:none}
 .prices__tabs .content .info__price .price-extra{margin:20px auto 0;color:#009020;text-align:center;width:70%}
 .prices__tabs .content .info__register button{padding:1.2rem 3.5rem}
 .place__address{display:-webkit-box;display:-ms-flexbox;display:flex;height:70px;-webkit-box-pack:center;-ms-flex-pack:center;justify-content:center;-webkit-box-align:center;-ms-flex-align:center;align-items:center}
-.faq-wrapper{background-image:url("assets/img/faq-bg.jpg");background-repeat:no-repeat;background-size:cover;background-position:center;position:relative;width:100%;z-index:1}
+.faq-wrapper{background-image:url("assets/img/faq-bg.jpg");background-repeat:no-repeat;background-size:cover;background-position:center;position:relative;width:100%;z-index:1;height:100%;-webkit-transition:height 10s 20s;transition:height 10s 20s}
 .faq{z-index:10;position:relative}
 .faq__title{color:#fff}
 .faq__title span{display:block;font-family:'Roboto Regular';font-weight:normal;-webkit-font-smoothing:subpixel-antialiased;-webkit-text-stroke:1px transparent}
@@ -401,7 +401,7 @@ h2{font-family:'Roboto Bold';text-align:center;font-size:1.5rem}
 .header__title .academy-logo{margin-right:-4.76rem}
 .pc{left:40.3%}
 }@media(max-width:1100px){.approaches__list{padding:0 1rem}
-}@media(max-width:1067.8px){.course-programme-line{height:111.4%}
+}@media(max-width:1067.8px){.course-programme-line{height:113.7%}
 }@media(max-width:991.98px){.header-bg{height:800px}
 .header__title{margin-bottom:10rem}
 .header__title .title h1{padding-top:30px}
@@ -409,7 +409,8 @@ h2{font-family:'Roboto Bold';text-align:center;font-size:1.5rem}
 .header__title .academy-logo{margin-right:0}
 .header__title .sub-title{font-size:.9rem;width:300px}
 .approaches-bg{margin-top:-60px}
-.course-programme__modules .module__header.flex-container .title.intro{margin-left:3.5rem}
+.course-programme__modules .module__header.flex-container .circle.intro{width:48px}
+.course-programme__modules .module__header.flex-container .title.intro{margin-left:3.5rem;margin-top:-1.5rem}
 .prices__tabs .content{-webkit-box-shadow:0 4px 10px rgba(74,74,74,0.1);box-shadow:0 4px 10px rgba(74,74,74,0.1)}
 .prices__tabs .content .tabs{display:-webkit-box;display:-ms-flexbox;display:flex}
 .prices__tabs .content .info{border-radius:12px;border:1px solid #d0d0d0;border-top:0;width:unset;margin:unset;display:block;-webkit-box-pack:unset;-ms-flex-pack:unset;justify-content:unset}
@@ -428,7 +429,7 @@ h2{font-family:'Roboto Bold';text-align:center;font-size:1.5rem}
 .footer{padding:1.5rem 0 .8rem 0}
 .footer .footer-wrapper{-webkit-box-orient:vertical;-webkit-box-direction:normal;-ms-flex-direction:column;flex-direction:column}
 .footer__nav .menu{-webkit-box-orient:vertical;-webkit-box-direction:normal;-ms-flex-direction:column;flex-direction:column;text-align:center}
-}@media(max-width:843.8px){.course-programme-line{height:110.3%}
+}@media(max-width:843.8px){.course-programme-line{height:108.84%}
 }@media(max-width:794.98px){.header-bg{max-height:unset;height:1056px;background:#0080e0;-webkit-transform:unset;transform:unset;-webkit-box-shadow:unset;box-shadow:unset}
 .navigation{background:#fff;width:100%}
 .navigation__mobile-menu{display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-align:center;-ms-flex-align:center;align-items:center;height:61px}
@@ -448,7 +449,7 @@ h2{font-family:'Roboto Bold';text-align:center;font-size:1.5rem}
 .benefits{margin:1rem}
 .benefits__list{width:100%;display:-webkit-box;display:-ms-flexbox;display:flex;-ms-flex-wrap:wrap;flex-wrap:wrap;-webkit-box-orient:horizontal;-webkit-box-direction:normal;-ms-flex-direction:row;flex-direction:row;margin:1rem auto;padding:unset}
 .benefits__list .benefit-item{-webkit-box-flex:40%;-ms-flex:40%;flex:40%;padding:.7rem;margin:.7rem}
-.course-programme-line{margin-left:1.5rem;margin-top:-12.3rem;height:114.7%}
+.course-programme-line{margin-left:1.5rem;margin-top:-12.3rem;height:113%}
 .course-programme{margin:.3rem 0}
 .course-programme__title{margin:.3rem 0}
 .course-programme__download{padding:.3rem 0;margin:.3rem 0}
@@ -458,6 +459,8 @@ h2{font-family:'Roboto Bold';text-align:center;font-size:1.5rem}
 .course-programme__modules .module__header .ext{font-size:1.4rem}
 .course-programme__modules .module__header .title{width:90%;margin:0 0 0 3.5rem;font-size:1rem}
 .course-programme__modules .module__content{padding-left:2.1rem;margin:unset}
+.module .intro{margin-bottom:unset}
+.videoPoster{background-size:70%}
 .footer__nav{display:-webkit-box;display:-ms-flexbox;display:flex}
 .hf-form .modal-wrapper{width:100%}
 main{margin:unset}
@@ -482,12 +485,12 @@ section{padding:.5rem}
 .register-btn{padding:.9rem 2.5rem}
 }@media(max-width:575.8px){.course-programme-line{margin-top:-10.3rem;height:111.85%}
 }@media(max-width:479px){.swiper-pagination-bullets.swiper-pagination-horizontal{bottom:10% !important}
-}@media(max-width:457.8px){.course-programme-line{height:111.25%}
+}@media(max-width:457.8px){.course-programme-line{height:108.8%}
 }@media(max-width:413.8px){.course-programme-line{height:110.8%}
-}@media(max-width:391.8px){.course-programme-line{height:110.05%}
+}@media(max-width:391.8px){.course-programme-line{height:108.1%}
 }@media(max-width:372px){.navigation__phone .phone-number{line-height:1.5rem}
-}@media(max-width:344.8px){.course-programme-line{height:109.7%}
-}@media(max-width:326.8px){.course-programme-line{height:109.36%}
+}@media(max-width:344.8px){.course-programme-line{height:107.9%}
+}@media(max-width:326.8px){.course-programme-line{height:107.5%}
 }@-webkit-keyframes swiper-preloader-spin{100%{-webkit-transform:rotate(360deg);transform:rotate(360deg)}
 }@keyframes swiper-preloader-spin{100%{-webkit-transform:rotate(360deg);transform:rotate(360deg)}
 }

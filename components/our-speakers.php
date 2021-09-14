@@ -238,5 +238,5 @@
         </a>
     </div>
     <div class="speakers__mail-us">
-    Якщо ви хочете стати нашим спікером, пишіть на <a href="mailto:norenkonikita@gmail.com">пошту</a> 
+    Якщо ви хочете стати нашим спікером, пишіть на <a href="mailto:academyviyar@gmail.com">пошту</a> 
     </div>

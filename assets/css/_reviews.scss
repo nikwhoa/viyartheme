@@ -35,7 +35,7 @@
 				color: $main-white;
 				font-weight: bold;
 				width: 100%;
-				bottom: -50px;
+				bottom: -40px;
 			}
 		}
 
@@ -115,10 +115,15 @@
 	position: absolute;
 	top: 0px;
 	left: 0px;
-	width: 97.8%;
-	height: 99.2%;
+	width: 98%;
+	height: 100%;
 	background-image: url(http://c.fastcompany.net/multisite_files/cocreate/imagecache/inline-large/inline/2013/01/1682283-inline-inline-2-music-veteran-amani-duncan-on-marketing-cf-martin-the-worlds-oldest-guitar-maker.jpg);
-	background-size: 100%;
+	// background-size: 100%;
+	background-size: cover;
+	@include md {
+		background-size: 70%;
+	}
+	background-position: center;
 	border: none;
 	text-indent: -999em;
 	overflow: hidden;

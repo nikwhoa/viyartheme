@@ -6,27 +6,55 @@
         <div class="swiper-wrapper">
             <div class="swiper-slide review">
                 <div class="video_wrapper video_wrapper_full js-videoWrapper">
-                    <iframe class="videoIframe js-videoIframe" src="" frameborder="0" allowTransparency="true" allowfullscreen data-src="https://www.youtube.com/embed/G4cJ4wviwS8?autoplay=1&modestbranding=1&rel=0&hl=ru&showinfo=0&color=white"></iframe>
-                    <button class="videoPoster js-videoPoster"></button>
+                    <iframe class="videoIframe js-videoIframe" src="" frameborder="0" allowTransparency="true" allowfullscreen data-src="https://www.youtube.com/embed/PRUESBjDDqU?autoplay=1&modestbranding=1&rel=0&hl=ru&showinfo=0&color=white"></iframe>
+                    <button class="videoPoster js-videoPoster" style="background-image: url('<?php echo get_template_directory_uri(); ?>/assets/img/reviews/porkhalo-oleksii.jpg')"></button>
                 </div>
-                <div class="review__name">Олена Васильєва</div>
+                <div class="review__name">Порхало Олексій</div>
             </div>
             <div class="swiper-slide review">
                 <div class="video_wrapper video_wrapper_full js-videoWrapper">
-                    <iframe class="videoIframe js-videoIframe" src="" frameborder="0" allowTransparency="true" allowfullscreen data-src="https://www.youtube.com/embed/NgC8MKUVlHk?autoplay=1&modestbranding=1&rel=0&hl=ru&showinfo=0&color=white"></iframe>
-                    <button class="videoPoster js-videoPoster" style="background-image: url(https://www.udiscovermusic.com/wp-content/uploads/2019/12/The-Weekend-Heartless-Video.jpg)"></button>
+                    <iframe class="videoIframe js-videoIframe" src="" frameborder="0" allowTransparency="true" allowfullscreen data-src="https://www.youtube.com/embed/XefWeSxkBOA?autoplay=1&modestbranding=1&rel=0&hl=ru&showinfo=0&color=white"></iframe>
+                    <button class="videoPoster js-videoPoster" style="background-image: url('<?php echo get_template_directory_uri(); ?>/assets/img/reviews/shkurenko-andrii.jpg')"></button>
                 </div>
-                <div class="review__name">Олена Васильєва</div>
+                <div class="review__name">Шкуренко Андрій</div>
             </div>
             <div class="swiper-slide review">
                 <div class="video_wrapper video_wrapper_full js-videoWrapper">
-                    <iframe class="videoIframe js-videoIframe" src="" frameborder="0" allowTransparency="true" allowfullscreen data-src="https://www.youtube.com/embed/VI4ssGtfdxw?autoplay=1&modestbranding=1&rel=0&hl=ru&showinfo=0&color=white"></iframe>
-                    <button class="videoPoster js-videoPoster" style="background-image: url(https://www.petbarn.com.au/petspot/app/uploads/2019/01/kitten-000017380158_Smaller.jpg)"></button>
+                    <iframe class="videoIframe js-videoIframe" src="" frameborder="0" allowTransparency="true" allowfullscreen data-src="https://www.youtube.com/embed/b7HMxQREzmE?autoplay=1&modestbranding=1&rel=0&hl=ru&showinfo=0&color=white"></iframe>
+                    <button class="videoPoster js-videoPoster" style="background-image: url('<?php echo get_template_directory_uri(); ?>/assets/img/reviews/shevchenko-yurii.jpg')"></button>
                 </div>
-                <div class="review__name">Олена Васильєва</div>
+                <div class="review__name">Шевченко Юрій</div>
+            </div>
+            <div class="swiper-slide review">
+                <div class="video_wrapper video_wrapper_full js-videoWrapper">
+                    <iframe class="videoIframe js-videoIframe" src="" frameborder="0" allowTransparency="true" allowfullscreen data-src="https://www.youtube.com/embed/k4Kr1sNJFoc?autoplay=1&modestbranding=1&rel=0&hl=ru&showinfo=0&color=white"></iframe>
+                    <button class="videoPoster js-videoPoster" style="background-image: url('<?php echo get_template_directory_uri(); ?>/assets/img/reviews/popovych-serhii.jpg')"></button>
+                </div>
+                <div class="review__name">Попович Сергій</div>
+            </div>
+            <div class="swiper-slide review">
+                <div class="video_wrapper video_wrapper_full js-videoWrapper">
+                    <iframe class="videoIframe js-videoIframe" src="" frameborder="0" allowTransparency="true" allowfullscreen data-src="https://www.youtube.com/embed/v7ygJ3W3XTo?autoplay=1&modestbranding=1&rel=0&hl=ru&showinfo=0&color=white"></iframe>
+                    <button class="videoPoster js-videoPoster" style="background-image: url('<?php echo get_template_directory_uri(); ?>/assets/img/reviews/horbenko-viktor.jpg')"></button>
+                </div>
+                <div class="review__name">Горбенко Віктор</div>
+            </div>
+            <div class="swiper-slide review">
+                <div class="video_wrapper video_wrapper_full js-videoWrapper">
+                    <iframe class="videoIframe js-videoIframe" src="" frameborder="0" allowTransparency="true" allowfullscreen data-src="https://www.youtube.com/embed/vfs73ZpWFMo?autoplay=1&modestbranding=1&rel=0&hl=ru&showinfo=0&color=white"></iframe>
+                    <button class="videoPoster js-videoPoster" style="background-image: url('<?php echo get_template_directory_uri(); ?>/assets/img/reviews/yerko-oleksandr.jpg')"></button>
+                </div>
+                <div class="review__name">Єрко Олександр</div>
+            </div>
+            <div class="swiper-slide review">
+                <div class="video_wrapper video_wrapper_full js-videoWrapper">
+                    <iframe class="videoIframe js-videoIframe" src="" frameborder="0" allowTransparency="true" allowfullscreen data-src="https://www.youtube.com/embed/0D0V55FBjw4?autoplay=1&modestbranding=1&rel=0&hl=ru&showinfo=0&color=white"></iframe>
+                    <button class="videoPoster js-videoPoster" style="background-image: url('<?php echo get_template_directory_uri(); ?>/assets/img/reviews/didovets-serhii.jpg')"></button>
+                </div>
+                <div class="review__name">Дідовець Сергій</div>
             </div>
         </div>
-        
+
     </div>
     <div class="swiper-pagination-reviews"></div>
     <div class="reviews-btn-prev reviews-btn"></div>
