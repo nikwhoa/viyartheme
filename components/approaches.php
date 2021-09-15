@@ -5,7 +5,7 @@
             <h2>ЧИ ПІДХОДИТЬ ВАМ ЦЕЙ КУРС?</h2>
             <div class="subtitle flex-container">
                 <img src="<?php echo get_template_directory_uri(); ?>/assets/img/view_on.svg" alt="Знайдіть пункти, які вам підходять">
-                Знайдіть пункти, які вам підходять
+                Так, якщо хоча б один із цих пунктів вас описує
             </div>
         </div>
         <div class="approaches__dash-line">

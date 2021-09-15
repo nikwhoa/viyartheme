@@ -29,7 +29,7 @@
             }
             &__name {
                 color: $main-white;
-                font-weight: 700;
+                font-family: 'Roboto Bold';
                 
             }
             &__info {
@@ -38,8 +38,9 @@
                 padding: 1rem 0;
             }
             &__text {
+                font-family: 'Roboto Bold';
+                line-height: 1.2rem;
                 color: $main-white;
-                font-weight: 700;
             }
         }
     }

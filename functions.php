@@ -106,12 +106,13 @@ function disable_emojis() {
    return $urls;
    }
 
-/*
-* This code runs for every successful form submission
-*/
-// add_action( 'hf_form_success', function( $submission, $form ) {
-// 	// You can do stuff here.
-// 	// $form contains details about the submitted form
-// 	// $submission contains details about the submission, like the form data.
-//     echo $form;
-// }, 10, 2);
+// Function to change email address
+
+ 
+// Function to change sender name
+function wpb_sender_name( $original_email_from ) {
+    return 'Viyar Academy';
+}
+ 
+// Hooking up our functions to WordPress filters 
+add_filter( 'wp_mail_from_name', 'wpb_sender_name' );

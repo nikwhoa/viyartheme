@@ -443,7 +443,7 @@
 			justify-content: flex-end;
 			align-items: center;
 
-			margin: 0.5rem -6.76rem -1.3rem 0;
+			margin: 0.5rem -2.76rem -1.3rem 0;
 			@include md {
 				margin: 0.5rem 1rem -3.3rem 0;
 				
@@ -456,11 +456,14 @@
 			}
 			div {
 				margin: 0 0.5rem;
+				img {
+					width: 200px;
+				}
 			}
 		}
 
 		.sub-title {
-			width: 430px;
+			width: 410px;
 			font-weight: normal;
 			line-height: 1.6rem;
 			padding: 1.2rem 0;

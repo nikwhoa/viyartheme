@@ -78,9 +78,10 @@ template{display:none}
 .header__title{max-width:1344px;margin:0 auto 10rem auto;padding:9.4rem 0 0 7.6rem}
 .header__title .title h1{line-height:2.3rem;font-size:3rem;font-weight:normal}
 .header__title .title h1 span{font-family:'Roboto Bold'}
-.header__title .academy-logo{font-size:.8rem;display:-webkit-box;display:-ms-flexbox;display:flex;font-weight:normal;-ms-flex-line-pack:end;align-content:flex-end;-webkit-box-pack:end;-ms-flex-pack:end;justify-content:flex-end;-webkit-box-align:center;-ms-flex-align:center;align-items:center;margin:.5rem -6.76rem -1.3rem 0}
+.header__title .academy-logo{font-size:.8rem;display:-webkit-box;display:-ms-flexbox;display:flex;font-weight:normal;-ms-flex-line-pack:end;align-content:flex-end;-webkit-box-pack:end;-ms-flex-pack:end;justify-content:flex-end;-webkit-box-align:center;-ms-flex-align:center;align-items:center;margin:.5rem -2.76rem -1.3rem 0}
 .header__title .academy-logo div{margin:0 .5rem}
-.header__title .sub-title{width:430px;font-weight:normal;line-height:1.6rem;padding:1.2rem 0;font-size:1.1rem}
+.header__title .academy-logo div img{width:200px}
+.header__title .sub-title{width:410px;font-weight:normal;line-height:1.6rem;padding:1.2rem 0;font-size:1.1rem}
 .header__title .course-btn{padding:5rem 1rem 0 0;text-align:right}
 .header__title .course-btn .btn{padding:1rem 2.7rem}
 .hamburger-navigation{display:-webkit-box !important;display:-ms-flexbox !important;display:flex !important;-webkit-box-orient:vertical !important;-webkit-box-direction:normal !important;-ms-flex-direction:column !important;flex-direction:column !important;position:fixed;color:rgba(0,128,224,0.9);top:48px;left:0;z-index:1000;width:90vw;height:100vh;background:#fff;line-height:50px !important;font-size:1.1rem !important;text-align:left;padding:1.5rem 1.63rem}
@@ -118,7 +119,7 @@ template{display:none}
 .benefits__list .benefit-item__feature-image .image-wrapper:hover .benefit-icon svg path{fill:#fff}
 .benefits__list .benefit-item__divider{width:40px;height:4px;background:#0080e0;margin:1rem auto}
 .benefits__list .benefit-item__title{text-align:center;line-height:1.2rem;font-weight:700;color:#606060}
-.benefits__list .benefit-item__description{font-size:.9rem;color:#909090;text-align:center;line-height:1.1rem;font-weight:500;padding:.7rem 0 0 0}
+.benefits__list .benefit-item__description{font-size:.9rem;color:#909090;text-align:center;line-height:1.2rem;font-weight:500;padding:.7rem 0 0 0}
 .benefits__button{text-align:center;margin:2rem 0}
 .course-programme-line{height:113.7%;width:2px;background:#0080e0;position:absolute;margin-left:1.5rem;margin-top:-11.5rem}
 .course-programme{margin:1rem 0}
@@ -133,7 +134,7 @@ template{display:none}
 .course-programme__modules .module__header .number{font-family:'Roboto Bold';font-size:4.3rem;color:#0080e0;line-height:1.4rem}
 .course-programme__modules .module__header .ext{font-family:'Roboto Bold';line-height:2.25rem;font-size:2rem;color:#0080e0;-webkit-box-align:center;-ms-flex-align:center;align-items:center;display:-webkit-box;display:-ms-flexbox;display:flex}
 .course-programme__modules .module__header .title{margin:0 0 0 1.3rem;padding:.5rem 1rem;background:#0080e0;border-radius:8px;color:#fff;-webkit-box-align:center;-ms-flex-align:center;align-items:center;display:-webkit-box;display:-ms-flexbox;display:flex;font-size:1.5rem}
-.course-programme__modules .module__content{color:#606060;line-height:1.2rem;margin:0 0 0 26%}
+.course-programme__modules .module__content{color:#606060;line-height:1.5rem;margin:0 0 0 26%}
 .course-programme__modules .module__content ul{list-style:none}
 .course-programme__modules .module__content ul li::before{content:"\2022";color:#ff8000;font-weight:bold;display:inline-block;width:1em;margin-left:-1em}
 .course-programme-register{text-align:center;margin:2rem 0}
@@ -147,9 +148,9 @@ template{display:none}
 .speakers__list .speaker{width:208px;text-align:center}
 .speakers__list .speaker__photo{padding:1rem}
 .speakers__list .speaker__photo img{width:168px;height:168px;border-radius:50%;-o-object-fit:cover;object-fit:cover;-o-object-position:100% 0;object-position:100% 0}
-.speakers__list .speaker__name{color:#fff;font-weight:700}
+.speakers__list .speaker__name{color:#fff;font-family:'Roboto Bold'}
 .speakers__list .speaker__info{color:#fff;font-size:.9rem;padding:1rem 0}
-.speakers__list .speaker__text{color:#fff;font-weight:700}
+.speakers__list .speaker__text{font-family:'Roboto Bold';line-height:1.2rem;color:#fff}
 .speakers__mail-us{text-align:center;color:#fff}
 .speakers__mail-us a{color:inherit;-webkit-text-decoration:underline #fff;text-decoration:underline #fff}
 .swiper{height:480px;padding:0 2rem}
@@ -200,7 +201,7 @@ template{display:none}
 .faq-wrapper{background-image:url("assets/img/faq-bg.jpg");background-repeat:no-repeat;background-size:cover;background-position:center;position:relative;width:100%;z-index:1;height:100%;-webkit-transition:height 10s 20s;transition:height 10s 20s}
 .faq{z-index:10;position:relative}
 .faq__title{color:#fff}
-.faq__title span{display:block;font-family:'Roboto Regular';font-weight:normal;-webkit-font-smoothing:subpixel-antialiased;-webkit-text-stroke:1px transparent}
+.faq__title span{display:block;font-family:'Roboto Regular'}
 .faq__questions{width:60%;margin:1rem auto}
 .faq__questions .question-item{margin:2rem 0;color:#fff;border:1px solid #fff;border-left:0;border-right:0;padding:1rem 0 1.2rem 0}
 .faq__questions .question-item .question{cursor:pointer;font-size:1.2rem;font-weight:bold;position:relative}
