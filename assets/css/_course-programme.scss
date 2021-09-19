@@ -1,10 +1,10 @@
 .course-programme-line {
-    height: 113.7%;
+    height: 113.3%;
     width: 2px;
     background: $main-blue;
     position: absolute;
     margin-left: 1.5rem;
-    margin-top: -11.5rem;
+    margin-top: -11.6rem;
     @include md {
         margin-left: 1.5rem;
         // height: 115%;
@@ -16,10 +16,10 @@
         height: 107.5%;
     }
     @media (max-width: 344.8px) {
-        height: 107.9%;
+        height: 107.2%;
     }
     @media (max-width: 391.8px) {
-        height: 108.1%;
+        height: 107.6%;
     }
     @media (max-width: 413.8px) {
         height: 110.8%;
@@ -101,6 +101,7 @@
                 @include md {
                     flex-wrap: wrap;
                 }
+                // height: 50px;
 				.circle {
                     margin: 0 1rem 0 0;
 					width: 48px;
@@ -128,12 +129,13 @@
                     color: $main-blue;
                     align-items: center;
                     display: flex;  
+                    margin-right: 1.6rem;
                     @include md {
                         font-size: 1.4rem;
                     }  
                 }
                 .title {
-                    margin: 0 0 0 1.3rem;
+                    // margin: 0 0 0 1.6rem;
                     padding: .5rem 1rem ;
                     background: $main-blue;
                     border-radius: 8px;
@@ -201,7 +203,10 @@
     display: flex;
     align-items: center;
     font-size: 1.4rem;
-    margin-bottom: 3.5rem;
+    // margin-bottom: 3.5rem;
+    @include md {
+        margin-bottom: 2.5rem;
+    }
 }
 .module.intro {
     margin-bottom: 5rem;

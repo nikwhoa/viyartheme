@@ -8,7 +8,7 @@ function videoPlay( button ) {
 
             e.target.previousElementSibling.setAttribute( 'src', e.target.previousElementSibling.getAttribute( 'data-src' ) );
 
-            e.target.parentNode.classList.add( 'videoWrapperActive' );
+            e.target.parentNode.classList.toggle( 'videoWrapperActive' );
 
         });
     });

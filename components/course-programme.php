@@ -27,7 +27,7 @@
                     <div class="circle"></div>
                     <div class="number">1</div>
                     <div class="ext">модуль</div>
-                    <div class="title">Ефективно управляти проєктом та фінансами</div>
+                    <div class="title">Управління проектом та фінансами</div>
                 </div>
                 <div class="module__content">
                     <ul>
@@ -41,10 +41,10 @@
             </div>
             <div class="module">
                 <div class="module__header flex-container">
-                    <div class="circle intro"></div>
+                    <div class="circle"></div>
                     <div class="number">2</div>
                     <div class="ext">модуль</div>
-                    <div class="title">Продавати та створювати найкращий клієнтський сервіс</div>
+                    <div class="title">Продажі та клієнтський сервіс</div>
                 </div>
                 <div class="module__content">
                     <ul>
@@ -60,7 +60,7 @@
                     <div class="circle"></div>
                     <div class="number">3</div>
                     <div class="ext">модуль</div>
-                    <div class="title">Розвивати креативність: дизайн, фото, відео</div>
+                    <div class="title">Креативність: дизайн, фото, відео</div>
                 </div>
                 <div class="module__content">
                     <ul>
@@ -76,7 +76,7 @@
                     <div class="circle"></div>
                     <div class="number">4</div>
                     <div class="ext">модуль</div>
-                    <div class="title">Створювати комплексний меблевий маркетинг
+                    <div class="title">Комплексний меблевий маркетинг
 </div>
                 </div>
                 <div class="module__content">
@@ -93,7 +93,7 @@
                     <div class="circle"></div>
                     <div class="number">5</div>
                     <div class="ext">модуль</div>
-                    <div class="title">Отримувати дохід з Viyar Bazar</div>
+                    <div class="title">Робота із сервісом Viyar Bazar</div>
                 </div>
                 <div class="module__content">
                     <ul>

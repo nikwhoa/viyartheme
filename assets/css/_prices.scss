@@ -170,7 +170,7 @@
 						right: 16px;
 						padding: .4rem 0;
 						font-size: 2rem;
-
+						font-family: 'Roboto Bold';
 						@include sm {
 							left: 9px;
 							right: 9px;
@@ -183,7 +183,10 @@
 
 					.price-extra {
 						margin: 20px auto 0;
-
+						span {
+							font-family: 'Roboto Bold';
+							display: block;
+						}
 						@include lg {
 							margin: 90px auto 0;
 						}

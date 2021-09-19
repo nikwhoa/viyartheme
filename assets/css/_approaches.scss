@@ -60,9 +60,10 @@
         .subtitle {
             justify-content: center;
             align-items: center;
-            img {
-                margin: 0 0 .5rem 0;
-            }
+            width: 90%;
+            margin:  0 auto;
+            text-align: center;
+            
         }
     }
     &__dash-line {

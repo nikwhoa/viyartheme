@@ -283,7 +283,7 @@ function videoPlay(button) {
     el.addEventListener('click', function (e) {
       e.preventDefault();
       e.target.previousElementSibling.setAttribute('src', e.target.previousElementSibling.getAttribute('data-src'));
-      e.target.parentNode.classList.add('videoWrapperActive');
+      e.target.parentNode.classList.toggle('videoWrapperActive');
     });
   });
 }

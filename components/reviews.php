@@ -6,14 +6,14 @@
         <div class="swiper-wrapper">
             <div class="swiper-slide review">
                 <div class="video_wrapper video_wrapper_full js-videoWrapper">
-                    <iframe class="videoIframe js-videoIframe" src="" frameborder="0" allowTransparency="true" allowfullscreen data-src="https://www.youtube.com/embed/PRUESBjDDqU?autoplay=1&modestbranding=1&rel=0&hl=ru&showinfo=0&color=white"></iframe>
+                    <iframe class="videoIframe js-videoIframe" src="" allow="autoplay" frameborder="0" allowTransparency="true" allowfullscreen data-src="https://www.youtube.com/embed/PRUESBjDDqU?autoplay=1&modestbranding=1&rel=0&hl=ru&showinfo=0&color=white"></iframe>
                     <button class="videoPoster js-videoPoster" style="background-image: url('<?php echo get_template_directory_uri(); ?>/assets/img/reviews/porkhalo-oleksii.jpg')"></button>
                 </div>
                 <div class="review__name">Порхало Олексій</div>
             </div>
             <div class="swiper-slide review">
                 <div class="video_wrapper video_wrapper_full js-videoWrapper">
-                    <iframe class="videoIframe js-videoIframe" src="" frameborder="0" allowTransparency="true" allowfullscreen data-src="https://www.youtube.com/embed/XefWeSxkBOA?autoplay=1&modestbranding=1&rel=0&hl=ru&showinfo=0&color=white"></iframe>
+                    <iframe class="videoIframe js-videoIframe" src="" allow="autoplay" frameborder="0" allowTransparency="true" allowfullscreen data-src="https://www.youtube.com/embed/XefWeSxkBOA?autoplay=1&modestbranding=1&rel=0&hl=ru&showinfo=0&color=white"></iframe>
                     <button class="videoPoster js-videoPoster" style="background-image: url('<?php echo get_template_directory_uri(); ?>/assets/img/reviews/shkurenko-andrii.jpg')"></button>
                 </div>
                 <div class="review__name">Шкуренко Андрій</div>
