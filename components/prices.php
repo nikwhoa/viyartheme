@@ -107,7 +107,7 @@
                             Дати курсу:
                         </div>
                         <div class="dates blue-text">
-                            06.10 — 01.12
+                            06.10 — 29.11
                         </div>
                     </div>
                     <div class="info__place">

@@ -152,7 +152,7 @@ template{display:none}
 .speakers__list .speaker__text{font-family:'Roboto Bold';line-height:1.2rem;color:#fff}
 .speakers__mail-us{text-align:center;color:#fff}
 .speakers__mail-us a{color:inherit;-webkit-text-decoration:underline #fff;text-decoration:underline #fff}
-.swiper{height:480px;padding:0 2rem}
+.swiper{height:520px;padding:0 2rem}
 .swiper-button-prev::after,.swiper-button-next::after{font-weight:bold}
 .reviews{margin:4rem 0 1rem;padding-top:3rem}
 .reviews__title{color:#fff}
@@ -210,8 +210,8 @@ template{display:none}
 .faq__questions .question-item .question span{width:82%;display:block}
 .faq__questions .question-item .question__btn{position:absolute;display:inline;right:20px;top:-7px;width:40px;height:40px;border:1px solid #fff;border-radius:50%}
 .faq__questions .question-item .question__btn .button{position:relative}
-.faq__questions .question-item .question__btn .button::before{content:'';top:19px;left:11.5px;-webkit-transform:rotate(50deg);transform:rotate(50deg);display:block;position:absolute;width:10px;height:2px;background:#fff}
-.faq__questions .question-item .question__btn .button::after{content:'';top:19px;left:17.5px;-webkit-transform:rotate(130deg);transform:rotate(130deg);display:block;position:absolute;width:10px;height:2px;background:#fff}
+.faq__questions .question-item .question__btn .button::before{content:'';top:19px;left:10.9px;-webkit-transform:rotate(50deg);transform:rotate(50deg);display:block;position:absolute;width:10px;height:2px;background:#fff}
+.faq__questions .question-item .question__btn .button::after{content:'';top:19px;left:16.6px;-webkit-transform:rotate(130deg);transform:rotate(130deg);display:block;position:absolute;width:10px;height:2px;background:#fff}
 .faq__questions .question-item .answer{display:none;width:72%;margin:10px 0 0 60px;line-height:20px;padding:.3rem 0 .3rem .5rem;border-left:1px solid #fff}
 .faq__questions .question-item .show{display:block}
 .question.active>.question__btn>.button::before{-webkit-transform:rotate(312deg);transform:rotate(312deg)}

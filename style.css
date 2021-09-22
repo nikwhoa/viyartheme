@@ -489,7 +489,7 @@ template { display: none; }
 .speakers__mail-us a { color: inherit; -webkit-text-decoration: underline #fff; text-decoration: underline #fff; }
 
 /* slider */
-.swiper { height: 480px; padding: 0 2rem; }
+.swiper { height: 520px; padding: 0 2rem; }
 
 .swiper-button-prev::after, .swiper-button-next::after { font-weight: bold; }
 
@@ -645,9 +645,9 @@ template { display: none; }
 
 .faq__questions .question-item .question__btn .button { position: relative; }
 
-.faq__questions .question-item .question__btn .button::before { content: ''; top: 19px; left: 11.5px; -webkit-transform: rotate(50deg); transform: rotate(50deg); display: block; position: absolute; width: 10px; height: 2px; background: #fff; }
+.faq__questions .question-item .question__btn .button::before { content: ''; top: 19px; left: 10.9px; -webkit-transform: rotate(50deg); transform: rotate(50deg); display: block; position: absolute; width: 10px; height: 2px; background: #fff; }
 
-.faq__questions .question-item .question__btn .button::after { content: ''; top: 19px; left: 17.5px; -webkit-transform: rotate(130deg); transform: rotate(130deg); display: block; position: absolute; width: 10px; height: 2px; background: #fff; }
+.faq__questions .question-item .question__btn .button::after { content: ''; top: 19px; left: 16.6px; -webkit-transform: rotate(130deg); transform: rotate(130deg); display: block; position: absolute; width: 10px; height: 2px; background: #fff; }
 
 .faq__questions .question-item .answer { display: none; width: 72%; margin: 10px 0 0 60px; line-height: 20px; padding: .3rem 0 .3rem .5rem; border-left: 1px solid #fff; }
 
