@@ -37,14 +37,6 @@
                 </header>
                 м. Київ, б-р Вацлава Гавела, 16
             </div>
-            <div class="offer">
-                <header>
-                    <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M18.8 6C18.4 4.8 17.3 4 16 4C14.7 4 13.6 4.8 13.2 6H6V26H26V6H18.8ZM24 24H8V8H15V7C15 6.4 15.4 6 16 6C16.6 6 17 6.4 17 7V8H24V24ZM12 21H10V19H12V21ZM12 17H10V15H12V17ZM12 13H10V11H12V13ZM22 21H14V19H22V21ZM22 17H14V15H22V17ZM22 13H14V11H22V13Z" fill="white" />
-                    </svg>
-                    <span>Договір оферти</span>
-                </header>
-            </div>
             <div class="speaker">
                 <header>
                     <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
