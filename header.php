@@ -86,10 +86,9 @@
                             <img src="<?php echo get_template_directory_uri(); ?>/assets/img/viar-academy-logo.svg" alt="">
                         </div>
                     </div>
-                    <h1><span> Viyar ProBusiness</span></h1>
+                    <h1><span><?php the_field('zagolovok_shapki'); ?></span></h1>
                     <div class="sub-title">
-                        Базовий курс для розвитку меблевого бізнесу
-                        Від стратегії до створення контенту за 2 місяці
+                        <?php the_field('podzagolovok_shapki'); ?>
                     </div>
                     <div class="course-btn">
 
@@ -106,6 +105,6 @@
 
     <div class="pc">
         <div class="pc-image">
-            <img src="<?php echo get_template_directory_uri(); ?>/assets/img/header-pc.png" alt="">
+            <img src="<?php the_field('kartinka_v_shapke'); ?>" alt="header image">
         </div>
     </div>
