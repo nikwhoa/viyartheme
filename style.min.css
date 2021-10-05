@@ -219,7 +219,7 @@ template{display:none}
 .contacts{margin:-1.25rem 0 0 0;background:#0080e0;font-style:normal}
 .contacts .contacts-wrapper{max-width:1344px;margin:0 auto;display:-webkit-box;display:-ms-flexbox;display:flex;padding:1.25rem 8rem 0;-webkit-box-orient:horizontal;-webkit-box-direction:normal;-ms-flex-direction:row;flex-direction:row}
 .contacts .contacts-wrapper .show-on-mobile{display:none}
-.contacts__info{color:#fff;width:50%;height:322px;margin:6rem auto 0 0;padding:0 0 0 2rem;border-left:1px solid #fff;position:relative}
+.contacts__info{color:#fff;width:50%;height:352px;margin:6rem auto 0 0;padding:0 0 0 2rem;border-left:1px solid #fff;position:relative}
 .contacts__info .title{color:#fff;position:absolute;left:10rem;top:-6rem}
 .contacts__info header{display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-align:center;-ms-flex-align:center;align-items:center;margin-left:-3rem}
 .contacts__info header svg{margin:0 1rem 0 0}
