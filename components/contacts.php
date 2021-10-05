@@ -33,24 +33,24 @@
                     <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path d="M16 26C16 26 11.8 21.5 10 18C9.1 16.2 8 14.1 8 12C8 7.6 11.6 4 16 4C20.4 4 24 7.6 24 12C24 14.1 22.9 16.2 22 18C20.2 21.5 16 26 16 26ZM16 9C14.3 9 13 10.3 13 12C13 13.7 14.3 15 16 15C17.7 15 19 13.7 19 12C19 10.3 17.7 9 16 9Z" fill="white" />
                     </svg>
-                    Адреса: 
+                    Адреса:
                 </header>
                 м. Київ, б-р Вацлава Гавела, 16
             </div>
             <div class="speaker">
                 <header>
                     <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M16 2C8.3 2 2 8.3 2 16C2 23.7 8.3 30 16 30C23.7 30 30 23.7 30 16C30 8.3 23.7 2 16 2ZM12 10C12 7.8 13.8 6 16 6C18.2 6 20 7.8 20 10C20 10.2 20 10.8 20 11C20 13.8 18.2 17 16 17C13.8 17 12 13.8 12 11C12 10.8 12 10.2 12 10ZM16 28C11.3 28 7.2 25.3 5.3 21.3C5.4 21.1 5.5 20.9 5.7 20.8C7.4 19.3 9.4 18.2 11.7 17.6L16 22L20.4 17.6C22.6 18.2 24.6 19.3 26.4 20.8C26.6 20.9 26.7 21.1 26.8 21.3C24.8 25.3 20.7 28 16 28Z" fill="white" />
+                        <path d="M18.8 6C18.4 4.8 17.3 4 16 4C14.7 4 13.6 4.8 13.2 6H6V26H26V6H18.8ZM24 24H8V8H15V7C15 6.4 15.4 6 16 6C16.6 6 17 6.4 17 7V8H24V24ZM12 21H10V19H12V21ZM12 17H10V15H12V17ZM12 13H10V11H12V13ZM22 21H14V19H22V21ZM22 17H14V15H22V17ZM22 13H14V11H22V13Z" fill="white"></path>
                     </svg>
-                    Стати спікером
+                    <span><a href="https://viyarpro.business/wp-content/uploads/2021/10/oferta-navchannya-viyarprobusiness.pdf">Договір оферти</a></span>
                 </header>
                 <a href="mailto:academyviyar@gmail.com">academyviyar@gmail.com</a>
             </div>
             <div class="register register-btn-wrapper hide-on-mobile">
-            <a href="#prices" class="link">
-                <button class="register-btn btn">Зареєструватися</button>
-            </a>
-        </div>
+                <a href="#prices" class="link">
+                    <button class="register-btn btn">Зареєструватися</button>
+                </a>
+            </div>
         </div>
         <div class="register register-btn-wrapper show-on-mobile">
             <a href="#prices" class="link">
@@ -59,8 +59,8 @@
         </div>
         <div class="contacts__map">
             <div class="map-wrapper">
-            
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2541.1299451778377!2d30.407227141605595!3d50.43868019147208!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4cd2a0ce24b65%3A0x8d582a4d786d980b!2sViyar%20Akademiya!5e0!3m2!1sen!2sua!4v1631432061880!5m2!1sen!2sua&language=ua" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2541.1299451778377!2d30.407227141605595!3d50.43868019147208!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4cd2a0ce24b65%3A0x8d582a4d786d980b!2sViyar%20Akademiya!5e0!3m2!1sen!2sua!4v1631432061880!5m2!1sen!2sua&language=ua" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
             </div>
         </div>
     </div>
