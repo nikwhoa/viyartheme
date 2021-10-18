@@ -90,7 +90,7 @@
                         </a>
                     </div>
                     <div class="info__register">
-                        <button class="register-btn btn" id="register-button-offline">
+                        <button disabled class="register-btn btn" id="register-button-offline">
                             Реєстрація
                         </button>
                     </div>
@@ -172,7 +172,7 @@
 
                     </div>
                     <div class="info__register">
-                        <button class="register-btn btn" id="register-button-online">
+                        <button disabled class="register-btn btn" id="register-button-online">
                             Реєстрація
                         </button>
                     </div>
