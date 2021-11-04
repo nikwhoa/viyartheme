@@ -10,7 +10,11 @@ let registerBtnOnline = document.querySelector('#register-button-online');
 let closeModal = document.querySelectorAll('.close-modal');
 let formModal = document.querySelectorAll('.hf-form');
 let backToHomeBtns = [document.querySelector('.form__success-56'), document.querySelector('.form__success-57')];
+let popUp = document.querySelector('.pop-up');
 
+setTimeout(() => {
+    popUp.style.display = 'block';
+}, 10000);
 
 
 callBtn.forEach(el => {

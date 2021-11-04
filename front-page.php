@@ -10,4 +10,5 @@
 <?php get_template_part( 'components/footer' ); ?>
 <?php get_template_part( 'components/order-call' ); ?>
 <?php get_template_part( 'components/register' ); ?>
+<?php get_template_part( 'components/popup' ); ?>
 <?php get_footer(); ?>

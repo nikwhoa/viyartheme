@@ -1,101 +1,156 @@
 .hf-form {
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    position: fixed;
-    z-index: 999;
-    background:rgba(79, 79, 79, 0.9);
-    display: none;
-    overflow: visible;
-    .modal-wrapper {
-        position: absolute;
-        z-index: 1000; 
-        left: 50%;
-        transform: translate(-50%, 0);
-        top: 10%;
-        opacity: 1;
-        overflow: hidden;
-        background: $main-white;
-        color: $main-blue;
-        width: 504px;
-        height: fit-content; 
-        @include md {
-            width: 100%;
-        }
-    }
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	position: fixed;
+	z-index: 999;
+	background: rgba(79, 79, 79, 0.9);
+	display: none;
+	overflow: visible;
+
+	.modal-wrapper {
+		position: absolute;
+		z-index: 1000;
+		left: 50%;
+		transform: translate(-50%, 0);
+		top: 10%;
+		opacity: 1;
+		overflow: hidden;
+		background: $main-white;
+		color: $main-blue;
+		width: 504px;
+		height: fit-content;
+
+		@include md {
+			width: 100%;
+		}
+	}
 }
 
 
 
 .hf-fields-wrap {
-    text-align: center;
+	text-align: center;
 }
+
 .hf-form.hf-form-56 .hf-fields-wrap {
-    width: 100%;
-    
+	width: 100%;
+
 }
+
 .hf-fields-wrap header {
-    background: $main-blue;
-    color: $main-white;
-    display: flex;
-    padding: 1rem 0;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    margin: 0 0 3rem 0;
+	background: $main-blue;
+	color: $main-white;
+	display: flex;
+	padding: 1rem 0;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	margin: 0 0 3rem 0;
 }
+
 .modal-title {
-    text-transform: uppercase;
-    font-weight: bold;
-    margin: 1.8rem 0 1rem 0;
+	text-transform: uppercase;
+	font-weight: bold;
+	margin: 1.8rem 0 1rem 0;
 }
+
 .hf-fields-wrap input {
-    width: 60%;
-    padding: .7rem .3rem;
-    border: 1px solid #D0D0D0;
-    border-radius: 2px;
+	width: 60%;
+	padding: .7rem .3rem;
+	border: 1px solid #D0D0D0;
+	border-radius: 2px;
 }
+
 .hf-fields-wrap input::placeholder {
-    color: #C0C0C0;
-    font-size: .9rem;
+	color: #C0C0C0;
+	font-size: .9rem;
 }
+
 .hf-fields-wrap .btn {
-    margin: 2rem 0 0 0;
-    padding: 1rem 1.5rem;
+	margin: 2rem 0 0 0;
+	padding: 1rem 1.5rem;
 }
+
 .close-modal {
-    position: absolute;
-    right: 0;
-    top: 10px;
-    cursor: pointer;
+	position: absolute;
+	border: none;
+	background: transparent;
+	right: 0;
+	top: 10px;
+	cursor: pointer;
 }
+
 .checkbox-oferta {
-    width: 5% !important;
+	width: 5% !important;
 }
+
 .hf-message {
-    color: white;
-    
-    font-weight: bold;
-    text-align: center;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    align-content: center;
-    position: absolute;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
+	color: white;
+
+	font-weight: bold;
+	text-align: center;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	align-content: center;
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
 }
+
 .form__success {
-    position: fixed;
-    top: 60%;
-    display: none;
-    left: 50%;
-    transform: translate(-50%, 0);
-    z-index: 1000;
-    button {
-        padding: 1rem 1.7rem;
-    }
+	position: fixed;
+	top: 60%;
+	display: none;
+	left: 50%;
+	transform: translate(-50%, 0);
+	z-index: 1000;
+
+	button {
+		padding: 1rem 1.7rem;
+	}
+}
+
+.pop-up {
+	display: none;
+
+	.pop-up-wrapper {
+		font-size: 1.5rem;
+		color: white;
+		width: 70%;
+		margin: 2rem auto;
+        @media (max-width: 640px) {
+         font-size: 1.2rem;
+        }
+		img {
+			width: 100%;
+			height: auto;
+		}
+
+		a {
+			color: #ff8000;
+			text-decoration: none;
+
+			&:hover {
+				font-weight: bold;
+				// color: #e07000;
+			}
+		}
+	}
+
+	.close-modal {
+		right: 30px;
+        top: 30px;
+        @media (max-width: 640px) {
+            right: 0;
+        }
+        svg {
+			width: 60px;
+			height: 60px;
+		}
+	}
 }
