@@ -105,6 +105,6 @@
 
     <div class="pc">
         <div class="pc-image">
-            <img src="<?php the_field('kartinka_v_shapke'); ?>" alt="header image">
+        <img src="<?php echo get_template_directory_uri(); ?>/assets/img/header-pc.png" alt="">
         </div>
     </div>
