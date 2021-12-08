@@ -198,7 +198,7 @@ template{display:none}
 .prices__tabs .content .info__price .price{color:#fff;background:#0080e0;position:static;left:16px;height:48px;vertical-align:middle;right:16px;padding:.4rem 0;font-size:2rem;font-family:'Roboto Bold'}
 .prices__tabs .content .info__price .price-extra{margin:20px auto 0;color:#009020;text-align:center;width:70%}
 .prices__tabs .content .info__price .price-extra span{font-family:'Roboto Bold';display:block}
-.prices__tabs .content .info__register button{padding:1.2rem 3.5rem;background:grey}
+.prices__tabs .content .info__register button{padding:1.2rem .8rem}
 .place__address{display:-webkit-box;display:-ms-flexbox;display:flex;height:70px;-webkit-box-pack:center;-ms-flex-pack:center;justify-content:center;-webkit-box-align:center;-ms-flex-align:center;align-items:center}
 .faq-wrapper{background-image:url("assets/img/faq-bg.jpg");background-repeat:no-repeat;background-size:cover;background-position:center;position:relative;width:100%;z-index:1;height:100%;-webkit-transition:height 10s 20s;transition:height 10s 20s}
 .faq{z-index:10;position:relative}

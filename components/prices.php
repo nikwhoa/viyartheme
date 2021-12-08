@@ -90,8 +90,8 @@
                         </a>
                     </div>
                     <div class="info__register">
-                        <button disabled class="register-btn btn" id="register-button-offline">
-                            Реєстрація
+                        <button class="register-btn btn" id="register-button-offline">
+                        Записатися в лист очікування
                         </button>
                     </div>
                 </div>
@@ -172,8 +172,8 @@
 
                     </div>
                     <div class="info__register">
-                        <button disabled class="register-btn btn" id="register-button-online">
-                            Реєстрація
+                        <button class="register-btn btn" id="register-button-online">
+                        Записатися в лист очікування
                         </button>
                     </div>
                 </div>
