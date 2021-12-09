@@ -193,11 +193,6 @@ var closeModal = document.querySelectorAll('.close-modal');
 var formModal = document.querySelectorAll('.hf-form');
 var backToHomeBtns = [document.querySelector('.form__success-56'), document.querySelector('.form__success-57')];
 var popUp = document.querySelector('.pop-up');
-/* uncomment code below if need pop-up  */
-// setTimeout(() => {
-//     popUp.style.display = 'block';
-// }, 10000);
-
 callBtn.forEach(function (el) {
   el.addEventListener('click', function () {
     modalCall.style.display = 'block';
