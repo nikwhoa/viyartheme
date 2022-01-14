@@ -619,7 +619,7 @@ template { display: none; }
 
 @media (max-width: 991.98px) { .prices__tabs .content .info__price .price-extra { margin: 90px auto 0; } }
 
-.prices__tabs .content .info__register button { padding: 1.2rem .8rem; }
+.prices__tabs .content .info__register button { padding: .8rem 1.5rem; }
 
 .place__address { display: -webkit-box; display: -ms-flexbox; display: flex; height: 70px; -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; /* align-content: center; */ -webkit-box-align: center; -ms-flex-align: center; align-items: center; }
 

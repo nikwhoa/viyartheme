@@ -91,7 +91,7 @@
                     </div>
                     <div class="info__register">
                         <button class="register-btn btn" id="register-button-offline">
-                        Записатися в лист очікування
+                        Зареєструватися
                         </button>
                     </div>
                 </div>
@@ -173,7 +173,7 @@
                     </div>
                     <div class="info__register">
                         <button class="register-btn btn" id="register-button-online">
-                        Записатися в лист очікування
+                        Зареєструватися
                         </button>
                     </div>
                 </div>

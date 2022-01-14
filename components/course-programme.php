@@ -12,16 +12,7 @@
         </div>
         <div class="course-programme__modules">
 
-            <div class="module intro">
-                <div class="module__header flex-container">
-                    <div class="circle intro"></div>
-                    <div class="number intro">Вступна лекція</div>
-                    <div class="title intro">Стратегія: що це, як вона працює і чому вона потрібна вашому бізнесу</div>
-                </div>
-                <div class="module__content">
-                    
-                </div>
-            </div>
+     
             <div class="module">
                 <div class="module__header flex-container">
                     <div class="circle"></div>
@@ -31,6 +22,7 @@
                 </div>
                 <div class="module__content">
                     <ul>
+                        <li>Стратегія: що це, як вона працює і чому вона потрібна вашому бізнесу</li>
                         <li>Фінанси в меблевому маркетингу: що важливо пам’ятати</li>
                         <li>Основи фінансового ведення бізнесу: ризики, дохід, витрати</li>
                         <li>Тайм-менеджмент: як використовувати його інструменти</li>
