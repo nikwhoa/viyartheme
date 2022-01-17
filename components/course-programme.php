@@ -6,7 +6,7 @@
             <h2>ПРОГРАМА КУРСУ</h2>
         </div>
         <div class="course-programme__download">
-            <a href="https://viyarpro.business/wp-content/uploads/2021/09/red_viyar_probusiness_start_kursu_ukrainskij.pptx" class="link">
+            <a href="https://viyarpro.business/wp-content/uploads/2022/01/red_viyar_probusiness_start_kursu_ukrainskij.pptx" class="link">
                 <img src="<?php echo get_template_directory_uri(); ?>/assets/img/download-icon.png" alt="Скачать презентацию">Завантажити презентацію
             </a>
         </div>
