@@ -94,7 +94,7 @@
                     <div class="button"></div>
                 </div>
             </div>
-            <div class="answer">Офлайн-група стартує 5 жовтня, а онлайн-група – 6 жовтня.</div>
+            <div class="answer">Офлайн-група стартує 15 лютого, а онлайн-група – 14 лютого.</div>
         </div>
     </div>
     <div class="faq__register register-btn-wrapper">
