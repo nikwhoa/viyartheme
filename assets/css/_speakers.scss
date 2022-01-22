@@ -29,7 +29,7 @@
             }
             &__name {
                 color: $main-white;
-                font-family: 'Roboto Bold';
+                font-weight: 700;
                 
             }
             &__info {
@@ -38,9 +38,8 @@
                 padding: 1rem 0;
             }
             &__text {
-                font-family: 'Roboto Bold';
-                line-height: 1.2rem;
                 color: $main-white;
+                font-weight: 700;
             }
         }
     }
@@ -57,7 +56,7 @@
 /* slider */
 .swiper {
     // width: 1136px;
-    height: 520px;
+    height: 480px;
     padding: 0 2rem;
 }
 .swiper-button-prev::after, .swiper-button-next::after {

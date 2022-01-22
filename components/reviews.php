@@ -6,6 +6,55 @@
         <div class="swiper-wrapper">
             <div class="swiper-slide review">
                 <div class="video_wrapper video_wrapper_full js-videoWrapper">
+                    <iframe class="videoIframe js-videoIframe" src="" allow="autoplay" frameborder="0" allowTransparency="true" allowfullscreen data-src="https://www.youtube.com/embed/Xyr004jGBiY?autoplay=1&modestbranding=1&rel=0&hl=ru&showinfo=0&color=white"></iframe>
+                    <button class="videoPoster js-videoPoster" style="background-image: url('<?php echo get_template_directory_uri(); ?>/assets/img/reviews/radchenko.jpg')"></button>
+                </div>
+                <div class="review__name">Радченко Юрій</div>
+            </div>
+            <div class="swiper-slide review">
+                <div class="video_wrapper video_wrapper_full js-videoWrapper">
+                    <iframe class="videoIframe js-videoIframe" src="" allow="autoplay" frameborder="0" allowTransparency="true" allowfullscreen data-src="https://www.youtube.com/embed/uT-TdqQhD4E?autoplay=1&modestbranding=1&rel=0&hl=ru&showinfo=0&color=white"></iframe>
+                    <button class="videoPoster js-videoPoster" style="background-image: url('<?php echo get_template_directory_uri(); ?>/assets/img/reviews/nikolska.jpg')"></button>
+                </div>
+                <div class="review__name">Нікольська Оксана</div>
+            </div>
+            <div class="swiper-slide review">
+                <div class="video_wrapper video_wrapper_full js-videoWrapper">
+                    <iframe class="videoIframe js-videoIframe" src="" allow="autoplay" frameborder="0" allowTransparency="true" allowfullscreen data-src="https://www.youtube.com/embed/HOWGIsZl7Ag?autoplay=1&modestbranding=1&rel=0&hl=ru&showinfo=0&color=white"></iframe>
+                    <button class="videoPoster js-videoPoster" style="background-image: url('<?php echo get_template_directory_uri(); ?>/assets/img/reviews/kolesnikov.jpg')"></button>
+                </div>
+                <div class="review__name">Леоненко Владислав</div>
+            </div>
+            <div class="swiper-slide review">
+                <div class="video_wrapper video_wrapper_full js-videoWrapper">
+                    <iframe class="videoIframe js-videoIframe" src="" allow="autoplay" frameborder="0" allowTransparency="true" allowfullscreen data-src="https://www.youtube.com/embed/SJtBBlx56lU?autoplay=1&modestbranding=1&rel=0&hl=ru&showinfo=0&color=white"></iframe>
+                    <button class="videoPoster js-videoPoster" style="background-image: url('<?php echo get_template_directory_uri(); ?>/assets/img/reviews/kolesnikov.jpg')"></button>
+                </div>
+                <div class="review__name">Колесніков Олександр</div>
+            </div>
+            <div class="swiper-slide review">
+                <div class="video_wrapper video_wrapper_full js-videoWrapper">
+                    <iframe class="videoIframe js-videoIframe" src="" allow="autoplay" frameborder="0" allowTransparency="true" allowfullscreen data-src="https://www.youtube.com/embed/Zmw4BgSjAkk?autoplay=1&modestbranding=1&rel=0&hl=ru&showinfo=0&color=white"></iframe>
+                    <button class="videoPoster js-videoPoster" style="background-image: url('<?php echo get_template_directory_uri(); ?>/assets/img/reviews/isuk.jpg')"></button>
+                </div>
+                <div class="review__name">Ісюк Ірина</div>
+            </div>
+            <div class="swiper-slide review">
+                <div class="video_wrapper video_wrapper_full js-videoWrapper">
+                    <iframe class="videoIframe js-videoIframe" src="" allow="autoplay" frameborder="0" allowTransparency="true" allowfullscreen data-src="https://www.youtube.com/embed/GuCflN5_QkE?autoplay=1&modestbranding=1&rel=0&hl=ru&showinfo=0&color=white"></iframe>
+                    <button class="videoPoster js-videoPoster" style="background-image: url('<?php echo get_template_directory_uri(); ?>/assets/img/reviews/artunyan.jpg')"></button>
+                </div>
+                <div class="review__name">Арутюнян Володимир</div>
+            </div>
+            <div class="swiper-slide review">
+                <div class="video_wrapper video_wrapper_full js-videoWrapper">
+                    <iframe class="videoIframe js-videoIframe" src="" allow="autoplay" frameborder="0" allowTransparency="true" allowfullscreen data-src="https://www.youtube.com/embed/2opDalYWjs4?autoplay=1&modestbranding=1&rel=0&hl=ru&showinfo=0&color=white"></iframe>
+                    <button class="videoPoster js-videoPoster" style="background-image: url('<?php echo get_template_directory_uri(); ?>/assets/img/reviews/vorobey.jpg')"></button>
+                </div>
+                <div class="review__name">Воробей Дмитро</div>
+            </div>
+            <div class="swiper-slide review">
+                <div class="video_wrapper video_wrapper_full js-videoWrapper">
                     <iframe class="videoIframe js-videoIframe" src="" allow="autoplay" frameborder="0" allowTransparency="true" allowfullscreen data-src="https://www.youtube.com/embed/PRUESBjDDqU?autoplay=1&modestbranding=1&rel=0&hl=ru&showinfo=0&color=white"></iframe>
                     <button class="videoPoster js-videoPoster" style="background-image: url('<?php echo get_template_directory_uri(); ?>/assets/img/reviews/porkhalo-oleksii.jpg')"></button>
                 </div>

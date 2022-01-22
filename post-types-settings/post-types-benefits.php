@@ -41,7 +41,7 @@ function benefits_init() {
         'has_archive'        => true,
         'hierarchical'       => false,
         'menu_position'      => 20,
-        'supports'           => array( 'title', 'editor', 'author', 'thumbnail'),
+        'supports'           => array( 'title', 'editor', 'author', 'thumbnail' ),
         // 'taxonomies'         => array( 'category', 'post_tag' ),
         'show_in_rest'       => true
     );
