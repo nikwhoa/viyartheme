@@ -147,7 +147,7 @@ template{display:none}
 .speakers__list .speaker__photo{padding:1rem}
 .speakers__list .speaker__photo img{width:168px;height:168px;border-radius:50%;-o-object-fit:cover;object-fit:cover;-o-object-position:100% 0;object-position:100% 0}
 .speakers__list .speaker__name{color:#fff;font-weight:700}
-.speakers__list .speaker__info{color:#fff;font-size:.9rem;padding:1rem 0}
+.speakers__list .speaker__info{color:#fff;font-size:.9rem;padding:1rem 0;height:90px;overflow:hidden}
 .speakers__list .speaker__text{color:#fff;font-weight:700}
 .speakers__mail-us{text-align:center;color:#fff}
 .speakers__mail-us a{color:inherit;-webkit-text-decoration:underline #fff;text-decoration:underline #fff}
