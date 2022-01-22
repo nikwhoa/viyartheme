@@ -3,6 +3,7 @@ define("WP_ROOT", __DIR__);
 define("DSS", DIRECTORY_SEPARATOR);
 require_once WP_ROOT . DSS . "post-types-settings/post-types-approaches.php";
 require_once WP_ROOT . DSS . "post-types-settings/post-types-benefits.php";
+require_once WP_ROOT . DSS . "post-types-settings/post-types-speakers.php";
 
 
 function scripts()
@@ -33,6 +34,10 @@ function themename_custom_logo_setup()
 }
 
 add_action('after_setup_theme', 'themename_custom_logo_setup');
+
+// post thumbnails
+
+add_theme_support( 'post-thumbnails' ); 
 
 // add svg files to media library
 function my_custom_mime_types($mimes)
