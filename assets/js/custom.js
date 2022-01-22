@@ -192,7 +192,6 @@ var registerBtnOnline = document.querySelector('#register-button-online');
 var closeModal = document.querySelectorAll('.close-modal');
 var formModal = document.querySelectorAll('.hf-form');
 var backToHomeBtns = [document.querySelector('.form__success-56'), document.querySelector('.form__success-57')];
-var popUp = document.querySelector('.pop-up');
 callBtn.forEach(function (el) {
   el.addEventListener('click', function () {
     modalCall.style.display = 'block';
