@@ -6,6 +6,7 @@ require_once WP_ROOT . DSS . "post-types-settings/post-types-benefits.php";
 require_once WP_ROOT . DSS . "post-types-settings/post-types-speakers.php";
 require_once WP_ROOT . DSS . "post-types-settings/post-types-reviews.php";
 require_once WP_ROOT . DSS . "post-types-settings/post-types-prices.php";
+require_once WP_ROOT . DSS . "post-types-settings/post-types-faq.php";
 
 
 function scripts()
