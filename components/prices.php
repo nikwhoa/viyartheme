@@ -121,7 +121,7 @@
                         </a>
                     </div>
                     <div class="info__register">
-                        <button class="register-btn btn" id="register-button-offline">
+                        <button class="register-btn btn" id="register-button-<?php the_field('dlya_formy'); ?>">
                             Зареєструватися
                         </button>
                     </div>

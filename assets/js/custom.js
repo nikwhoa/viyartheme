@@ -276,6 +276,132 @@ function tabs(tabsSelector, tabsContentSelector, tabsParentSelector, activeClass
 }
 "use strict";
 
+window.addEventListener('DOMContentLoaded', function (event) {
+  // timer
+  var timer = document.querySelector('.timer');
+  var days = timer.querySelector('.days');
+  var hours = timer.querySelector('.hours');
+  var minutes = timer.querySelector('.minutes');
+  var second = timer.querySelector('.seconds');
+  var dead = 'February 15 2022 18:00:00 GMT+0200';
+
+  function getTimeRemaining(endtime) {
+    var total = Date.parse(endtime) - Date.parse(new Date());
+    var seconds = Math.floor(total / 1000 % 60);
+    var minutes = Math.floor(total / 1000 / 60 % 60);
+    var hours = Math.floor(total / (1000 * 60 * 60) % 24);
+    var days = Math.floor(total / (1000 * 60 * 60 * 24));
+    var secondsToDisplay = seconds.toLocaleString('en-US', {
+      minimumIntegerDigits: 2,
+      useGrouping: false
+    }).split('').map(function (num) {
+      return Number(num);
+    });
+    var minutesToDisplay = minutes.toLocaleString('en-US', {
+      minimumIntegerDigits: 2,
+      useGrouping: false
+    }).split('').map(function (num) {
+      return Number(num);
+    });
+    var hoursToDisplay = hours.toLocaleString('en-US', {
+      minimumIntegerDigits: 2,
+      useGrouping: false
+    }).split('').map(function (num) {
+      return Number(num);
+    });
+    var daysToDisplay = days.toLocaleString('en-US', {
+      minimumIntegerDigits: 2,
+      useGrouping: false
+    }).split('').map(function (num) {
+      return Number(num);
+    });
+    return {
+      total: total,
+      days: days,
+      hours: hours,
+      minutes: minutes,
+      seconds: seconds,
+      daysToDisplay: daysToDisplay,
+      minutesToDisplay: minutesToDisplay,
+      secondsToDisplay: secondsToDisplay,
+      hoursToDisplay: hoursToDisplay
+    };
+  }
+
+  function declOfNum(number, titles) {
+    var cases = [2, 0, 1, 1, 1, 2];
+    return titles[number % 100 > 4 && number % 100 < 20 ? 2 : cases[number % 10 < 5 ? number % 10 : 5]];
+  }
+
+  function daysaaaa(day) {
+    if (1 === day) {
+      return 'день';
+    } else if (day === 0) {
+      return 'днiв';
+    } else {
+      return 'днi';
+    }
+  }
+
+  var aaaa = getTimeRemaining(dead).daysToDisplay.map(function (item) {
+    return "<div class='timer-bg'>".concat(item, "</div>");
+  });
+  days.innerHTML = "<div class='timer-bg'>".concat(getTimeRemaining(dead).daysToDisplay[0], "</div> <div class='timer-bg'>").concat(getTimeRemaining(dead).daysToDisplay[1], "</div>  <div class='timer-extra'> ").concat(daysaaaa(getTimeRemaining(dead).days), " </div>");
+
+  function showHours(hours) {
+    return declOfNum(hours, ['година', 'години', 'годин']);
+  }
+
+  hours.innerHTML = "<div class='timer-bg'>".concat(getTimeRemaining(dead).hoursToDisplay[0], "</div> <div class='timer-bg'>").concat(getTimeRemaining(dead).hoursToDisplay[1], "</div> <div class='timer-extra'> ").concat(showHours(getTimeRemaining(dead).hours), "</div>");
+
+  function showMinutes(minutes) {
+    return declOfNum(minutes, ['хвилина', 'хвилини', 'хвилин']);
+  }
+
+  minutes.innerHTML = "<div class='timer-bg'>".concat(getTimeRemaining(dead).minutesToDisplay[0], "</div> <div class='timer-bg'>").concat(getTimeRemaining(dead).minutesToDisplay[1], "</div> <div class='timer-extra'>").concat(showMinutes(getTimeRemaining(dead).minutes), "</div>");
+
+  function showSeconds(seconds) {
+    return declOfNum(seconds, ['секунда', 'секунди', 'секунд']);
+  }
+
+  second.innerHTML = "<div class='timer-bg'>".concat(getTimeRemaining(dead).secondsToDisplay[0], "</div> <div class='timer-bg'>").concat(getTimeRemaining(dead).secondsToDisplay[1], "</div> <div class='timer-extra'> ").concat(showSeconds(getTimeRemaining(dead).seconds), "</div>");
+  setInterval(function () {
+    function daysaaaa(day) {
+      if (day === 1) {
+        return 'день';
+      } else if (day === 0) {
+        return 'днiв';
+      } else {
+        return 'днi';
+      }
+    }
+
+    var aaaa = getTimeRemaining(dead).daysToDisplay.map(function (item) {
+      return "<div class='timer-bg'>".concat(item, "</div>");
+    });
+    days.innerHTML = "<div class='timer-bg'>".concat(getTimeRemaining(dead).daysToDisplay[0], "</div> <div class='timer-bg'>").concat(getTimeRemaining(dead).daysToDisplay[1], "</div>  <div class='timer-extra'> ").concat(daysaaaa(getTimeRemaining(dead).days), " </div>");
+
+    function showHours(hours) {
+      return declOfNum(hours, ['година', 'години', 'годин']);
+    }
+
+    hours.innerHTML = "<div class='timer-bg'>".concat(getTimeRemaining(dead).hoursToDisplay[0], "</div> <div class='timer-bg'>").concat(getTimeRemaining(dead).hoursToDisplay[1], "</div> <div class='timer-extra'> ").concat(showHours(getTimeRemaining(dead).hours), "</div>");
+
+    function showMinutes(minutes) {
+      return declOfNum(minutes, ['хвилина', 'хвилини', 'хвилин']);
+    }
+
+    minutes.innerHTML = "<div class='timer-bg'>".concat(getTimeRemaining(dead).minutesToDisplay[0], "</div> <div class='timer-bg'>").concat(getTimeRemaining(dead).minutesToDisplay[1], "</div> <div class='timer-extra'>").concat(showMinutes(getTimeRemaining(dead).minutes), "</div>");
+
+    function showSeconds(seconds) {
+      return declOfNum(seconds, ['секунда', 'секунди', 'секунд']);
+    }
+
+    second.innerHTML = "<div class='timer-bg'>".concat(getTimeRemaining(dead).secondsToDisplay[0], "</div> <div class='timer-bg'>").concat(getTimeRemaining(dead).secondsToDisplay[1], "</div> <div class='timer-extra'> ").concat(showSeconds(getTimeRemaining(dead).seconds), "</div>");
+  }, 1000);
+});
+"use strict";
+
 // eslint-disable-next-line no-unused-vars
 function videoPlay(button) {
   var youTubeButton = document.querySelectorAll(button);
