@@ -20,7 +20,7 @@
 		transform: unset;
 		box-shadow: unset;
 		// display: none;
-		
+
 	}
 	@include lg {
 		height: 800px;
@@ -96,8 +96,8 @@
 	}
 
 	/*
-		TODO: remove if will be wrapper 
-		max-width: 1344px; 
+		TODO: remove if will be wrapper
+		max-width: 1344px;
 		*/
 
 
@@ -404,8 +404,8 @@
 		@include xl {
 			margin: 0 auto 16rem -3rem;
 		}
-		
-		
+
+
 
 		// justify-content: space-around!important;
 		.title {
@@ -446,7 +446,7 @@
 			margin: 0.5rem -6.76rem -1.3rem 0;
 			@include md {
 				margin: 0.5rem 1rem -3.3rem 0;
-				
+
 			}
 			@include lg {
 				margin-right: 0;
@@ -491,7 +491,7 @@
 
 
 .hamburger-navigation {
-	
+
 	display: flex !important;
 	flex-direction: column !important;
 	position: fixed;
@@ -506,7 +506,7 @@
 	font-size: 1.1rem !important;
 	text-align: left;
 	padding: 1.5rem 1.63rem;
-    
+
 	a {
 		color: $main-blue;
 	}

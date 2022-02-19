@@ -34,13 +34,7 @@ details{display:block}
 summary{display:list-item}
 template{display:none}
 [hidden]{display:none}
-.timer{max-width:1110px;margin:90px auto -215px auto;color:white;font-size:31px;font-weight:bold;text-align:left;position:relative;color:white;font-size:31px;font-weight:bold}
-.timer .text{font-size:16px;padding-left:5px;margin-bottom:15px}
-.timer .days,.timer .hours,.timer .minutes,.timer .seconds{display:inline-block;text-align:center;margin:0 5px}
-.timer .days div,.timer .hours div,.timer .minutes div,.timer .seconds div{background:rgba(0,0,0,0.2);-webkit-backdrop-filter:blur(45px);backdrop-filter:blur(45px);border-radius:5px;padding:5px;display:contents}
-.timer .timer-bg{width:40px;height:56px;background:rgba(0,0,0,0.2) !important;-webkit-backdrop-filter:blur(45px) !important;backdrop-filter:blur(45px) !important;display:-webkit-inline-box !important;display:-ms-inline-flexbox !important;display:inline-flex !important;border-radius:5px !important;padding:5px !important;padding:8px 0 0 10px !important}
-.timer .timer-extra{display:block !important;background:none !important;font-size:14px !important}
-.header-bg{background:radial-gradient(44.52% 130.48% at 61.79% 38.76%,rgba(48,160,240,0.9) 0,rgba(0,128,224,0.9) 45.12%,rgba(0,128,224,0.9) 100%);-webkit-box-shadow:0 4px 20px rgba(0,32,64,0.19);box-shadow:0 4px 20px rgba(0,32,64,0.19);position:absolute;width:100%;top:-320px;min-height:830px;max-height:960px;overflow:hidden;-webkit-transform:skewY(-8deg);transform:skewY(-8deg);-webkit-transform-origin:100%;transform-origin:100%}
+.header-bg{background:radial-gradient(44.52% 130.48% at 61.79% 38.76%,rgba(48,160,240,0.9) 0,rgba(0,128,224,0.9) 45.12%,rgba(0,128,224,0.9) 100%);-webkit-box-shadow:0 4px 20px rgba(0,32,64,0.19);box-shadow:0 4px 20px rgba(0,32,64,0.19);position:absolute;width:100%;top:-320px;min-height:780px;max-height:960px;overflow:hidden;-webkit-transform:skewY(-8deg);transform:skewY(-8deg);-webkit-transform-origin:100%;transform-origin:100%}
 .nav-wrapper{width:100%;position:fixed;top:0;left:50%;-webkit-transform:translate(-50%,0);transform:translate(-50%,0);z-index:999;-webkit-transition:all .6s ease-in-out;transition:all .6s ease-in-out;text-align:center;display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-pack:center;-ms-flex-pack:center;justify-content:center}
 .sticky-nav{background:#fff;-webkit-transition:all .6s ease-in-out;transition:all .6s ease-in-out}
 .sticky-nav #phone-icon{fill:#0080e0}
@@ -81,7 +75,7 @@ template{display:none}
 .navigation__phone:hover .phone__call-order-desktop button{padding:1rem 1.5rem}
 .header{position:relative;z-index:1;height:auto;color:#fff;font-weight:bold;font-size:.9rem}
 .header section{background:url("assets/img/header-bg--drawing.svg") top/cover no-repeat;height:inherit}
-.header__title{max-width:1344px;margin:0 auto 10rem auto;padding:13.4rem 0 0 7.6rem}
+.header__title{max-width:1344px;margin:0 auto 10rem auto;padding:9.4rem 0 0 7.6rem}
 .header__title .title h1{line-height:2.3rem;font-size:3rem;font-weight:normal}
 .header__title .title h1 span{font-family:'Roboto Bold'}
 .header__title .academy-logo{font-size:.8rem;display:-webkit-box;display:-ms-flexbox;display:flex;font-weight:normal;-ms-flex-line-pack:end;align-content:flex-end;-webkit-box-pack:end;-ms-flex-pack:end;justify-content:flex-end;-webkit-box-align:center;-ms-flex-align:center;align-items:center;margin:.5rem -6.76rem -1.3rem 0}
@@ -410,8 +404,7 @@ h2{font-family:'Roboto Bold';text-align:center;font-size:1.5rem}
 .pc{left:40.3%}
 }@media(max-width:1100px){.approaches__list{padding:0 1rem}
 }@media(max-width:1067.8px){.course-programme-line{height:113.7%}
-}@media(max-width:991.98px){.timer{max-width:820px}
-.header-bg{height:800px}
+}@media(max-width:991.98px){.header-bg{height:800px}
 .header__title{margin-bottom:10rem}
 .header__title .title h1{padding-top:30px}
 .header__title .title h1{font-size:2rem}
@@ -439,21 +432,16 @@ h2{font-family:'Roboto Bold';text-align:center;font-size:1.5rem}
 .footer .footer-wrapper{-webkit-box-orient:vertical;-webkit-box-direction:normal;-ms-flex-direction:column;flex-direction:column}
 .footer__nav .menu{-webkit-box-orient:vertical;-webkit-box-direction:normal;-ms-flex-direction:column;flex-direction:column;text-align:center}
 }@media(max-width:843.8px){.course-programme-line{height:108.84%}
-}@media(max-width:794.98px){.timer{text-align:center;font-size:26px;max-width:100%;margin:90px auto -190px auto}
-.timer .text{text-align:center}
-.timer .timer-bg{width:32px;height:48px}
-.header-bg{max-height:unset;height:1160px;background:#0080e0;-webkit-transform:unset;transform:unset;-webkit-box-shadow:unset;box-shadow:unset}
+}@media(max-width:794.98px){.header-bg{max-height:unset;height:1056px;background:#0080e0;-webkit-transform:unset;transform:unset;-webkit-box-shadow:unset;box-shadow:unset}
 .navigation{background:#fff;width:100%}
 .navigation__mobile-menu{display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-align:center;-ms-flex-align:center;align-items:center;height:61px}
 .navigation__nav{display:none}
 .navigation__phone .phone__link{color:#0080e0;display:none}
 .navigation__phone .phone-number{line-height:3rem}
-.header__title{margin:30rem auto 0 auto;padding:unset;-webkit-box-pack:center;-ms-flex-pack:center;justify-content:center}
-.header__title .title{max-width:100%}
+.header__title{margin:24rem auto 0 auto;padding:unset;-webkit-box-pack:center;-ms-flex-pack:center;justify-content:center}
 .header__title .title h1{font-size:2.1rem}
 .header__title .title h1 span{display:block}
 .header__title .academy-logo{margin:.5rem 1rem -3.3rem 0}
-.header__title .academy-logo img{width:100%}
 .header__title .sub-title{margin:unset;width:100%;padding:unset}
 .header__title .course-btn{text-align:center}
 .approaches-bg{background:#0080e0;margin-top:unset;-webkit-transform:unset;transform:unset;max-height:unset;height:600px;-webkit-box-shadow:unset;box-shadow:unset}
