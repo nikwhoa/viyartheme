@@ -52,7 +52,7 @@ main {
 section {
   padding: 1rem;
   @include sm {
-    padding: 0.5rem;
+    padding: 0.5rem !important;
   }
 }
 
@@ -84,9 +84,13 @@ section {
   position: absolute;
   z-index: 100;
 
+  @media (max-width: 1110.98px) {
+    left: 40.3%;
+  }
+
   @include md {
     left: auto;
-    top: -37rem;
+    top: -43rem;
     padding: unset;
     display: block;
     max-width: unset;
@@ -96,10 +100,9 @@ section {
   }
   @media (max-width: 610.98px) {
     width: 267px;
+    top: -40rem;
   }
-  @media (max-width: 1110.98px) {
-    left: 40.3%;
-  }
+
 
   .pc-image img {
     @media (max-width: 1140.98px) {
