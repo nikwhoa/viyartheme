@@ -1,7 +1,24 @@
-"use strict";
+'use strict';
 
 /* eslint-disable no-trailing-spaces */
 window.addEventListener('DOMContentLoaded', function () {
+  const headerMenuItems = document.querySelectorAll(
+    '#menu-header-menu .menu-item'
+  );
+
+  headerMenuItems.forEach((item) => {
+    item.addEventListener('click', () => {
+      document
+        .querySelector('.navigation__nav')
+        .classList.remove('hamburger-navigation');
+
+      document.querySelector('.mobile-menu-btn__open').toggleAttribute('isOpened');
+      document.querySelector('.mobile-menu-btn__open').classList.replace('close-btn', 'open-btn');
+      document.documentElement.classList.remove('disable-scroll');
+
+    });
+  });
+
   document.querySelector('#offline-tab').classList.add('active');
   document.querySelector('#post_number-80').classList.add('active');
 
@@ -19,18 +36,20 @@ window.addEventListener('DOMContentLoaded', function () {
     document.querySelector('#post_number-80').classList.add('active');
   });
   var navWrapper = document.querySelector('.nav-wrapper'),
-      hamburgerButton = document.querySelector(' .navigation__mobile-menu'),
-      navigation = navWrapper.querySelector('.navigation__nav'),
-      menu = navWrapper.querySelectorAll('.menu > li'),
-      hamburgerOpenButton = document.querySelector('.mobile-menu-btn__open'),
-      hamburgerCloseButton = document.querySelector('.mobile-menu-btn__close');
+    hamburgerButton = document.querySelector(' .navigation__mobile-menu'),
+    navigation = navWrapper.querySelector('.navigation__nav'),
+    menu = navWrapper.querySelectorAll('.menu > li'),
+    hamburgerOpenButton = document.querySelector('.mobile-menu-btn__open'),
+    hamburgerCloseButton = document.querySelector('.mobile-menu-btn__close');
   window.addEventListener('scroll', function () {
-    if (200 < window.pageYOffset
-    /* added pageYOffset for ie */
+    if (
+      200 < window.pageYOffset
+      /* added pageYOffset for ie */
     ) {
       navWrapper.classList.add('sticky-nav');
       var logoJs = document.querySelector('.logo-js');
-      logoJs.src = './wp-content/themes/viyartheme/assets/img/logo-svg-sticky.svg';
+      logoJs.src =
+        './wp-content/themes/viyartheme/assets/img/logo-svg-sticky.svg';
     } else if (100 > window.pageYOffset) {
       navWrapper.classList.remove('sticky-nav');
 
@@ -62,7 +81,8 @@ window.addEventListener('DOMContentLoaded', function () {
 
     var hamburgerLine = document.createElement('div');
     hamburgerLine.setAttribute('id', 'hamburgerLine');
-    hamburgerLine.style.cssText = "\n        width: 64px;\n        height: 1px;\n        background: #30A0F0;\n        margin: 1rem auto;\n        ";
+    hamburgerLine.style.cssText =
+      '\n        width: 64px;\n        height: 1px;\n        background: #30A0F0;\n        margin: 1rem auto;\n        ';
 
     if (document.querySelector('#hamburgerLine')) {
       console.log('hamburgerLine is exist');
@@ -72,7 +92,8 @@ window.addEventListener('DOMContentLoaded', function () {
 
     var hamburgerPhone = document.createElement('div');
     hamburgerPhone.classList.add('hamburger-phone');
-    hamburgerPhone.innerHTML = "\n        <a class=\"phone__link\" href=\"tel:+380978929786\"> \n        <div class=\"phone-icon flex-item\">\n        \n        <svg width=\"18\" height=\"18\" viewBox=\"0 0 18 18\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n        <path id=\"phone-icon\" d=\"M17.4912 13.2102L14.9792 10.6982C14.0821 9.80111 12.557 10.16 12.1981 11.3262C11.929 12.1337 11.0319 12.5822 10.2245 12.4028C8.43021 11.9542 6.00797 9.62168 5.55941 7.73772C5.29027 6.93027 5.82855 6.03314 6.63596 5.76404C7.80222 5.40519 8.16108 3.88007 7.26395 2.98295L4.752 0.470991C4.03429 -0.156997 2.95774 -0.156997 2.32975 0.470991L0.625214 2.17553C-1.07933 3.96978 0.804639 8.72455 5.02113 12.941C9.23763 17.1575 13.9924 19.1313 15.7866 17.337L17.4912 15.6324C18.1192 14.9147 18.1192 13.8382 17.4912 13.2102Z\" fill=\"white\" />\n        </svg>\n        \n        </div>\n        <div class=\"phone-number flex-item\">\n        \n        +380 97 892 97 86\n                    \n        </div>\n        </a>\n        ";
+    hamburgerPhone.innerHTML =
+      '\n        <a class="phone__link" href="tel:+380978929786"> \n        <div class="phone-icon flex-item">\n        \n        <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">\n        <path id="phone-icon" d="M17.4912 13.2102L14.9792 10.6982C14.0821 9.80111 12.557 10.16 12.1981 11.3262C11.929 12.1337 11.0319 12.5822 10.2245 12.4028C8.43021 11.9542 6.00797 9.62168 5.55941 7.73772C5.29027 6.93027 5.82855 6.03314 6.63596 5.76404C7.80222 5.40519 8.16108 3.88007 7.26395 2.98295L4.752 0.470991C4.03429 -0.156997 2.95774 -0.156997 2.32975 0.470991L0.625214 2.17553C-1.07933 3.96978 0.804639 8.72455 5.02113 12.941C9.23763 17.1575 13.9924 19.1313 15.7866 17.337L17.4912 15.6324C18.1192 14.9147 18.1192 13.8382 17.4912 13.2102Z" fill="white" />\n        </svg>\n        \n        </div>\n        <div class="phone-number flex-item">\n        \n        +380 97 892 97 86\n                    \n        </div>\n        </a>\n        ';
 
     if (document.querySelector('.hamburger-phone')) {
       console.log('already exist');
@@ -90,49 +111,49 @@ window.addEventListener('DOMContentLoaded', function () {
     loop: true,
     pagination: {
       el: '.swiper-pagination',
-      clickable: true
+      clickable: true,
     },
     navigation: {
       nextEl: '.swiper-button-next',
-      prevEl: '.swiper-button-prev'
+      prevEl: '.swiper-button-prev',
     },
     breakpointsBase: 'window',
     breakpoints: {
       // when window width is >= 320px
       320: {
         slidesPerView: 1,
-        spaceBetween: 40
+        spaceBetween: 40,
       },
       // when window width is >= 480px
       480: {
         slidesPerView: 2,
-        spaceBetween: 30
+        spaceBetween: 30,
       },
       // when window width is >= 480px
       700: {
         slidesPerView: 3,
-        spaceBetween: 30
+        spaceBetween: 30,
       },
       // when window width is >= 760px
       760: {
         slidesPerView: 3,
-        spaceBetween: 30
+        spaceBetween: 30,
       },
       // when window width is >= 991px
       991: {
         slidesPerView: 4,
-        spaceBetween: 30
+        spaceBetween: 30,
       },
       // when window width is >= 1160px
       1160: {
         slidesPerView: 5,
-        spaceBetween: 40
-      }
-    }
+        spaceBetween: 40,
+      },
+    },
   });
   var swiperReview = new Swiper('.swiper-review', {
     init: true,
-    slidesPerView: "auto",
+    slidesPerView: 'auto',
     noSwipingClass: 'swiper-no-swiping',
     centeredSlides: true,
     watchOverflow: false,
@@ -143,12 +164,12 @@ window.addEventListener('DOMContentLoaded', function () {
     loop: true,
     navigation: {
       nextEl: '.reviews-btn-next',
-      prevEl: '.reviews-btn-prev'
+      prevEl: '.reviews-btn-prev',
     },
     pagination: {
       el: '.swiper-pagination-reviews',
-      clickable: true
-    }
+      clickable: true,
+    },
   });
   videoPlay('.js-videoPoster');
 
@@ -163,10 +184,10 @@ window.addEventListener('DOMContentLoaded', function () {
     });
   });
 });
-"use strict";
+('use strict');
 
 var question = document.querySelectorAll('.question'),
-    answers = document.querySelectorAll('.answer');
+  answers = document.querySelectorAll('.answer');
 
 for (var i = 0; i < question.length; i++) {
   question[i].addEventListener('click', function () {
@@ -196,18 +217,21 @@ function setClass(els, className, fnName) {
 //         question[i].children[1].classList.toggle( 'show', false );
 //     }
 // };
-"use strict";
+('use strict');
 
 // Get the modal
-var modalCall = document.querySelector('.hf-form[data-id=\'56\']');
-var modalRegisterOffline = document.querySelector('.hf-form[data-id=\'57\']');
-var modalRegisterOnline = document.querySelector('.hf-form[data-id=\'58\']');
+var modalCall = document.querySelector(".hf-form[data-id='56']");
+var modalRegisterOffline = document.querySelector(".hf-form[data-id='57']");
+var modalRegisterOnline = document.querySelector(".hf-form[data-id='58']");
 var callBtn = document.querySelectorAll('#call-order');
 var registerBtnOffline = document.querySelector('#register-button-offline');
 var registerBtnOnline = document.querySelector('#register-button-online');
 var closeModal = document.querySelectorAll('.close-modal');
 var formModal = document.querySelectorAll('.hf-form');
-var backToHomeBtns = [document.querySelector('.form__success-56'), document.querySelector('.form__success-57')];
+var backToHomeBtns = [
+  document.querySelector('.form__success-56'),
+  document.querySelector('.form__success-57'),
+];
 callBtn.forEach(function (el) {
   el.addEventListener('click', function () {
     modalCall.style.display = 'block';
@@ -247,15 +271,20 @@ var mutationObserver = new MutationObserver(function (mutations) {
 formModal.forEach(function (form) {
   mutationObserver.observe(form, {
     attributes: true,
-    attributeOldValue: true
+    attributeOldValue: true,
   });
 });
-"use strict";
+('use strict');
 
-function tabs(tabsSelector, tabsContentSelector, tabsParentSelector, activeClass) {
+function tabs(
+  tabsSelector,
+  tabsContentSelector,
+  tabsParentSelector,
+  activeClass
+) {
   var tabs = document.querySelectorAll(tabsSelector),
-      tabsContent = document.querySelectorAll(tabsContentSelector),
-      tabsParent = document.querySelector(tabsParentSelector);
+    tabsContent = document.querySelectorAll(tabsContentSelector),
+    tabsParent = document.querySelector(tabsParentSelector);
 
   function hideTabContent() {
     tabsContent.forEach(function (item) {
@@ -268,7 +297,8 @@ function tabs(tabsSelector, tabsContentSelector, tabsParentSelector, activeClass
   }
 
   function showTabContent() {
-    var i = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : 0;
+    var i =
+      arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : 0;
     tabsContent[i].classList.add('show', 'fade');
     tabsContent[i].classList.remove('hide');
     tabs[i].classList.add(activeClass);
@@ -290,7 +320,7 @@ function tabs(tabsSelector, tabsContentSelector, tabsParentSelector, activeClass
     }
   });
 }
-"use strict";
+('use strict');
 
 window.addEventListener('DOMContentLoaded', function (event) {
   // timer
@@ -303,34 +333,46 @@ window.addEventListener('DOMContentLoaded', function (event) {
 
   function getTimeRemaining(endtime) {
     var total = Date.parse(endtime) - Date.parse(new Date());
-    var seconds = Math.floor(total / 1000 % 60);
-    var minutes = Math.floor(total / 1000 / 60 % 60);
-    var hours = Math.floor(total / (1000 * 60 * 60) % 24);
+    var seconds = Math.floor((total / 1000) % 60);
+    var minutes = Math.floor((total / 1000 / 60) % 60);
+    var hours = Math.floor((total / (1000 * 60 * 60)) % 24);
     var days = Math.floor(total / (1000 * 60 * 60 * 24));
-    var secondsToDisplay = seconds.toLocaleString('en-US', {
-      minimumIntegerDigits: 2,
-      useGrouping: false
-    }).split('').map(function (num) {
-      return Number(num);
-    });
-    var minutesToDisplay = minutes.toLocaleString('en-US', {
-      minimumIntegerDigits: 2,
-      useGrouping: false
-    }).split('').map(function (num) {
-      return Number(num);
-    });
-    var hoursToDisplay = hours.toLocaleString('en-US', {
-      minimumIntegerDigits: 2,
-      useGrouping: false
-    }).split('').map(function (num) {
-      return Number(num);
-    });
-    var daysToDisplay = days.toLocaleString('en-US', {
-      minimumIntegerDigits: 2,
-      useGrouping: false
-    }).split('').map(function (num) {
-      return Number(num);
-    });
+    var secondsToDisplay = seconds
+      .toLocaleString('en-US', {
+        minimumIntegerDigits: 2,
+        useGrouping: false,
+      })
+      .split('')
+      .map(function (num) {
+        return Number(num);
+      });
+    var minutesToDisplay = minutes
+      .toLocaleString('en-US', {
+        minimumIntegerDigits: 2,
+        useGrouping: false,
+      })
+      .split('')
+      .map(function (num) {
+        return Number(num);
+      });
+    var hoursToDisplay = hours
+      .toLocaleString('en-US', {
+        minimumIntegerDigits: 2,
+        useGrouping: false,
+      })
+      .split('')
+      .map(function (num) {
+        return Number(num);
+      });
+    var daysToDisplay = days
+      .toLocaleString('en-US', {
+        minimumIntegerDigits: 2,
+        useGrouping: false,
+      })
+      .split('')
+      .map(function (num) {
+        return Number(num);
+      });
     return {
       total: total,
       days: days,
@@ -340,13 +382,17 @@ window.addEventListener('DOMContentLoaded', function (event) {
       daysToDisplay: daysToDisplay,
       minutesToDisplay: minutesToDisplay,
       secondsToDisplay: secondsToDisplay,
-      hoursToDisplay: hoursToDisplay
+      hoursToDisplay: hoursToDisplay,
     };
   }
 
   function declOfNum(number, titles) {
     var cases = [2, 0, 1, 1, 1, 2];
-    return titles[number % 100 > 4 && number % 100 < 20 ? 2 : cases[number % 10 < 5 ? number % 10 : 5]];
+    return titles[
+      number % 100 > 4 && number % 100 < 20
+        ? 2
+        : cases[number % 10 < 5 ? number % 10 : 5]
+    ];
   }
 
   function daysaaaa(day) {
@@ -360,27 +406,63 @@ window.addEventListener('DOMContentLoaded', function (event) {
   }
 
   var aaaa = getTimeRemaining(dead).daysToDisplay.map(function (item) {
-    return "<div class='timer-bg'>".concat(item, "</div>");
+    return "<div class='timer-bg'>".concat(item, '</div>');
   });
-  days.innerHTML = "<div class='timer-bg'>".concat(getTimeRemaining(dead).daysToDisplay[0], "</div> <div class='timer-bg'>").concat(getTimeRemaining(dead).daysToDisplay[1], "</div>  <div class='timer-extra'> ").concat(daysaaaa(getTimeRemaining(dead).days), " </div>");
+  days.innerHTML = "<div class='timer-bg'>"
+    .concat(
+      getTimeRemaining(dead).daysToDisplay[0],
+      "</div> <div class='timer-bg'>"
+    )
+    .concat(
+      getTimeRemaining(dead).daysToDisplay[1],
+      "</div>  <div class='timer-extra'> "
+    )
+    .concat(daysaaaa(getTimeRemaining(dead).days), ' </div>');
 
   function showHours(hours) {
     return declOfNum(hours, ['година', 'години', 'годин']);
   }
 
-  hours.innerHTML = "<div class='timer-bg'>".concat(getTimeRemaining(dead).hoursToDisplay[0], "</div> <div class='timer-bg'>").concat(getTimeRemaining(dead).hoursToDisplay[1], "</div> <div class='timer-extra'> ").concat(showHours(getTimeRemaining(dead).hours), "</div>");
+  hours.innerHTML = "<div class='timer-bg'>"
+    .concat(
+      getTimeRemaining(dead).hoursToDisplay[0],
+      "</div> <div class='timer-bg'>"
+    )
+    .concat(
+      getTimeRemaining(dead).hoursToDisplay[1],
+      "</div> <div class='timer-extra'> "
+    )
+    .concat(showHours(getTimeRemaining(dead).hours), '</div>');
 
   function showMinutes(minutes) {
     return declOfNum(minutes, ['хвилина', 'хвилини', 'хвилин']);
   }
 
-  minutes.innerHTML = "<div class='timer-bg'>".concat(getTimeRemaining(dead).minutesToDisplay[0], "</div> <div class='timer-bg'>").concat(getTimeRemaining(dead).minutesToDisplay[1], "</div> <div class='timer-extra'>").concat(showMinutes(getTimeRemaining(dead).minutes), "</div>");
+  minutes.innerHTML = "<div class='timer-bg'>"
+    .concat(
+      getTimeRemaining(dead).minutesToDisplay[0],
+      "</div> <div class='timer-bg'>"
+    )
+    .concat(
+      getTimeRemaining(dead).minutesToDisplay[1],
+      "</div> <div class='timer-extra'>"
+    )
+    .concat(showMinutes(getTimeRemaining(dead).minutes), '</div>');
 
   function showSeconds(seconds) {
     return declOfNum(seconds, ['секунда', 'секунди', 'секунд']);
   }
 
-  second.innerHTML = "<div class='timer-bg'>".concat(getTimeRemaining(dead).secondsToDisplay[0], "</div> <div class='timer-bg'>").concat(getTimeRemaining(dead).secondsToDisplay[1], "</div> <div class='timer-extra'> ").concat(showSeconds(getTimeRemaining(dead).seconds), "</div>");
+  second.innerHTML = "<div class='timer-bg'>"
+    .concat(
+      getTimeRemaining(dead).secondsToDisplay[0],
+      "</div> <div class='timer-bg'>"
+    )
+    .concat(
+      getTimeRemaining(dead).secondsToDisplay[1],
+      "</div> <div class='timer-extra'> "
+    )
+    .concat(showSeconds(getTimeRemaining(dead).seconds), '</div>');
   setInterval(function () {
     function daysaaaa(day) {
       if (day === 1) {
@@ -393,30 +475,66 @@ window.addEventListener('DOMContentLoaded', function (event) {
     }
 
     var aaaa = getTimeRemaining(dead).daysToDisplay.map(function (item) {
-      return "<div class='timer-bg'>".concat(item, "</div>");
+      return "<div class='timer-bg'>".concat(item, '</div>');
     });
-    days.innerHTML = "<div class='timer-bg'>".concat(getTimeRemaining(dead).daysToDisplay[0], "</div> <div class='timer-bg'>").concat(getTimeRemaining(dead).daysToDisplay[1], "</div>  <div class='timer-extra'> ").concat(daysaaaa(getTimeRemaining(dead).days), " </div>");
+    days.innerHTML = "<div class='timer-bg'>"
+      .concat(
+        getTimeRemaining(dead).daysToDisplay[0],
+        "</div> <div class='timer-bg'>"
+      )
+      .concat(
+        getTimeRemaining(dead).daysToDisplay[1],
+        "</div>  <div class='timer-extra'> "
+      )
+      .concat(daysaaaa(getTimeRemaining(dead).days), ' </div>');
 
     function showHours(hours) {
       return declOfNum(hours, ['година', 'години', 'годин']);
     }
 
-    hours.innerHTML = "<div class='timer-bg'>".concat(getTimeRemaining(dead).hoursToDisplay[0], "</div> <div class='timer-bg'>").concat(getTimeRemaining(dead).hoursToDisplay[1], "</div> <div class='timer-extra'> ").concat(showHours(getTimeRemaining(dead).hours), "</div>");
+    hours.innerHTML = "<div class='timer-bg'>"
+      .concat(
+        getTimeRemaining(dead).hoursToDisplay[0],
+        "</div> <div class='timer-bg'>"
+      )
+      .concat(
+        getTimeRemaining(dead).hoursToDisplay[1],
+        "</div> <div class='timer-extra'> "
+      )
+      .concat(showHours(getTimeRemaining(dead).hours), '</div>');
 
     function showMinutes(minutes) {
       return declOfNum(minutes, ['хвилина', 'хвилини', 'хвилин']);
     }
 
-    minutes.innerHTML = "<div class='timer-bg'>".concat(getTimeRemaining(dead).minutesToDisplay[0], "</div> <div class='timer-bg'>").concat(getTimeRemaining(dead).minutesToDisplay[1], "</div> <div class='timer-extra'>").concat(showMinutes(getTimeRemaining(dead).minutes), "</div>");
+    minutes.innerHTML = "<div class='timer-bg'>"
+      .concat(
+        getTimeRemaining(dead).minutesToDisplay[0],
+        "</div> <div class='timer-bg'>"
+      )
+      .concat(
+        getTimeRemaining(dead).minutesToDisplay[1],
+        "</div> <div class='timer-extra'>"
+      )
+      .concat(showMinutes(getTimeRemaining(dead).minutes), '</div>');
 
     function showSeconds(seconds) {
       return declOfNum(seconds, ['секунда', 'секунди', 'секунд']);
     }
 
-    second.innerHTML = "<div class='timer-bg'>".concat(getTimeRemaining(dead).secondsToDisplay[0], "</div> <div class='timer-bg'>").concat(getTimeRemaining(dead).secondsToDisplay[1], "</div> <div class='timer-extra'> ").concat(showSeconds(getTimeRemaining(dead).seconds), "</div>");
+    second.innerHTML = "<div class='timer-bg'>"
+      .concat(
+        getTimeRemaining(dead).secondsToDisplay[0],
+        "</div> <div class='timer-bg'>"
+      )
+      .concat(
+        getTimeRemaining(dead).secondsToDisplay[1],
+        "</div> <div class='timer-extra'> "
+      )
+      .concat(showSeconds(getTimeRemaining(dead).seconds), '</div>');
   }, 1000);
 });
-"use strict";
+('use strict');
 
 // eslint-disable-next-line no-unused-vars
 function videoPlay(button) {
@@ -424,7 +542,10 @@ function videoPlay(button) {
   youTubeButton.forEach(function (el) {
     el.addEventListener('click', function (e) {
       e.preventDefault();
-      e.target.previousElementSibling.setAttribute('src', e.target.previousElementSibling.getAttribute('data-src'));
+      e.target.previousElementSibling.setAttribute(
+        'src',
+        e.target.previousElementSibling.getAttribute('data-src')
+      );
       e.target.parentNode.classList.toggle('videoWrapperActive');
     });
   });

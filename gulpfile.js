@@ -7,7 +7,7 @@ const sourcemaps = require('gulp-sourcemaps');
 
 gulp.task('sass', function () {
   return gulp
-    .src('./assets/css/*.scss')
+    .src('./assets/css/style.scss')
     .pipe(sass().on('error', sass.logError))
     .pipe(gulp.dest('./'));
 });

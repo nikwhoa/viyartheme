@@ -1,523 +1,501 @@
 .header-bg {
-	background: radial-gradient(44.52% 130.48% at 61.79% 38.76%,
-			rgba(48, 160, 240, 0.9) 0%,
-			rgba(0, 128, 224, 0.9) 45.12%,
-			rgba(0, 128, 224, 0.9) 100%);
-	box-shadow: 0px 4px 20px rgba(0, 32, 64, 0.19);
-	position: absolute;
-	width: 100%;
-	top: -320px;
-	min-height: 780px;
-	max-height: 960px;
-	overflow: hidden;
-	transform: skewY(-8deg);
-	transform-origin: 100%;
-	@include md {
-		max-height: unset;
-		height: 1056px;
-		// background: rgba(2, 128, 224, 0.9);
-		background: #0080E0;
-		transform: unset;
-		box-shadow: unset;
-		// display: none;
-
-	}
-	@include lg {
-		height: 800px;
-	}
-	@include wide-screen {
-		top: -360px;
-		max-height: 1000px;
-	}
+  background: radial-gradient(
+    44.52% 130.48% at 61.79% 38.76%,
+    rgba(48, 160, 240, 0.9) 0%,
+    rgba(0, 128, 224, 0.9) 45.12%,
+    rgba(0, 128, 224, 0.9) 100%
+  );
+  box-shadow: 0px 4px 20px rgba(0, 32, 64, 0.19);
+  position: absolute;
+  width: 100%;
+  top: -320px;
+  min-height: 780px;
+  max-height: 960px;
+  overflow: hidden;
+  transform: skewY(-8deg);
+  transform-origin: 100%;
+  @include md {
+    max-height: unset;
+    height: 1056px;
+    // background: rgba(2, 128, 224, 0.9);
+    background: #0080e0;
+    transform: unset;
+    box-shadow: unset;
+    // display: none;
+  }
+  @include lg {
+    height: 800px;
+  }
+  @include wide-screen {
+    top: -360px;
+    max-height: 1000px;
+  }
 }
 
 .nav-wrapper {
-	width: 100%;
-	position: fixed;
-	top: 0;
-	left: 50%;
-	transform: translate(-50%, 0);
-	z-index: 999;
-	transition: all 0.6s ease-in-out;
-	text-align: center;
-	display: flex;
-	justify-content: center;
-
-
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 50%;
+  transform: translate(-50%, 0);
+  z-index: 999;
+  transition: all 0.6s ease-in-out;
+  text-align: center;
+  display: flex;
+  justify-content: center;
 }
 
 .sticky-nav {
-	/* painting background in white and all elements in blue  */
-	background: $main-white;
+  /* painting background in white and all elements in blue  */
+  background: $main-white;
 
-	#phone-icon {
-		fill: $main-blue;
-	}
+  #phone-icon {
+    fill: $main-blue;
+  }
 
-	a {
-		color: $main-blue !important;
-	}
+  a {
+    color: $main-blue !important;
+  }
 
-	a:after {
-		background: $main-blue !important;
-	}
+  a:after {
+    background: $main-blue !important;
+  }
 
-	svg path {
-		fill: $main-blue;
-	}
+  svg path {
+    fill: $main-blue;
+  }
 
-	transition: all 0.6s ease-in-out;
+  transition: all 0.6s ease-in-out;
 }
 
 .navigation {
-	align-self: center;
-	padding: 0 1rem;
-	line-height: 64px;
-	font-size: 0.9rem;
-	transition: all 0.6s ease-in-out;
+  align-self: center;
+  padding: 0 1rem;
+  line-height: 64px;
+  font-size: 0.9rem;
+  transition: all 0.6s ease-in-out;
 
-	@include sm {
-		padding: 0 .5rem;
-		height: 48px;
-	}
+  @include sm {
+    padding: 0 0.5rem;
+    height: 48px;
+  }
 
-	@include md {
-		background: $main-white;
-		width: 100%;
+  @include md {
+    background: $main-white;
+    width: 100%;
+  }
 
-	}
+  @media (max-width: 1110px) {
+    font-size: 0.75rem;
+  }
 
-	@media (max-width: 1110px) {
-		font-size: 0.75rem;
-	}
+  a {
+    color: $main-white;
+  }
 
-	a {
-		color: $main-white;
-	}
-
-	/*
+  /*
 		TODO: remove if will be wrapper
 		max-width: 1344px;
 		*/
 
+  .navigation.flex-container {
+    justify-content: space-between;
+  }
 
-	.navigation.flex-container {
-		justify-content: space-between;
-	}
+  &__mobile-menu {
+    display: none;
+    height: 48px;
+    margin: 0 0.8rem 0 1.2rem;
 
-	&__mobile-menu {
-		display: none;
-		height: 48px;
-		margin: 0 .8rem 0 1.2rem;
+    @include md {
+      display: flex;
+      align-items: center;
+      height: 61px;
+    }
+
 		@include sm {
-			height: 48px;
-		}
-		@include md {
-			display: flex;
-			align-items: center;
-			height: 61px;
-		}
-	}
+      height: 48px;
+    }
+  }
 
-	.mobile-menu-btn {
-		width: 22px;
-		// display: flex;
-		flex-direction: column;
-		transition: all .6s ease-in-out;
-		margin-top: -12px;
+  .mobile-menu-btn {
+    width: 22px;
+    // display: flex;
+    flex-direction: column;
+    transition: all 0.6s ease-in-out;
+    margin-top: -12px;
 
+    div {
+      margin: 5px 0;
+    }
 
+    .open-btn {
+      height: 2.3px;
+      width: 22px;
+      margin: 5px 0;
+      background: $main-blue;
 
+      &::before {
+        display: block;
+        // padding: 5px 0 15px 0;
+        margin: 14px 0;
+        position: absolute;
+        content: ' ';
+        height: 2px;
+        width: 22px;
+        background: $main-blue;
+      }
 
+      &::after {
+        display: block;
+        // padding: 5px 0 15px 0;
+        margin: 7px 0;
+        // top: .5rem;
+        position: absolute;
+        content: ' ';
+        height: 2px;
+        width: 14px;
+        background: $main-blue;
+      }
+    }
 
-		div {
-			margin: 5px 0;
-		}
+    .close-btn {
+      position: absolute;
+      width: 32px;
+      height: 32px;
+      top: 6px;
+      left: 20px;
+    }
 
-		.open-btn {
-			height: 2.3px;
-			width: 22px;
-			margin: 5px 0;
-			background: $main-blue;
+    .close-btn:before,
+    .close-btn:after {
+      position: absolute;
+      left: 15px;
+      content: ' ';
+      height: 25px;
+      width: 2px;
+      background-color: $main-blue;
+    }
 
-			&::before {
-				display: block;
-				// padding: 5px 0 15px 0;
-				margin: 14px 0;
-				position: absolute;
-				content: ' ';
-				height: 2px;
-				width: 22px;
-				background: $main-blue;
-			}
+    .close-btn:before {
+      transform: rotate(45deg);
+    }
 
-			&::after {
-				display: block;
-				// padding: 5px 0 15px 0;
-				margin: 7px 0;
-				// top: .5rem;
-				position: absolute;
-				content: ' ';
-				height: 2px;
-				width: 14px;
-				background: $main-blue;
-			}
-		}
+    .close-btn:after {
+      transform: rotate(-45deg);
+    }
+  }
 
-		.close-btn {
-			position: absolute;
-			width: 32px;
-			height: 32px;
-			top: 6px;
-			left: 20px;
-		}
+  &__logo {
+    display: flex;
 
-		.close-btn:before,
-		.close-btn:after {
-			position: absolute;
-			left: 15px;
-			content: ' ';
-			height: 25px;
-			width: 2px;
-			background-color: $main-blue;
-		}
+    .custom-logo-link {
+      align-items: center;
+      display: flex;
+      transition: all 0.4s ease-in-out;
 
-		.close-btn:before {
-			transform: rotate(45deg);
-		}
+      // transition-timing-function: ease;
+      &:hover {
+        // transform: scale(1.05);
+      }
 
-		.close-btn:after {
-			transform: rotate(-45deg);
-		}
-	}
+      img {
+        display: block;
+      }
 
-	&__logo {
-		display: flex;
+      #phone-icon {
+        fill: $main-white;
+      }
+    }
+  }
 
-		.custom-logo-link {
-			align-items: center;
-			display: flex;
-			transition: all 0.4s ease-in-out;
+  &__nav {
+    padding: 0 1rem;
 
-			// transition-timing-function: ease;
-			&:hover {
-				// transform: scale(1.05);
-			}
+    @include md {
+      display: none !important;
+    }
 
-			img {
-				display: block;
-			}
+    .menu {
+      // font-weight: 600;
+      font-family: 'Roboto Bold';
+      display: flex;
+      padding: 0;
+      margin: 0;
 
-			#phone-icon {
-				fill: $main-white;
-			}
-		}
-	}
+      list-style-type: none;
 
-	&__nav {
-		padding: 0 1rem;
+      .menu-item {
+        margin: 0 1.8rem;
 
-		@include md {
-			display: none;
-		}
+        @media (max-width: 1110px) {
+          margin: 0.8rem;
+        }
 
-		.menu {
-			// font-weight: 600;
-			font-family: 'Roboto Bold';
-			display: flex;
-			padding: 0;
-			margin: 0;
+        @include xl {
+          margin: 1.2rem;
+        }
 
-			list-style-type: none;
+        a {
+          padding: 0 0 0.3rem 0;
+          text-decoration: none;
 
-			.menu-item {
-				margin: 0 1.8rem;
+          transition-delay: 200ms;
+          transition-timing-function: ease;
 
-				@media (max-width: 1110px) {
-					margin: 0.8rem;
-				}
+          &:after {
+            content: '';
+            display: block;
+            position: relative;
+            top: -0.9rem;
+            width: 100%;
+            height: 2px;
+            opacity: 0;
+            background: $main-white;
+            transition: all 0.4s ease-in-out;
+          }
 
-				@include xl {
-					margin: 1.2rem;
-				}
+          &:hover {
+            &::after {
+              // transition: opacity 2s ease-in-out;
+              display: block;
+              opacity: 1;
+            }
 
-				a {
-					padding: 0 0 0.3rem 0;
-					text-decoration: none;
+            // text-decoration: underline $main-white 2px;
+            // border-bottom: 2px solid $main-white;
+          }
+        }
+      }
+    }
+  }
 
-					transition-delay: 200ms;
-					transition-timing-function: ease;
+  &__phone {
+    .phone__link {
+      @include sm {
+        // display: none;
+      }
 
+      @include md {
+        color: $main-blue;
+        display: none;
+      }
 
-					&:after {
-						content: "";
-						display: block;
-						position: relative;
-						top: -0.9rem;
-						width: 100%;
-						height: 2px;
-						opacity: 0;
-						background: $main-white;
-						transition: all 0.4s ease-in-out;
-					}
+      font-weight: bold;
+      display: flex;
+      text-decoration: none;
+      color: $main-white;
+      transition: all 0.4s ease-in-out;
 
-					&:hover {
-						&::after {
-							// transition: opacity 2s ease-in-out;
-							display: block;
-							opacity: 1;
-						}
+      // transition-timing-function: ease;
+      &:hover {
+        transform: scale(1.05);
+      }
+    }
 
-						// text-decoration: underline $main-white 2px;
-						// border-bottom: 2px solid $main-white;
-					}
+    .phone-icon {
+      margin: 0 0.8rem 0 0;
+      align-items: center;
+      display: flex;
 
-				}
+      @include sm {
+        margin: 0;
+      }
 
+      img {
+        display: block;
+      }
+    }
 
-			}
-		}
+    .phone-number {
+      @media (max-width: 372px) {
+        line-height: 1.5rem !important;
+      }
 
-	}
+      @include sm {
+        line-height: 3rem !important;
+      }
 
-	&__phone {
-		.phone__link {
-			@include sm {
-				// display: none;
-			}
+      @include md {
+        line-height: 3rem !important;
+      }
 
-			@include md {
-				color: $main-blue;
-				display: none;
-			}
+      @media (max-width: 1110px) {
+        display: none !important;
+        line-height: 90px !important;
+      }
 
-			font-weight: bold;
-			display: flex;
-			text-decoration: none;
-			color: $main-white;
-			transition: all 0.4s ease-in-out;
-
-			// transition-timing-function: ease;
-			&:hover {
-				transform: scale(1.05);
-			}
-		}
-
-		.phone-icon {
-			margin: 0 0.8rem 0 0;
-			align-items: center;
-			display: flex;
-
-			@include sm {
-				margin: 0;
-			}
-
-			img {
-				display: block;
-			}
-		}
-
-		.phone-number {
-			@media (max-width: 372px) {
-				line-height: 1.5rem;
-			}
-
-			@include sm {
-				line-height: 3rem;
-			}
-
-			@include md {
-				line-height: 3rem;
-			}
-
-			@media (max-width: 1110px) {
-				line-height: 90px;
-			}
-
-			@include xl {
-				text-align: center;
-				vertical-align: middle;
-				line-height: 100px;
-			}
-		}
-	}
-	&__call-order {
-		margin-left: auto;
-		align-items: center;
-		button {
-			padding: .5rem 1rem;
-			border-radius: 10px;
-		}
-	}
+      @include xl {
+        text-align: center;
+        vertical-align: middle;
+        line-height: 100px;
+      }
+    }
+  }
+  &__call-order {
+    margin-left: auto;
+    align-items: center;
+    button {
+      padding: 0.5rem 1rem;
+      border-radius: 10px;
+    }
+  }
 }
 .phone__call-order-desktop {
-	display: none;
+  display: none;
 }
 .navigation__phone:hover .phone__call-order-desktop {
-	position: absolute;
-	display: block;
-	top: 4rem;
-	button {
-		padding: 1rem 1.5rem;
-	}
+  position: absolute;
+  display: block;
+  top: 4rem;
+  button {
+    padding: 1rem 1.5rem;
+  }
 }
 
 .header {
-	position: relative;
-	z-index: 1;
-	// margin: 2rem 0;
-	// clip-path: polygon(100% 0, 100% 57%, 0 100%, 0 0);
-	// height: 785px;
-	height: auto;
+  position: relative;
+  z-index: 1;
+  // margin: 2rem 0;
+  // clip-path: polygon(100% 0, 100% 57%, 0 100%, 0 0);
+  // height: 785px;
+  height: auto;
 
+  color: $main-white;
+  font-weight: bold;
+  font-size: 0.9rem;
 
-	color: $main-white;
-	font-weight: bold;
-	font-size: 0.9rem;
+  section {
+    background: url('assets/img/header-bg--drawing.svg') top / cover no-repeat;
+    height: inherit;
+  }
 
+  /* TITLE */
 
-	section {
-		background: url('assets/img/header-bg--drawing.svg') top / cover no-repeat;
-		height: inherit;
-	}
+  &__title {
+    max-width: 1344px;
+    margin: 0 auto 10rem auto;
+    padding: 9.4rem 0 0 7.6rem;
+    @include md {
+      margin: 24rem auto 0 auto;
+      padding: unset;
+      justify-content: center;
+    }
+    @include lg {
+      margin-bottom: 10rem;
+    }
+    @include xl {
+      margin: 0 auto 16rem -3rem;
+    }
 
+    // justify-content: space-around!important;
+    .title {
+      h1 {
+        line-height: 2.3rem;
+        font-size: 3rem;
+        font-weight: normal;
+        @include lg {
+          padding-top: 30px;
+        }
+        @include md {
+          font-size: 2.1rem;
+        }
+        @include lg {
+          font-size: 2rem;
+        }
+        @media (max-width: 1110.98px) {
+          font-size: 2.5rem;
+        }
+        span {
+          font-family: 'Roboto Bold';
+          @include md {
+            display: block;
+          }
+          // font-weight: 900;
+        }
+      }
+    }
 
+    .academy-logo {
+      font-size: 0.8rem;
+      display: flex;
+      font-weight: normal;
+      align-content: flex-end;
+      justify-content: flex-end;
+      align-items: center;
 
+      margin: 0.5rem -6.76rem -1.3rem 0;
+      @include md {
+        margin: 0.5rem 1rem -3.3rem 0;
+      }
+      @include lg {
+        margin-right: 0;
+      }
+      @media (max-width: 1110.98px) {
+        margin-right: -4.76rem;
+      }
+      div {
+        margin: 0 0.5rem;
+      }
+    }
 
+    .sub-title {
+      width: 430px;
+      font-weight: normal;
+      line-height: 1.6rem;
+      padding: 1.2rem 0;
+      font-size: 1.1rem;
+      @include md {
+        margin: unset;
+        width: 100%;
+        padding: unset;
+      }
+      @include lg {
+        font-size: 0.9rem;
+        width: 300px;
+      }
+    }
 
-
-
-	/* TITLE */
-
-	&__title {
-		max-width: 1344px;
-		margin: 0 auto 10rem auto;
-		padding: 9.4rem 0 0 7.6rem;
-		@include md {
-			margin: 24rem auto 0 auto;
-			padding: unset;
-			justify-content: center;
-		}
-		@include lg {
-			margin-bottom: 10rem;
-		}
-		@include xl {
-			margin: 0 auto 16rem -3rem;
-		}
-
-
-
-		// justify-content: space-around!important;
-		.title {
-			h1 {
-				line-height: 2.3rem;
-				font-size: 3rem;
-				font-weight: normal;
-				@include lg {
-					padding-top: 30px;
-				}
-				@include md {
-					font-size: 2.1rem;
-				}
-				@include lg {
-					font-size: 2rem;
-				}
-				@media (max-width: 1110.98px) {
-						font-size: 2.5rem;
-				}
-				span {
-					font-family: 'Roboto Bold';
-					@include md {
-						display: block;
-					}
-					// font-weight: 900;
-				}
-			}
-		}
-
-		.academy-logo {
-			font-size: 0.8rem;
-			display: flex;
-			font-weight: normal;
-			align-content: flex-end;
-			justify-content: flex-end;
-			align-items: center;
-
-			margin: 0.5rem -6.76rem -1.3rem 0;
-			@include md {
-				margin: 0.5rem 1rem -3.3rem 0;
-
-			}
-			@include lg {
-				margin-right: 0;
-			}
-			@media (max-width: 1110.98px) {
-				margin-right: -4.76rem;
-			}
-			div {
-				margin: 0 0.5rem;
-			}
-		}
-
-		.sub-title {
-			width: 430px;
-			font-weight: normal;
-			line-height: 1.6rem;
-			padding: 1.2rem 0;
-			font-size: 1.1rem;
-			@include md {
-				margin: unset;
-				width: 100%;
-				padding: unset;
-			}
-			@include lg {
-				font-size: .9rem;
-				width: 300px;
-			}
-		}
-
-		.course-btn {
-			padding: 5rem 1rem 0 0;
-			text-align: right;
-			@include md {
-				text-align: center;
-			}
-			.btn {
-				padding: 1rem 2.7rem;
-			}
-		}
-	}
+    .course-btn {
+      padding: 5rem 1rem 0 0;
+      text-align: right;
+      @include md {
+        text-align: center;
+      }
+      .btn {
+        padding: 1rem 2.7rem;
+      }
+    }
+  }
 }
 
-
 .hamburger-navigation {
+  display: flex !important;
+  flex-direction: column !important;
+  position: fixed;
+  color: rgba(0, 128, 224, 0.9);
+  top: 48px;
+  left: 0;
+  z-index: 1000;
+  width: 90vw;
+  height: 100vh;
+  background: $main-white;
+  line-height: 50px !important;
+  font-size: 1.1rem !important;
+  text-align: left;
+  padding: 1.5rem 1.63rem;
 
-	display: flex !important;
-	flex-direction: column !important;
-	position: fixed;
-	color: rgba(0, 128, 224, 0.9);
-	top: 48px;
-	left: 0;
-	z-index: 1000;
-	width: 90vw;
-	height: 100vh;
-	background: $main-white;
-	line-height: 50px !important;
-	font-size: 1.1rem !important;
-	text-align: left;
-	padding: 1.5rem 1.63rem;
+  a {
+    color: $main-blue;
+  }
 
-	a {
-		color: $main-blue;
-	}
+  .menu {
+    flex-direction: column;
 
-	.menu {
-		flex-direction: column;
-
-		.menu-item {
-			margin: 0 !important;
-		}
-	}
+    .menu-item {
+      margin: 0 !important;
+    }
+  }
 }
 
 /* TODO: no need */
@@ -531,29 +509,29 @@
 // }
 
 .hamburger-phone {
-	display: flex;
-	flex-direction: row;
-	align-items: center;
-	justify-content: center;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
 
-	.phone-icon {
-		margin: 0 1rem 0 0;
-		padding: .2rem 0;
-	}
+  .phone-icon {
+    margin: 0 1rem 0 0;
+    padding: 0.2rem 0;
+  }
 
-	.phone__link {
-		font-weight: bold;
-		display: flex;
-		text-decoration: none;
+  .phone__link {
+    font-weight: bold;
+    display: flex;
+    text-decoration: none;
 
-		transition: all 0.4s ease-in-out;
-	}
+    transition: all 0.4s ease-in-out;
+  }
 
-	#phone-icon {
-		fill: $main-blue;
-	}
+  #phone-icon {
+    fill: $main-blue;
+  }
 }
 
 .hidden-btn {
-	display: none;
+  display: none;
 }

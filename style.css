@@ -332,7 +332,7 @@ template {
   .header-bg {
     max-height: unset;
     height: 1056px;
-    background: #0080E0;
+    background: #0080e0;
     transform: unset;
     box-shadow: unset;
   }
@@ -387,9 +387,9 @@ template {
   font-size: 0.9rem;
   transition: all 0.6s ease-in-out;
   /*
-  	TODO: remove if will be wrapper
-  	max-width: 1344px;
-  	*/
+  TODO: remove if will be wrapper
+  max-width: 1344px;
+  */
 }
 @media (max-width: 575.98px) {
   .navigation {
@@ -419,16 +419,16 @@ template {
   height: 48px;
   margin: 0 0.8rem 0 1.2rem;
 }
-@media (max-width: 575.98px) {
-  .navigation__mobile-menu {
-    height: 48px;
-  }
-}
 @media (max-width: 794.98px) {
   .navigation__mobile-menu {
     display: flex;
     align-items: center;
     height: 61px;
+  }
+}
+@media (max-width: 575.98px) {
+  .navigation__mobile-menu {
+    height: 48px;
   }
 }
 .navigation .mobile-menu-btn {
@@ -505,7 +505,7 @@ template {
 }
 @media (max-width: 794.98px) {
   .navigation__nav {
-    display: none;
+    display: none !important;
   }
 }
 .navigation__nav .menu {
@@ -580,22 +580,23 @@ template {
 }
 @media (max-width: 372px) {
   .navigation__phone .phone-number {
-    line-height: 1.5rem;
+    line-height: 1.5rem !important;
   }
 }
 @media (max-width: 575.98px) {
   .navigation__phone .phone-number {
-    line-height: 3rem;
+    line-height: 3rem !important;
   }
 }
 @media (max-width: 794.98px) {
   .navigation__phone .phone-number {
-    line-height: 3rem;
+    line-height: 3rem !important;
   }
 }
 @media (max-width: 1110px) {
   .navigation__phone .phone-number {
-    line-height: 90px;
+    display: none !important;
+    line-height: 90px !important;
   }
 }
 @media (max-width: 1250.98px) {
