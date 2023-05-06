@@ -1,7 +1,7 @@
 <section id="course-programme" class="course-programme">
 
     <div class="container">
-    <div class="course-programme-line"></div>
+<!--    <div class="course-programme-line"></div>-->
         <div class="course-programme__title">
             <h2>ПРОГРАМА КУРСУ</h2>
         </div>

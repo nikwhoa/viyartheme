@@ -488,15 +488,17 @@ h2{padding:0 .15rem}
 .prices__tabs .content .info__price .price{left:9px;right:9px}
 section{padding:.5rem}
 .register-btn{padding:.9rem 2.5rem}
-}@media(max-width:575.8px){.course-programme-line{margin-top:-10.3rem;height:111.85%}
+}@media(max-width:575.8px){.course-programme-line{}
 }@media(max-width:479px){.swiper-pagination-bullets.swiper-pagination-horizontal{bottom:10% !important}
-}@media(max-width:457.8px){.course-programme-line{height:108.8%}
-}@media(max-width:413.8px){.course-programme-line{height:110.8%}
-}@media(max-width:391.8px){.course-programme-line{height:107.9%}
+}@media(max-width:457.8px){.course-programme-line{}
+}@media(max-width:413.8px){.course-programme-line{}
+}@media(max-width:391.8px){.course-programme-line{}
 }@media(max-width:374.98px){.video_wrapper{width:290px}
 }@media(max-width:372px){.navigation__phone .phone-number{line-height:1.5rem}
-}@media(max-width:344.8px){.course-programme-line{height:107.2%}
-}@media(max-width:326.8px){.course-programme-line{height:107.5%}
+}@media(max-width:344.8px){.course-programme-line{}
+}@media(max-width:326.8px){.course-programme-line{}
 }@-webkit-keyframes swiper-preloader-spin{100%{-webkit-transform:rotate(360deg);transform:rotate(360deg)}
 }@keyframes swiper-preloader-spin{100%{-webkit-transform:rotate(360deg);transform:rotate(360deg)}
 }
+
+#88 {display: none !important;}

@@ -12,7 +12,6 @@
                     ОНЛАЙН
                 </div>
             </div>
-
             <div class="info">
 
             <?php
@@ -26,7 +25,7 @@
             ?>
 
             <?php while ($loop->have_posts()): $loop->the_post();?>
-	        <div id="info_01" class="tab_block">
+	        <div class="tab_block" id="<?php echo get_the_ID(); ?>">
                     <div class="tabs-desktop">
                         <div class="tab-desktop"><?php the_title(); ?></div>
                     </div>
@@ -120,11 +119,11 @@
                             </svg>
                         </a>
                     </div>
-                    <div class="info__register">
-                        <button class="register-btn btn" id="register-button-<?php the_field('dlya_formy'); ?>">
-						Хочу на наступний потік
-                        </button>
-                    </div>
+<!--                    <div class="info__register">-->
+<!--                        <button class="register-btn btn" id="register-button---><?php //the_field('dlya_formy'); ?><!--">-->
+<!--						Хочу на наступний потік-->
+<!--                        </button>-->
+<!--                    </div>-->
                 </div>
 	        <?php endwhile;
             wp_reset_query();
