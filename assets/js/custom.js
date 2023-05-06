@@ -2,6 +2,22 @@
 
 /* eslint-disable no-trailing-spaces */
 window.addEventListener('DOMContentLoaded', function () {
+  document.querySelector('#offline-tab').classList.add('active');
+  document.querySelector('#post_number-80').classList.add('active');
+
+  document.querySelector('#online-tab').addEventListener('click', function () {
+    document.querySelector('#online-tab').classList.add('active');
+    document.querySelector('#offline-tab').classList.remove('active');
+    document.querySelector('#post_number-80').classList.remove('active');
+    document.querySelector('#post_number-88').classList.add('active');
+  });
+  document.querySelector('#offline-tab').addEventListener('click', function () {
+    console.log('offline-tab');
+    document.querySelector('#offline-tab').classList.add('active');
+    document.querySelector('#online-tab').classList.remove('active');
+    document.querySelector('#post_number-88').classList.remove('active');
+    document.querySelector('#post_number-80').classList.add('active');
+  });
   var navWrapper = document.querySelector('.nav-wrapper'),
       hamburgerButton = document.querySelector(' .navigation__mobile-menu'),
       navigation = navWrapper.querySelector('.navigation__nav'),

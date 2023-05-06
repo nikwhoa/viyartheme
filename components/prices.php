@@ -5,10 +5,10 @@
     <div class="prices__tabs">
         <div class="content">
             <div class="tabs">
-                <div class="tab">
+                <div class="tab" id="offline-tab">
                     ОФЛАЙН
                 </div>
-                <div class="tab">
+                <div class="tab" id="online-tab">
                     ОНЛАЙН
                 </div>
             </div>
@@ -25,7 +25,7 @@
             ?>
 
             <?php while ($loop->have_posts()): $loop->the_post();?>
-	        <div class="tab_block" id="<?php echo get_the_ID(); ?>">
+	        <div class="tab_block" id="post_number-<?php echo get_the_ID(); ?>">
                     <div class="tabs-desktop">
                         <div class="tab-desktop"><?php the_title(); ?></div>
                     </div>

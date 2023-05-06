@@ -7,7 +7,7 @@
 				</path>
 			</svg>
 		</button>
-		<img src="https://viyarpro.business/wp-content/uploads/2021/11/google-forms-2.jpg" alt="insta-maraphone">
+		<!-- <img src="https://viyarpro.business/wp-content/uploads/2021/11/google-forms-2.jpg" alt="insta-maraphone"> -->
 		<br>
 		<p>Ви активний користувач Instagram і займаєтеся виготовленням меблів? Тоді долучайтеся до марафону
 			«Інста-майстер» </p>
