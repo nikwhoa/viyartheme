@@ -1,217 +1,222 @@
 .prices {
-	&__title {
-		color: $main-blue;
-		margin:2rem 0 1rem;
-		padding: 1rem 0;
-	}
+  &__title {
+    color: $main-blue;
+    margin: 2rem 0 1rem;
+    padding: 1rem 0;
+  }
 
-	&__tabs {
-		padding: 1rem 0;
+  &__tabs {
+    padding: 1rem 0;
 
-		.content {
+    .content {
+      @include lg {
+        // box-shadow: 0px 4px 10px rgba(74, 74, 74, 0.1);
+      }
 
-			@include lg {
-				box-shadow: 0px 4px 10px rgba(74, 74, 74, 0.1);
-			}
+      .tabs {
+        width: 100%;
+        justify-content: space-around;
+        align-items: stretch;
+        display: none;
+        flex-direction: row;
 
-			.tabs {
-				width: 100%;
-				justify-content: space-around;
-				align-items: stretch;
-				display: none;
-				flex-direction: row;
+        @include lg {
+          display: flex;
+        }
 
-				@include lg {
-					display: flex;
-				}
+        .tab {
+          background: linear-gradient(272.04deg, #139aff 6.2%, #0080e0 96.57%);
+          border-radius: 12px 12px 0px 0px;
+          height: 56px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          vertical-align: middle;
+          // padding: 1.1rem 0;
+          width: 100%;
+          position: relative;
+          text-align: center;
+          color: $main-white;
+          font-weight: bold;
+          cursor: pointer;
+        }
 
-				.tab {
-					background: linear-gradient(272.04deg, #139AFF 6.2%, #0080E0 96.57%);
-					border-radius: 12px 12px 0px 0px;
-					height: 56px;
-					display: flex;
-					justify-content: center;
-					align-items: center;
-					vertical-align: middle;
-					// padding: 1.1rem 0;
-					width: 100%;
+        .active {
+          background: $main-white;
+          color: $main-blue;
+          border-radius: 12px 12px 0px 0px;
+          border: 1px solid #d0d0d0;
+          border-bottom: none;
+        }
+      }
+
+      .info {
+        /* tabs-item */
+        text-align: center;
+        width: 830px;
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-around;
+
+        @include lg {
 					position: relative;
-					text-align: center;
-					color: $main-white;
-					font-weight: bold;
-					cursor: pointer;
+					top: -15px;
+          border-bottom-right-radius: 12px;
+          border-bottom-left-radius: 12px;
+					// box-shadow: 0px -8px 10px rgba(74, 74, 74, 0.1);
+          border: 1px solid #d0d0d0;
+          border-top: none;
+          width: unset;
+          margin: unset;
+          display: block;
+          justify-content: unset;
+        }
 
-				}
+        .tabs-desktop {
+          display: none;
+          width: 351px;
+          background: linear-gradient(
+            267.47deg,
+            #139aff 17.22%,
+            #0080e0 65.68%
+          );
+          border-radius: 12px 12px 0px 0px;
+          position: absolute;
+          height: 56px;
+          top: -3.9rem;
+          color: $main-white;
+          font-weight: 700;
+          justify-content: center;
 
-				.active {
-					background: $main-white;
-					color: $main-blue;
-					border-radius: 12px 12px 0px 0px;
-					border: 1px solid #D0D0D0;
-					border-bottom: none;
-				}
-			}
+          @media (min-width: 991px) {
+            display: flex;
+          }
+        }
 
+        .tab_block {
+          padding: 1rem 0 0 0;
+          width: 352px;
+          border: 1px solid #d0d0d0;
+          box-sizing: border-box;
+          box-shadow: 0px 4px 10px rgba(74, 74, 74, 0.1);
+          border-radius: 12px;
+          @media (min-width: 991px) {
+            position: relative;
+          }
+          @include lg {
+            border: unset;
+            box-shadow: unset;
+            width: 100%;
+          }
+        }
+        &__logo {
+          a {
+            transition: all 0.4s ease-in-out;
+            display: block;
+            &:hover {
+              transform: scale(1.03);
+            }
+          }
+        }
 
+        .info-row {
+          display: flex;
+          flex-direction: row;
+          justify-content: center;
+          align-items: center;
 
-			.info {
+          svg {
+            position: absolute;
+            margin-left: -80px;
 
-				/* tabs-item */
-				text-align: center;
-				width: 830px;
-				margin: 0 auto;
-				display: flex;
-				justify-content: space-around;
-
-				@include lg {
-					border-radius: 12px;
-					border: 1px solid #D0D0D0;
-					border-top: none;
-					width: unset;
-					margin: unset;
-					display: block;
-					justify-content: unset;
-				}
-
-				.tabs-desktop {
-					display: none;
-					width: 351px;
-					background: linear-gradient(267.47deg, #139AFF 17.22%, #0080E0 65.68%);
-					border-radius: 12px 12px 0px 0px;
-					position: absolute;
-					height: 56px;
-					top: -3.9rem;
-					color: $main-white;
-					font-weight: 700;
-						justify-content: center;
-
-					@media (min-width: 991px) {
-						display: flex;
-					}
-				}
-
-				.tab_block {
-					padding: 1rem 0 0 0;
-					width: 352px;
-					border: 1px solid #D0D0D0;
-					box-sizing: border-box;
-					box-shadow: 0px 4px 10px rgba(74, 74, 74, 0.1);
-					border-radius: 12px;
-					@media (min-width: 991px) {
-						position: relative;
-					}
-					@include lg {
-						border: unset;
-						box-shadow: unset;
-						width: 100%;
-					}
-				}
-				&__logo {
-					a {
-						transition: all .4s ease-in-out;
-						display: block;
-						&:hover {
-						transform: scale(1.03);
-					}
-				}
-				}
-
-				.info-row {
-					display: flex;
-					flex-direction: row;
-					justify-content: center;
-					align-items: center;
-
-					svg {
-						position: absolute;
-						margin-left: -80px;
-						@media (min-width: 991px) {
-						margin-left: -150px;
-						}
-					}
-				}
-
-				div {
-					margin: 1rem 0;
-				}
-
-
-
-				.show {
-					display: block;
-
-					@include lg {}
-				}
-
-				.hide {
-
-					@include lg {
-						display: none;
-					}
-				}
-
-				.blue-text {
-					text-align: center;
-					color: $main-blue;
-					font-weight: bold;
-					font-size: 1.2rem;
-				}
-
-				&__date {}
-
-				&__price {
-					.price {
-						color: $main-white;
-						background: $main-blue;
-						position: static;
-						left: 16px;
-						height: 48px;
-						vertical-align: middle;
-						right: 16px;
-						padding: .4rem 0;
-						font-size: 2rem;
-						font-family: 'Roboto Bold';
-						@include sm {
-							left: 9px;
-							right: 9px;
+						@media (max-width: 991px) {
+							margin-left: -150px !important;
 						}
 
-						@include lg {
-							position: absolute;
-						}
-					}
+            @media (min-width: 991px) {
+              margin-left: -150px !important;
+            }
+          }
+        }
 
-					.price-extra {
-						margin: 20px auto 0;
-						span {
-							font-family: 'Roboto Bold';
-							display: block;
-						}
-						@include lg {
-							margin: 90px auto 0;
-						}
+        div {
+          margin: 1rem 0;
+        }
 
-						color: #009020;
-						text-align: center;
-						width: 70%;
-					}
-				}
+        .show {
+          display: block;
 
-				&__register {
-					button {
-						padding: 1.2rem 3.5rem;
-					}
-				}
-			}
-		}
+          @include lg {
+          }
+        }
 
-	}
+        .hide {
+          @include lg {
+            display: none;
+          }
+        }
+
+        .blue-text {
+          text-align: center;
+          color: $main-blue;
+          font-weight: bold;
+          font-size: 1.2rem;
+        }
+
+        &__date {
+        }
+
+        &__price {
+          .price {
+            color: $main-white;
+            background: $main-blue;
+            position: static;
+            left: 16px;
+            height: 48px;
+            vertical-align: middle;
+            right: 16px;
+            padding: 0.4rem 0;
+            font-size: 2rem;
+            font-family: 'Roboto Bold';
+            @include sm {
+              left: 9px;
+              right: 9px;
+            }
+
+            @include lg {
+              position: absolute;
+            }
+          }
+
+          .price-extra {
+            margin: 20px auto 0;
+            span {
+              font-family: 'Roboto Bold';
+              display: block;
+            }
+            @include lg {
+              margin: 90px auto 0;
+            }
+
+            color: #009020;
+            text-align: center;
+            width: 70%;
+          }
+        }
+
+        &__register {
+          button {
+            padding: 1.2rem 3.5rem;
+          }
+        }
+      }
+    }
+  }
 }
 .place__address {
-
-	display: flex;
-    height: 70px;
-    justify-content: center;
-    /* align-content: center; */
-    align-items: center;
+  display: flex;
+  height: 70px;
+  justify-content: center;
+  /* align-content: center; */
+  align-items: center;
 }
