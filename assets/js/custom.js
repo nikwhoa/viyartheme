@@ -7,7 +7,7 @@ window.addEventListener('DOMContentLoaded', function () {
   );
 
   headerMenuItems.forEach((item) => {
-    item.addEventListener('click', () => {
+    item.addEventListener('touchend', () => {
       document
         .querySelector('.navigation__nav')
         .classList.remove('hamburger-navigation');
