@@ -1,131 +1,128 @@
 .benefits {
-	margin: 1rem 0;
-	padding-top: 2rem;
+  margin: 1rem 0;
+  padding-top: 2rem;
 
-	@include md {
-		margin: 1rem;
-	}
+  @include md {
+    margin: 1rem;
+  }
 
-	&__title {
-		text-align: center;
-		color: $main-blue;
-		margin: 2rem 0;
-	}
+  &__title {
+    text-align: center;
+    color: $main-blue;
+    margin: 2rem 0;
+  }
 
-	&__list {
-		width: 90%;
-		margin: 3rem auto 0 auto;
-		padding: 0 2rem;
-		justify-content: center;
+  &__list {
+    width: 90%;
+    margin: 3rem auto 0 auto;
+    padding: 0 2rem;
+    justify-content: center;
 
-		@include md {
-			width: 100%;
-			display: flex;
-			flex-wrap: wrap;
-			flex-direction: row;
-			margin: 1rem auto;
-			padding: unset;
-		}
+    @include md {
+      width: 100%;
+      display: flex !important;
+      flex-wrap: wrap !important;
+      flex-direction: row !important;
+      margin: 1rem auto;
+      padding: unset;
+    }
 
-		.benefit-item {
-			width: 264px;
-			background: $main-white;
-			padding: 1rem .5rem;
-			border: 0.5px solid #D0EEFF;
-			box-shadow: 0px 4px 10px rgba(0, 96, 192, 0.08);
-			border-radius: 1.1rem;
-			margin: 0 1rem;
+    .benefit-item {
+      width: 264px;
+      background: $main-white;
+      padding: 1rem 0.5rem;
+      border: 0.5px solid #d0eeff;
+      box-shadow: 0px 4px 10px rgba(0, 96, 192, 0.08);
+      border-radius: 1.1rem;
+      margin: 0 1rem;
 
-			@include sm {
-				flex: 35%;
-				padding: .3rem;
-				margin: .3rem;
-			}
+      @include md {
+        flex: 40%;
+        padding: 0.7rem;
+        margin: 0.7rem;
+      }
 
-			@include md {
-				flex: 40%;
-				padding: .7rem;
-				margin: .7rem;
-			}
+      @include sm {
+        flex: 35%;
+        padding: 0.3rem;
+        margin: 0.3rem;
+      }
 
-			&__feature-image {
-				padding: 1rem 0;
-				text-align: center;
+      &__feature-image {
+        padding: 1rem 0;
+        text-align: center;
 
-				.image-wrapper {
-					width: 96px;
-					height: 96px;
-					border: 0.5px solid #E0E0E0;
-					border-radius: 100%;
-					text-align: center;
-					vertical-align: middle;
-					display: inline-flex;
-					align-content: center;
-					justify-content: center;
-					align-items: center;
-                    transition: all .6s ease-in-out;
+        .image-wrapper {
+          width: 96px;
+          height: 96px;
+          border: 0.5px solid #e0e0e0;
+          border-radius: 100%;
+          text-align: center;
+          vertical-align: middle;
+          display: inline-flex;
+          align-content: center;
+          justify-content: center;
+          align-items: center;
+          transition: all 0.6s ease-in-out;
 
+          &:before {
+            content: '';
+            display: inline-block;
+            vertical-align: middle;
+            height: 100%;
+          }
 
+          img {
+            display: inline-block;
+            vertical-align: middle;
+            width: 48px;
+            height: 48px;
+            // margin: 0 2px 0 0;
+          }
 
-					&:before {
-						content: "";
-						display: inline-block;
-						vertical-align: middle;
-						height: 100%;
-					}
+          .benefit-icon {
+            display: inline-block;
+            vertical-align: middle;
+            width: 48px;
+            // height: 48px;
+          }
+        }
+        .image-wrapper:hover {
+          background: $main-blue;
+          cursor: pointer;
+        }
+        .image-wrapper:hover .benefit-icon svg path {
+          fill: $main-white;
+        }
+      }
 
-					img {
-						display: inline-block;
-						vertical-align: middle;
-						width: 48px;
-						height: 48px;
-						// margin: 0 2px 0 0;
-					}
-                    
-					.benefit-icon {
-						display: inline-block;
-						vertical-align: middle;
-						width: 48px;
-						// height: 48px;
-                      
-					}
-				}
-                .image-wrapper:hover  {
-                    background: $main-blue;
-					cursor: pointer;
-                }
-                .image-wrapper:hover .benefit-icon svg path  {
-                    fill: $main-white;
-                }
-			}
+      &__divider {
+        width: 40px;
+        height: 4px;
+        background: $main-blue;
+        margin: 1rem auto;
+      }
 
-			&__divider {
-				width: 40px;
-				height: 4px;
-				background: $main-blue;
-				margin: 1rem auto;
-			}
+      &__title {
+        text-align: center;
+        line-height: 1.2rem;
+        font-weight: 700;
+        color: #606060;
+      }
 
-			&__title {
-				text-align: center;
-				line-height: 1.2rem;
-				font-weight: 700;
-				color: #606060;
-			}
+      &__description {
+        font-size: 0.9rem;
+        color: #909090;
+        text-align: center;
+        line-height: 1.2rem;
+        font-weight: 500;
+        padding: 0.7rem 0 0 0;
+      }
+    }
+  }
 
-			&__description {
-				font-size: .9rem;
-				color: #909090;
-				text-align: center;
-				line-height: 1.2rem;
-				font-weight: 500;
-				padding: 0.7rem 0 0 0;
-			}
-		}
-	}
-
-	&__button {
-		text-align: center;
-		margin: 2rem 0;
-	}
+  &__button {
+    text-align: center;
+    margin: 2rem 0;
+  }
 }

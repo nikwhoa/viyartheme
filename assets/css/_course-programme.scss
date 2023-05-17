@@ -1,5 +1,5 @@
 .course-programme-line {
-    height: 113.3%;
+    height: calc(100% + 202px);;
     width: 2px;
     background: $main-blue;
     position: absolute;
@@ -31,14 +31,14 @@
         margin-top: -10.3rem;
         height: 111.85%;
     }
-    
+
     @media (max-width: 843.8px) {
         height: 108.84%;
     }
     @media (max-width: 1067.8px) {
         height: 113.7%;
     }
-    
+
 }
 
 .course-programme {
@@ -96,7 +96,7 @@
         }
 		.module {
             margin: 1.5rem 0;
-            
+
 			&__header {
                 @include md {
                     flex-wrap: wrap;
@@ -119,8 +119,8 @@
                         font-size: 1.8rem;
                         line-height: 2.71rem;
                         margin: 0 1rem 0 .5rem;
-                    }  
-                    
+                    }
+
                 }
                 .ext {
                     font-family: 'Roboto Bold';
@@ -128,11 +128,11 @@
                     font-size: 2rem;
                     color: $main-blue;
                     align-items: center;
-                    display: flex;  
+                    display: flex;
                     margin-right: 1.6rem;
                     @include md {
                         font-size: 1.4rem;
-                    }  
+                    }
                 }
                 .title {
                     // margin: 0 0 0 1.6rem;
@@ -142,13 +142,13 @@
                     color: $main-white;
                     align-items: center;
                     display: flex;
-                    font-size: 1.5rem;   
+                    font-size: 1.5rem;
                     @include md {
                         width: 90%;
                         margin: 0 0 0 3.5rem;
                         font-size: 1rem;
-                    }   
-                        
+                    }
+
                 }
 			}
             &__content {
@@ -178,13 +178,13 @@
     text-align: center;
     margin: 2rem 0;
 }
-.module .intro { 
+.module .intro {
     // margin-bottom: 3.5rem;
     @include md {
         margin-bottom: unset;
     }
-} 
-.course-programme__modules .module__header.flex-container .circle.intro { 
+}
+.course-programme__modules .module__header.flex-container .circle.intro {
     width: 56px;
     @include lg {
         width: 48px;
@@ -197,7 +197,7 @@
         margin-left: 3.5rem;
         margin-top: -1.5rem;
     }
-}      
+}
 .course-programme__modules .module__header.flex-container .number.intro {
     width: 187px;
     display: flex;

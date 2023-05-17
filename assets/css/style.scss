@@ -17,51 +17,50 @@
 
 html,
 body {
-	font-family: $roboto-regular, sans-serif;
-	box-sizing: border-box;
-	overflow-x: hidden;
+  font-family: $roboto-regular, sans-serif;
+  box-sizing: border-box;
+  overflow-x: hidden;
 
-	-webkit-font-smoothing: antialiased;
-	-moz-osx-font-smoothing: grayscale;
-	background: url('assets/img/body-bg-3-min.png') no-repeat;
-	background-position: 50% 10%;
-	// background-size: cover; 
-
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background: url('assets/img/body-bg-3-min.png') no-repeat;
+  background-position: 50% 10%;
+  // background-size: cover;
 }
 
 *,
 *:before,
 *:after {
-	box-sizing: inherit;
+  box-sizing: inherit;
 }
 
-html.disable-scroll, body.disable-scroll {
-	overflow: hidden;
-	height: 100%;
+html.disable-scroll,
+body.disable-scroll {
+  overflow: hidden;
+  height: 100%;
 }
 
 main {
-	margin: -11.7rem auto 0;
+  margin: -11.7rem auto 0;
 
-	// max-width: 1344px;
-	@include md {
-		margin: unset;
-	}
-
+  // max-width: 1344px;
+  @include md {
+    margin: unset;
+  }
 }
 
 section {
-	padding: 1rem;
-	@include sm {
-		padding: .5rem;
-	}
+  padding: 1rem;
+  @include sm {
+    padding: 0.5rem !important;
+  }
 }
 
 .flex-container {
-	display: flex;
-	flex-flow: row nowrap;
-	align-items: stretch;
-	/*
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: stretch;
+  /*
     flex-flow is the combination of flex-direction and flex-wrap.
       justify-content: flex-start;
       flex-direction: row;
@@ -71,96 +70,115 @@ section {
 }
 
 .flex-item {
-	flex: 0 1 auto;
+  flex: 0 1 auto;
 }
 
 .pc {
-	max-width: 900px;
-	margin: 0 auto;
-	left: 46.3%;
-	padding: 0 8.5rem;
-	top: 7.9rem;
-	display: flex;
-	justify-content: flex-end;
-	position: absolute;
-	z-index: 100;
+  max-width: 900px;
+  margin: 0 auto;
+  left: 46.3%;
+  padding: 0 8.5rem;
+  top: 7.9rem;
+  display: flex;
+  justify-content: flex-end;
+  position: absolute;
+  z-index: 100;
 
-	@include md {
-		
-		left: auto;
-		top: -37rem;
-		padding: unset;
-		display: block;
-		max-width: unset;
-		width: 300px;
-		position: relative;
-		margin-bottom: -18.2rem;
-	}
-	@media (max-width: 610.98px) {
-		width: 267px;		
-	}
-	@media (max-width: 1110.98px) {
-		left: 40.3%;		
-	}
-	
-	.pc-image img {
-		@media (max-width: 1140.98px) {
-			width: 125%;	
-		}
-		@include md {
-			width: 100%;
-			height: auto;
-		}
-	}
+  @media (max-width: 1110.98px) {
+    left: 40.3%;
+  }
+
+  @include md {
+    left: auto;
+    top: -43rem;
+    padding: unset;
+    display: block;
+    max-width: unset;
+    width: 300px;
+    position: relative;
+    margin-bottom: -18.2rem;
+  }
+  @media (max-width: 610.98px) {
+    width: 267px;
+    top: -40rem;
+  }
+
+
+  .pc-image img {
+    @media (max-width: 1140.98px) {
+      width: 125%;
+    }
+    @include md {
+      width: 100%;
+      height: auto;
+    }
+  }
 }
 
 .btn {
-	background: linear-gradient(90deg, #FF8000 0%, #FC710D 100%);
-	border-radius: 14px;
-	border: transparent;
-	font-weight: 700;
-	text-align: center;
-	color: $main-white;
-	cursor: pointer;
-	transition: all 350ms ease-in-out;
-	&:hover {
-		background: #FFA61E;
-	}
+  background: linear-gradient(90deg, #ff8000 0%, #fc710d 100%);
+  border-radius: 14px;
+  border: transparent;
+  font-weight: 700;
+  text-align: center;
+  color: $main-white;
+  cursor: pointer;
+  transition: all 350ms ease-in-out;
+  &:hover {
+    background: #ffa61e;
+  }
 }
 
 .link {
-	display: inline-block;
-	text-decoration: none;
-	cursor: grab;
+  display: inline-block;
+  text-decoration: none;
+  cursor: grab;
 }
 
 h2 {
-	font-family: 'Roboto Bold';
-	text-align: center;
-	font-size: 1.5rem;
-	@include md {
-		padding: 0 .15rem;
-	}
+  font-family: 'Roboto Bold';
+  text-align: center;
+  font-size: 1.5rem;
+  @include md {
+    padding: 0 0.15rem;
+  }
 }
 
 .register-btn {
-	padding: 1.2rem 3rem;
-	@include sm {
-		padding: 0.9rem 2.5rem;
-	}
+  padding: 1.2rem 3rem;
+  @include sm {
+    padding: 0.9rem 2.5rem;
+  }
 }
 .register-btn-wrapper {
   text-align: center;
   margin: 2rem 0;
 }
 .only-mobile {
-	display: none;
-	@include md {
-		display: flex;
-	}
+  display: none;
+  @include md {
+    display: flex;
+  }
 }
 .swiper-pagination-bullets.swiper-pagination-horizontal {
-	@media (max-width: 479px) {
-		bottom: 10% !important;
+  @media (max-width: 479px) {
+    bottom: 10% !important;
+  }
+}
+
+// css id selector
+#post_number-88 {
+  // hide the post on mobile
+	@include lg {
+		display: none;
 	}
+}
+div#post_number-80.tab_block {
+  display: none;
+}
+div#post_number-88.tab_block.active {
+  display: block !important;
+}
+div#post_number-80.tab_block.active {
+  display: block !important;
 }
