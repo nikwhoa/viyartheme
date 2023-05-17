@@ -12,7 +12,7 @@
             </div>
         </div>
         <div class="approaches__dash-line">
-            <img src="<?php echo get_template_directory_uri(); ?>/assets/img/dash-line.png" alt="">
+            <img width="100%" height="auto" src="<?php echo get_template_directory_uri(); ?>/assets/img/dash-line.png" alt="">
         </div>
         <div class="approaches__list flex-container">
 
@@ -29,7 +29,7 @@
             <?php while ($loop->have_posts()) : $loop->the_post(); ?>
                 <a href="#course-programme">
                     <div class="approaches-item">
-                        <div class="approaches-item__title"> <span><img src="<?php echo get_template_directory_uri(); ?>/assets/img/view_side_r.svg" alt=""></span> <?php the_title(); ?></div>
+                        <div class="approaches-item__title"> <span><img width="100%" height="auto" src="<?php echo get_template_directory_uri(); ?>/assets/img/view_side_r.svg" alt=""></span> <?php the_title(); ?></div>
                         <div class="approaches-item__description"> <?php the_content(); ?> </div>
                     </div>
                 </a>

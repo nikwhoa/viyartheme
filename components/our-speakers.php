@@ -21,7 +21,7 @@
                 <div class="speaker__photo">
                     <div class="photo-wrapper">
                         <div class="photo">
-                            <img src="<?php echo get_the_post_thumbnail_url(); ?>"
+                            <img width="100%" height="auto" src="<?php echo get_the_post_thumbnail_url(); ?>"
                                 alt="speaker photo">
                         </div>
                     </div>

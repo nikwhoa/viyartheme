@@ -43,7 +43,7 @@
                             type="image/svg+xml" media="(max-width:835px)">
                         <source srcset="<?php echo get_template_directory_uri(); ?>/assets/img/logo-tablet-svg.svg"
                             type="image/svg+xml" media="(max-width:991px)">
-                        <img width="100%" class="logo-js"
+                        <img width="100%" height="auto" class="logo-js"
                             src="<?php echo get_template_directory_uri(); ?>/assets/img/logo-svg.svg" alt="">
                     </picture>
                 </a>
@@ -112,6 +112,7 @@
                         <div>
                             <img class="viyar-logo"
                                 width="100%"
+                                height="auto"
                                 src="<?php echo get_template_directory_uri(); ?>/assets/img/viar-academy-logo.svg"
                                 alt="Viyar Pro Business">
                         </div>
@@ -136,6 +137,6 @@
 
     <div class="pc">
         <div class="pc-image">
-            <img width="100%" src="<?php echo get_template_directory_uri(); ?>/assets/img/header-pc.png" alt="">
+            <img width="100%" height="auto" src="<?php echo get_template_directory_uri(); ?>/assets/img/header-pc.png" alt="">
         </div>
     </div>

@@ -3,7 +3,7 @@
         <div class="footer__logo">
             <a href="" class="custom-logo-link">
                 <picture>
-                    <img class="logo-js" src="<?php echo get_template_directory_uri(); ?>/assets/img/logo-svg.svg" alt="">
+                    <img width="100%" height="auto" class="logo-js" src="<?php echo get_template_directory_uri(); ?>/assets/img/logo-svg.svg" alt="">
                 </picture>
             </a>
         </div>
@@ -16,7 +16,7 @@
         ?>
         <div class="footer__social-icon">
             <div class="inst">
-                
+
                 <a target="_blank" href="https://www.instagram.com/viyar.ua/">
                     <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path d="M16.5 0H7.5C3.3585 0 0 3.3585 0 7.5V16.5C0 20.6415 3.3585 24 7.5 24H16.5C20.6415 24 24 20.6415 24 16.5V7.5C24 3.3585 20.6415 0 16.5 0ZM21.75 16.5C21.75 19.395 19.395 21.75 16.5 21.75H7.5C4.605 21.75 2.25 19.395 2.25 16.5V7.5C2.25 4.605 4.605 2.25 7.5 2.25H16.5C19.395 2.25 21.75 4.605 21.75 7.5V16.5Z" fill="white" />
