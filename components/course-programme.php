@@ -7,7 +7,7 @@
         </div>
         <div class="course-programme__download">
             <a href="https://viyarpro.business/wp-content/uploads/2022/01/red_viyar_probusiness_start_kursu_ukrainskij.pptx" class="link">
-                <img width="100%" height="auto" src="<?php echo get_template_directory_uri(); ?>/assets/img/download-icon.png" alt="Скачать презентацию">Завантажити презентацію
+                <img width="auto" height="auto" src="<?php echo get_template_directory_uri(); ?>/assets/img/download-icon.png" alt="Скачать презентацию">Завантажити презентацію
             </a>
         </div>
         <div class="course-programme__modules">

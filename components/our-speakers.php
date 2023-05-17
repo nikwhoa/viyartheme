@@ -6,39 +6,41 @@
         <div class="swiper-wrapper">
 
 
-        <?php
+            <?php
             $loop = new WP_Query(
-            array(
-                'post_type' => 'speakers',
-                'posts_per_page' => -1,
-                'order' => 'ASC',
-            )
-        );
-        ?>
+                array(
+                    'post_type' => 'speakers',
+                    'posts_per_page' => -1,
+                    'order' => 'ASC',
+                )
+            );
+            ?>
 
-        <?php while ($loop->have_posts()): $loop->the_post();?>
-        <div class="swiper-slide speaker">
-                <div class="speaker__photo">
-                    <div class="photo-wrapper">
-                        <div class="photo">
-                            <img width="100%" height="auto" src="<?php echo get_the_post_thumbnail_url(); ?>"
-                                alt="speaker photo">
+            <?php while ($loop->have_posts()):
+                $loop->the_post(); ?>
+                <div class="swiper-slide speaker">
+                    <div class="speaker__photo">
+                        <div class="photo-wrapper">
+                            <div class="photo">
+                                <img width="100%" height="auto"
+                                    src="<?php echo get_the_post_thumbnail_url(get_the_ID(), 'medium'); ?>"
+                                    alt="speaker photo">
+                            </div>
                         </div>
                     </div>
+                    <div class="speaker__name">
+                        <?php the_title(); ?>
+                    </div>
+                    <div class="speaker__info">
+                        <?php the_content(); ?>
+                    </div>
+                    <div class="speaker__text">
+                        <?php the_field('dopolnitelnyj_tekst_spikera') ?>
+                    </div>
                 </div>
-                <div class="speaker__name">
-                    <?php the_title(); ?>
-                </div>
-                <div class="speaker__info">
-                    <?php the_content(); ?>
-                </div>
-                <div class="speaker__text">
-                    <?php the_field('dopolnitelnyj_tekst_spikera') ?>
-                </div>
-            </div>
-        <?php endwhile;
+            <?php endwhile;
             wp_reset_query();
-        ?>
+            ?>
 
 
 

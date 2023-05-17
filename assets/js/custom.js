@@ -5,24 +5,28 @@ window.addEventListener('DOMContentLoaded', function () {
   const headerMenuItems = document.querySelectorAll(
     '#menu-header-menu .menu-item'
   );
-    // event listener for touch devices
+  // event listener for touch devices
 
   headerMenuItems.forEach((item) => {
     item.addEventListener('click', (e) => {
-      document
-        .querySelector('.navigation__nav')
-        .classList.toggle('hamburger-navigation');
+      console.log('click');
 
-      document
-        .querySelector('.mobile-menu-btn__open')
-        .toggleAttribute('isOpened');
+      if (window.innerWidth <= 793) {
+        document
+          .querySelector('.navigation__nav')
+          .classList.toggle('hamburger-navigation');
 
-      document
-        .querySelector('.mobile-menu-btn__open')
-        .classList.replace('close-btn', 'open-btn');
+        document
+          .querySelector('.mobile-menu-btn__open')
+          .toggleAttribute('isOpened');
+        document
+          .querySelector('.mobile-menu-btn__open')
+          .classList.replace('close-btn', 'open-btn');
 
-      document.documentElement.classList.toggle('disable-scroll');
-      document.body.classList.toggle('disable-scroll');
+        document.documentElement.classList.toggle('disable-scroll');
+        document.body.classList.toggle('disable-scroll');
+      }
+
     });
   });
 
